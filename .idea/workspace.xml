@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db8ca120-1dd2-49ab-9320-2c6ce20776c5" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/triangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/rectangle.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
