@@ -1,1 +1,1 @@
-def area(a, b): return a * b\ndef perimeter(a, b): return a + b
+def area(a, b): return a * b\ndef perimeter(a, b, c): return a + b + c
