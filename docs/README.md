@@ -71,4 +71,5 @@ output ~3.14
 output ~12.57
 ```
 ## История изменения проекта с хешами комитов
-> 
+
+<img width="510" alt="Снимок экрана 2023-09-27 в 2 20 10 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/ac1e5749-0fab-47b9-a0e7-c72206333bb5">
