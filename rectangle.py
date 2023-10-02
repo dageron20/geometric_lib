@@ -1,5 +1,7 @@
-def area(a, b): 
+def area(a, b):
+    ''' Находит площадь прямоугольника по его двум сторонам (a, b) ''' 
     return a * b 
 
-def perimeter(a, b): 
+def perimeter(a, b):
+    ''' Находит периметр прямоугольника по его двум сторонам (a, b) '''
     return 2*(a + b)
