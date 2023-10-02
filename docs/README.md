@@ -28,3 +28,13 @@
 ### Функция perimeter
 - Считает периметр треугольника в зависимости от его сторон
 - Triangle: P = a+b+c
+## История коммитов
+- 20b1d2b925d45c07b83d9544468c5287a89c1ceb Update triangle.py
+- dc69550500ce85b183acdc0584dce55832d51278 Update square.py
+- ad66bc5d813cf9c9ee3a933854d049747b64ac4c Update rectangle.py
+- d5a39d76546895cfe66dc3c74e9214e145bc7585 Update circle.py
+- 7415e8b50d082af6da240cfb8a6498005c2b12bb Исправлена ошибка в файле rectangle
+- 2da68a849da67dfd594e2d597ed7881513021093 добавлен новый файл triangle
+- cb8f1efa26b3b55b4cf8e81f0d2fff14e4ed228d добавлен новый файл
+- d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
+- 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
