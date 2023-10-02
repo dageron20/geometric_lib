@@ -51,3 +51,7 @@ print(perimeter(4)) # 16
 print(area(4, 7)) # 14
 print(perimeter(4, 3, 6)) # 13
 ```
+
+## History of commits
+1) 74a1446 -> 1d9970a -> c352f71 - Added triangle.py and fixed rectangle.py.
+2) 76d17c3 -> 0ceacf0 -> 4bf24fe -> a29e155 -> 3adfd58 - Added documentation and update README.md
