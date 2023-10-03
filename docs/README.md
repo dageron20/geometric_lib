@@ -1,3 +1,86 @@
+# **Geometric_lib**
+
+## Descripiton
+##### Calling the appropriate function with the required parameters.
+
+## Description of the functions
+### Circle
+**Area function area(r)**
+>Takes a number `r` - the radius of a circle
+Return area of circle.
+
+**Call example**
+```
+area_circle = area(3)
+```
+**Perimeter function perimeter(r)**
+>Takes a number `r` - the radius of a circle
+Return perimeter of circle.
+
+**Call example**
+```
+perimeter_circle = perimeter(3)
+```
+### Rectangle
+**Area function area(a, b)**
+>Accepted parameters: `(int) a`, `(int) b`.
+Return area of rectangle.
+
+**Call example**
+```
+area_rectangle = area(2, 6)
+```
+**Perimeter function perimeter(r)**
+>Accepted parameters: `(int) a`, `(int) b`.
+Return perimeter of rectangle.
+
+**Call example**
+```
+perimeter_rectangle = perimeter(6, 2)
+```
+### Square
+**Area function area(a)**
+>Takes a number `a` (the side of a square), returns the area of the square.
+Return area of square.
+
+**Call example**
+```
+area_square = area(5)
+```
+**Perimeter function perimeter(a)**
+>Takes a number `a` (the side of a square), returns the perimeter of the square.
+Return perimeter of square.
+
+**Call example**
+```
+perimeter_square = perimeter(4)
+```
+### Triangle
+**Area function area(a, h)**
+>Accepted parameters: side `(int) a`, height `(int) h`.
+Return area of triangle.
+
+**Call example**
+```
+area_triangle = area(3, 7)
+```
+**Perimeter function perimeter(a, b, c)**
+>Accepted parameters: side `(int) a`, side `(int) b`, side `(int) c`.
+Return perimeter of triangle.
+
+**Call example**
+```
+perimeter_triangle = perimeter(4, 6, 5)
+```
+## Project change history
+>**Commit**: c0ee283
+**Date**: Sep 12 2023
+**Description**: error fix
+
+>**Commit**: 21d25e9
+**Date**: Sep 12 2023
+**Description**: add new file
+
 # Math formulas
 ## Area
 - Circle: S = πR²
