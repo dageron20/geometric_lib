@@ -137,17 +137,20 @@
 + perimeter(5,4,3) = 12
 
 # История изменений проекта
+```
 -   commit 361812da7f6280c5cdb956a67981b6fb7e83e5fa (HEAD -> main, origin/main, origin/HEAD)
     Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
     Date:   Wed Oct 4 23:08:44 2023 +0300
   
         Update triangle.py
-
+```
+```
 -   commit 3537698097eebf4e0484f6f7ead5cbe03cb05f10
     Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
     Date:   Wed Oct 4 22:25:56 2023 +0300
 
         Добавил описание функций
+```
 
 -   commit 4a6dc54fa68fc522dcebff6621c997c07480c3d0
     Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
@@ -214,13 +217,14 @@
 
         Добавил файл
 
--   `commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
+-   commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
     Author: smartiqa <info@smartiqa.ru>
     Date:   Thu Mar 4 14:55:29 2021 +0300
 
-        L-03: Docs added`
+        L-03: Docs added
 
--   `commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+-   commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
     Author: smartiqa <info@smartiqa.ru>
-    Date:   Thu Mar 4 14:54:08 2021 +0300`
+    Date:   Thu Mar 4 14:54:08 2021 +0300
+    :
 
