@@ -8,6 +8,7 @@
 print(perimeter(3));
 print(area(2));
 '''
+
 Выходные данные:
 '''
 18.84955592153876
@@ -22,6 +23,7 @@ print(area(2));
 print(perimeter(2,3));
 print(area(2,2));
 '''
+
 Выходные данные:
 '''
 10
@@ -36,6 +38,7 @@ print(area(2,2));
 print(perimeter(2));
 print(area(2));
 '''
+
 Выходные данные:
 '''
 8
@@ -51,6 +54,7 @@ print(area(2));
 print(perimeter(3,4,5));
 print(area(3,4));
 '''
+
 Выходные данные:
 '''
 12
