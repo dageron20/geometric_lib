@@ -1,55 +1,55 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# Математические формулы
+## Площадь
+- Круг: S = πR²
+- Прямоугольник: S = ab
+- Площадь: S = a²
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+## Периметр
+- Круг: P = 2πR
+- Прямоугольник: P = 2a + 2b
+- Площадь: P = 4a
 
-# Description of solution:
-## Made functions to find the area and perimeter of shapes: circle, rectangle, square, triangle
+# Описание решения:
+## Созданы функции для поиска области и периметра форм: круг, прямоугольник, квадрат, треугольник
 
-# Description of functions:
-## Circle:
-```python
-import math
+# Описание функций:
+## Круг:
+```питон
+импорт математики
 
-def area(r):
-return math.pi * r * r
+def площадь (r):
+вернуть math.pi * r * r
 
-def perimetr(r):
-return 2 * math.pi * r
+def perimetr (r):
+возврат 2 * math.pi * r
 ```
-- File code circle.py
+- Код файла crup.py
 
-```python
-def area(r):
-	return math.pi * r * r
+```питон
+def площадь (r):
+вернуть math.pi * r * r
 ```
-- The function for calculating the area takes the number **r** - the radius of the circle for further calculation of the area of ​​the circle
+- Функция для расчета области принимает число **r** - радиус круга для дальнейшего расчета площади круга
 
-```python
-def perimetr(r):
-	return 2 * math.pi * r
+```питон
+def perimetr (r):
+возврат 2 * math.pi * r
 ```
 
-- The function for calculating the perimeter of a circle takes the number **r** - the radius of the circle to calculate the perimeter of the circle
+- Функция для расчета периметра круга принимает число **r** - радиус круга для расчета периметра круга
 
-### Example call:
-```python
-import math
+### Пример вызова:
+```питон
+импорт математики
 
-def area(r):
-    return math.pi * r * r
+def площадь (r):
+ вернуть math.pi * r * r
 
-def perimetr(r):
-    return 2 * math.pi * r
+def perimetr (r):
+ возврат 2 * math.pi * r
 
-print(area(5))
-print(perimeter(5))
+печать (область (5))
+print (периметр (5))
 ```
 
 - Result area function = 78.53981633974483
@@ -109,77 +109,83 @@ def area(a):
 - The function for calculating the area takes the number a - the side of the square to calculate its area
 
 
-```python
-def perimetr(a):
-	return 4 * a
+```питон
+def perimetr (a):
+возвод 4 * а
 ```
-- The function for calculating the perimeter takes the number a - the side of the square to calculate its perimeter
-### Example call:
-```python
-def area(a):
-    return a * a
+- Функция расчета периметра принимаэт число а - сторону квадрата для расчета его периметра
+### Пример Вызова :
+```питон
+def plopchadь (а):
+ вернуть * а
 
-def perimetr(a):
-    return 4 * a
+def perimetr (a):
+ возвод 4 * а
 
-print(area(6))
-print(perimetr(6))
+pechatj (облат (6))
+печать (периметр (6))
 ```
-- Result area function = 36
-- Result perimeter function 24
-## Triangle
-```python
-def area(a, h):
-    return a * h / 2
+- Фунция области резултата = 36
+- Регламент фонкти и периметра 24
+## Тройгольник
+```питон
+def plopchadь (а, ч):
+ вернуть * ч / 2
 
-def perimetr(a, b, c):
-    return a + b + c
+def perimetr (a, b, c):
+ вернуть + б + в
 ```
-- File code tiangle.py
+- Код Файла Тиангла.пи
 
-```python
-def area(a, h):
-	return a * h / 2
+```питон
+def plopchadь (а, ч):
+ вернуть * ч / 2
 ```
-- The function for calculating the area takes two numbers: a and h - the side and height of the triangle to calculate its area
-```python
+- Фунция даль расчета плащади принимает сва числа: а и ч - стона и вюголничка для расчета
+```питон
 
-def perimetr(a, b, c):
-	return a + b + c
+def perimetr (a, b, c):
+ вернуть + б + в
 ```
-- The function for calculating the perimeter takes three numbers: a, b, c - sides of the triangle
+- Функция расчета периметра принимает три числа: а, б, в - стороны троиника
 
-### Example call:
-```python
-def area(a, h):
-    return a * h / 2
+### Пример Вызова :
+```питон
+def plopchadь (а, ч):
+ вернуть * ч / 2
 
-def perimetr(a, b, c):
-    return a + b + c
+def perimetr (a, b, c):
+ вернуть + б + в
 
 
-print(area(2, 4))
-print(perimetr(2, 3, 4))
+pechatj (облат (2, 4))
+печать (периметр (2, 3, 4))
 ```
-- Result area function = 4
-- Result perimeter function = 9
-# Project change history with commit hashes
-> commit 895de6d4ac25263a47e41d7919260685826c7e5b (HEAD -> main, origin/main, origin/HEAD)
-- | Author: Taras <nebarrow@yandex.ru>
-- | Date:   Mon Sep 18 19:12:37 2023 +0300
+- Фунция области резултата = 4
+- Фунция периметра результата = 9
+## История эмиссии проэкта с поместю коммитов
+> коммит 54029aef4b78f8468b63d7ed1cdc136a86b03afa (HEAD -> main, proishozdenié / main, proyshozdenié / HEAD)
+- | Автор: Максим <karimovmaksim121@gmail.com>
+- | Дата: ср 13 сентьября 19: 34:15 2023 +0500
 - |
-- |     была исправлена ошибка в вычислении периметра прямоугольника в файле rectangle.py.
+- | FIX: ancellogne.py
 
 
-> commit b441342a4b0460f0e1c6895932e64ee43f4d07c5
-- | Author: Taras <nebarrow@yandex.ru>
-- | Date:   Mon Sep 18 19:08:11 2023 +0300
+> коммит d93c047818ab0a08f8978e1700e0f884e1ee7dc8
+- | Автор: Максим <karimovmaksim121@gmail.com>
+- | Дата: ср 13 сентьября 19: 29:51 2023 +0500
 - |
-- |     был добавлен новый файл rectangle.py с вычислениями для фигуры Прямоугольник
+- | FIX: ancellogne.py; ДОБАВИТ: trangle.py
 
 
-> commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
--  | Author: smartiqa <info@smartiqa.ru>
--  | Date:   Thu Mar 4 14:55:29 2021 +0300
+> commit e802e55f4c24cbfce3026419972cb13f0e6c14fb
+- | Автор: Максим <karimovmaksim121@gmail.com>
+- | Ср 13 сентибрия 19: 22:28 2023 +0500
 -  |
--  |     L-03: Docs added
+- | ДОБАВИТЬ: ancellogne.py
+
+> commit e802e55f4c24cbfce3026419972cb13f0e6c14fb
+- | Автор: Максим <karimovmaksim121@gmail.com>
+- | Ср 13 сентибря 19: 22:28 2023 +0500
+-  |
+- | ИЗМЕНЕНИЕ: README.md
