@@ -229,5 +229,33 @@ commit 54da83bb9ecd820b91f5e09f7712181292596e68
 Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
 Date:   Wed Oct 4 22:10:00 2023 +0300
 
-:
+    Добавил описание функций
+```
+```
+commit 398b940b26fc597fb7a02500cc497f6b752d6c43
+Author: Soltan Dydymov <sodidimov2005@gmail.com>
+Date:   Sat Sep 9 17:56:25 2023 +0300
+
+    Исправил ошибку
+```
+```
+commit d99d4c25a9fc35529b1c8eff22ea64c584441722
+Author: Soltan Dydymov <sodidimov2005@gmail.com>
+Date:   Sat Sep 9 17:54:10 2023 +0300
+
+    Добавил файл
+```
+```
+commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added
+```
+```
+commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300
+
+    L-03: Circle and square added
 ```
