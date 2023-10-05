@@ -127,35 +127,28 @@
 
 # История изменений проекта
 ```
-commit 65541b00cc288f43051980acf7ae8d7cb76a6d62 (HEAD -> main, origin/main, origin/HEAD)
+commit 87d6a36eba1be2e12a5996d7127440705a81c869 (HEAD -> main, origin/main, origin/HEAD)
 Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
-Date:   Wed Oct 4 23:36:21 2023 +0300
+Date:   Thu Oct 5 23:41:37 2023 +0300
 
     Update README.md
 ```
 ```
-commit 1a615fd69049a7ef410cc8a50e1f368a11a41232
+commit 15bbaa73a961db855b296a52f710f539ab50866a
 Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
-Date:   Wed Oct 4 23:31:58 2023 +0300
+Date:   Thu Oct 5 23:38:38 2023 +0300
 
     Update README.md
 ```
 ```
-commit f0d0ec883d5724cc21c81d59880835d890d014ee
+commit f22075c0fee24e7ea2a41beca3a0aaef3382da38
 Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
-Date:   Wed Oct 4 23:31:27 2023 +0300
+Date:   Wed Oct 4 23:42:14 2023 +0300
 
     Update README.md
 ```
 ```
-commit 178575aa58e8269ef032f245eb1d7f5bc09237e6
-Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
-Date:   Wed Oct 4 23:25:40 2023 +0300
-
-:...skipping...
-```
-```
-commit 65541b00cc288f43051980acf7ae8d7cb76a6d62 (HEAD -> main, origin/main, origin/HEAD)
+commit 65541b00cc288f43051980acf7ae8d7cb76a6d62
 Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
 Date:   Wed Oct 4 23:36:21 2023 +0300
 
@@ -258,4 +251,5 @@ Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:54:08 2021 +0300
 
     L-03: Circle and square added
+
 ```
