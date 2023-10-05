@@ -5,14 +5,14 @@
 - Функция area(a, b) принимает 2 числа (стороны прямугольника), возвращает площадь заданного прямоугольника
 '''py
 rectangle_area = area(2, 5)
-rectangle_area = 10
+print(rectangle_area) #10
 '''
 
 ### Периметр
 - Функция perimeter(a, b) принимает 2 числа (стороны прямугольника), возвращает периметр заданного треугольника
 '''py
 rectangle_perimeter = perimeter(2, 5)
-#rectangle_perimeter = 14
+rectangle_perimeter = 14
 '''
 
 
