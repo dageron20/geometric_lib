@@ -22,4 +22,4 @@ def perimeter(r):
                 perimeter (float): периметр окружности радиуса r
     """
     return 2 * math.pi * r
-print(area(3))
+
