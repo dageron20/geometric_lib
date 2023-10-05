@@ -149,6 +149,14 @@ Usage:
 # Changelog
 ## Docs
 
+Commit: 783a968f2cbe24b51d3ae3922fbc9155abeaff91
+
+Date: 05.10.2023
+
+Usage blocks added in function comments
+
+## Docs
+
 Commit: 7a898d0fcf21d1d9f2beced3d068b316678633e1
 
 Date: 05.10.2023
