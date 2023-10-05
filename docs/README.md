@@ -149,6 +149,14 @@ Usage:
 # Changelog
 ## Docs
 
+Commit: 7a898d0fcf21d1d9f2beced3d068b316678633e1
+
+Date: 05.10.2023
+
+README.md expanded, added sections
+
+## Docs
+
 Commit: 55490b6585037028de5adc5b9f1019a36b5ec5ef
 
 Date: 05.10.2023
