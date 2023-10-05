@@ -7,6 +7,10 @@ def area(side: int, ground: int) -> int:
 
     # Возвращает площадь фигуры, а именно умножение side на ground
     #   * Возвращаемое значение area -> int
+
+    # Пример вызова:
+    # 1. side = 1, ground = 3 (входные данные)
+    # 2. 1 * 3 = 3 (умножение и полученние возвращаемого значения функции)
     return side * ground
 
 def perimeter(side: int , ground: int) -> int:
@@ -18,4 +22,8 @@ def perimeter(side: int , ground: int) -> int:
 
     # Возвращает периметр фигуры, а именно сложение оснований и боковых сторон
     #   * Возвращаемое значение perimeter -> int
+
+    # Пример вызова:
+    # 1. side = 2, ground = 4 (входные данные)
+    # 2. 2 + 2 + 4 + 4 = 12 (сложение и полученние возвращаемого значения функции)
     return side + side + ground + ground
