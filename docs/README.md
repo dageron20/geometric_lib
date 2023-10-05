@@ -1,5 +1,9 @@
-# Math formulas
-## Area
+# Описание каждой функции с примерами вызова
+## Прямоугольник
+### Площадь
+
+
+
 - Circle: S = πR²
 - Rectangle: S = ab
 - Square: S = a²
