@@ -12,7 +12,7 @@ print(rectangle_area) #10
 - Функция perimeter(a, b) принимает 2 числа (стороны прямугольника), возвращает периметр заданного треугольника
 ```py
 rectangle_perimeter = perimeter(2, 5)
-rectangle_perimeter = 14
+print(rectangle_perimeter) #14
 ```
 
 
@@ -22,14 +22,14 @@ rectangle_perimeter = 14
 - Функция area(a) принимает 1 число (сторону квадрата), возвращает площадь заданного квадрата
 '''py
 square_area = area(3)
-#square_area = 9
+print(square_area) #9
 ```
 
 ### Периметр
 - Функция perimeter(a) принимает 1 число (сторону квадрата), возвращает периметр заданного квадрата
 ```py
 square_perimeter = perimeter(3)
-#square_perimeter = 12
+print(square_perimeter) #12
 ```
 
 ## Треугольник
@@ -38,14 +38,14 @@ square_perimeter = perimeter(3)
 - Функция area(a, b) принимает 2 числа (стороны треугольника), возвращает площадь заданного треугольника
 ```py
 triangle_area = area(4, 5)
-#triangle_area = 10
+print(triangle_area) #10
 ```
 
 ### Периметр
 - Функция perimeter(a, b, c) принимает 3 числа (стороны треугольника), возвращает периметр заданного треугольника
 ```py
 triangle_perimeter = perimeter(3, 4, 5)
-#triangle_perimeter = 12
+print(triangle_perimeter) #12
 ```
 
 ## Круг
@@ -54,14 +54,14 @@ triangle_perimeter = perimeter(3, 4, 5)
 - Функция area(r) принимает 1 число (радиус круга), возвращает площадь заданного круга
 ```py
 triangle_area = area(3)
-#triangle_area = 28.274333882308138
+print(triangle_area) #28.274333882308138
 ```
 
 ### Периметр
 - Функция perimeter(r) принимает 1 число (радиус круга), возвращает периметр заданного круга
 ```py
 triangle_perimeter = perimeter(3)
-#triangle_perimeter = 18.84955592153876
+print(triangle_perimeter) #18.84955592153876
 ```
 
 # История изменения проекта с хешами комитов
