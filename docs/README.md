@@ -45,3 +45,12 @@
   Пример: на вход поступает число 6 - _это длина квадрата_. На выходе получится число 24, что является *периметром квадрата* с данной длиной.
   
 # История изменения проекта 
+b805f28 (HEAD -> main, origin/main, origin/HEAD) Update README.md
+a2f6cbc Update triangle.py
+44e49a3 Update square.py
+082c272 Update rectangle.py
+9abac90 Update circle.py
+37e4eb3 исправил ошибку в файле rectangle.py
+363ba22 создал новый файл rectangle.py
+d078c8d L-03: Docs added
+8ba9aeb L-03: Circle and square added
