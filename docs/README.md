@@ -20,7 +20,7 @@ print(rectangle_perimeter) #14
 Файл square.py
 ### Площадь
 - Функция area(a) принимает 1 число (сторону квадрата), возвращает площадь заданного квадрата
-'''py
+```py
 square_area = area(3)
 print(square_area) #9
 ```
