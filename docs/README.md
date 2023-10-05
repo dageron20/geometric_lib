@@ -2,20 +2,20 @@
 ## Area
 - Circle: S = πR²
 ###
-import math
-def area(r):
-  return r * math.pi * r
-print(area(5))
-Output: 78.53981633974483 
+Формула площади окружности
 - Rectangle: S = ab
 ###
-def area(a, b)
-  return a * b
-print(area(4, 5))
-Output: 20
+Формула площади прямоугольника
 - Square: S = a²
-
+###
+Формула площади квадрата
+- Triangle: S = ah / 2
+###
+Формула площади треугольника
 ## Perimeter
 - Circle: P = 2πR
+- 
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+
+#
