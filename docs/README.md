@@ -63,3 +63,18 @@ triangle_area = area(3)
 triangle_perimeter = perimeter(3)
 #triangle_perimeter = 18.84955592153876
 '''
+
+# История изменения проекта с хешами комитов
+- 67eca5f Update README.md
+- c215b0f Update README.md
+- c484c64 Update triangle.py
+- 8bf2ab5 Update square.py
+- 33393cd Update square.py
+- 6cb039d Update rectangle.py
+- 7ee5b14 Update circle.py
+- b7bce0f Update circle.py
+- d372037 Исправлена ошибка в файле rectangle.py
+- 8ba1e6f Добавлен новый файл triangle.py
+- c2220ed Добавлен новый файл
+- d078c8d L-03: Docs added
+- 8ba9aeb L-03: Circle and square added
