@@ -12,30 +12,30 @@
 - Triangle: P = a + b + c
 
 # What is included in the project?
-: Here are various functions for finding the areas and perimeters of shapes.
+> Here are various functions for finding the areas and perimeters of shapes.
 1. Circle[^1]
-  1.1 The functions take float values ​​and returns them accordingly.
+  - The functions take float values ​​and returns them accordingly.
   ```py
   if __ name__ == __"main__":
     area(1.0)       # return : 3.141592653589793
     perimeter(1.0)  # return : 6.283185307179586  
   ```
-3. Rectangle[^2]
-  2.1 The functions accept integer values ​​and returns them accordingly.
+2. Rectangle[^2]
+  - The functions accept integer values ​​and returns them accordingly.
   ```py
   if __ name__ == __"main__":
     area(1, 3)       # return : 3
     perimeter(2, 4)  # return : 12  
   ```
-5. Square[^3]
-   3.1 The functions accept integer values ​​and returns them accordingly.
+3. Square[^3]
+   - The functions accept integer values ​​and returns them accordingly.
   ```py
   if __ name__ == __"main__":
     area(5)       # return : 25
     perimeter(5)  # return : 20
   ```
-7. Triangle[^4]
-   4.1 The functions take float values ​​and returns them accordingly.
+4. Triangle[^4]
+   - The functions take float values ​​and returns them accordingly.
   ```py
   if __ name__ == __"main__":
     area(1.0, 3.0)             # return : 1.5 
@@ -57,10 +57,10 @@
 
 
 # Links to files
-[^1]: [Circle](https://github.com/klorainy/fork_geometric_lib/blob/main/circle.py)
-[^2]: [Rectangle](https://github.com/klorainy/fork_geometric_lib/blob/main/rectangle.py)
-[^3]: [Square](https://github.com/klorainy/fork_geometric_lib/blob/main/square.py)
-[^4]: [Triangle](https://github.com/klorainy/fork_geometric_lib/blob/main/triangle.py)
+- [^1]: [Circle](https://github.com/klorainy/fork_geometric_lib/blob/main/circle.py)
+- [^2]: [Rectangle](https://github.com/klorainy/fork_geometric_lib/blob/main/rectangle.py)
+- [^3]: [Square](https://github.com/klorainy/fork_geometric_lib/blob/main/square.py)
+- [^4]: [Triangle](https://github.com/klorainy/fork_geometric_lib/blob/main/triangle.py)
 
 # Link to the original creator of my work.
-: [dageron20](https://github.com/dageron20)
+- [dageron20](https://github.com/dageron20)
