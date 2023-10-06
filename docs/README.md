@@ -54,13 +54,11 @@
 * d078c8d (origin/main, origin/HEAD) L-03: Docs added
 * 8ba9aeb L-03: Circle and square added
 ```
-
-
+# Link to the original creator of my work.
+- [dageron20](https://github.com/dageron20)
+  
 # Links to files
 [^1]: [Circle](https://github.com/klorainy/fork_geometric_lib/blob/main/circle.py)
 [^2]: [Rectangle](https://github.com/klorainy/fork_geometric_lib/blob/main/rectangle.py)
 [^3]: [Square](https://github.com/klorainy/fork_geometric_lib/blob/main/square.py)
 [^4]: [Triangle](https://github.com/klorainy/fork_geometric_lib/blob/main/triangle.py)
-
-# Link to the original creator of my work.
-- [dageron20](https://github.com/dageron20)
