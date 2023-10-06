@@ -17,29 +17,29 @@
   - The functions take float values ​​and returns them accordingly.
   ```py
   if __name__ == "__main__":
-    area(1.0)       # return : 3.141592653589793
-    perimeter(1.0)  # return : 6.283185307179586  
+    area(1.0)       # input : radius; output : 3.141592653589793
+    perimeter(1.0)  # input : radius; output : 6.283185307179586  
   ```
 2. Rectangle[^2]
   - The functions accept integer values ​​and returns them accordingly.
   ```py
   if __name__ == "__main__":
-    area(1, 3)       # return : 3
-    perimeter(2, 4)  # return : 12  
+    area(1, 3)       # input : side, ground; output : 3
+    perimeter(2, 4)  # input : side, ground; output : : 12  
   ```
 3. Square[^3]
   - The functions accept integer values ​​and returns them accordingly.
   ```py
   if __name__ == "__main__":
-    area(5)       # return : 25
-    perimeter(5)  # return : 20
+    area(5)       # input : side; output : 25
+    perimeter(5)  # input : side; output : 20
   ```
 4. Triangle[^4]
   - The functions take float values ​​and returns them accordingly.
   ```py
   if __name__ == "__main__":
-    area(1.0, 3.0)             # return : 1.5 
-    perimeter(2.0, 3.0, 4.0)   # return : 9.0  
+    area(1.0, 3.0)             # input : side; output : 1.5 
+    perimeter(2.0, 3.0, 4.0)   # input : a, b and c,  where they are sides of a triangle; output : 9.0  
   ```
 # Project change history with commit hashes.
 
