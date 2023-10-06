@@ -73,18 +73,20 @@
  	```
 
 # project modification history
-### * 51dab6ad09b32019d3078197b1706b1853ce569f (HEAD -> main) corrected an annotation to the triatgle file
-### * a85333ec9ebf037b504b35aff9cf225f812e7b54 corrected an annotation to the square file
-### * 2c69c83bc208850694f28485710dfaa6da32a8b2 corrected an annotation to the rectangle file
-### * 3377fb2472d2e407ebdeab68badcf055f9d87d4d added an annotation to the README file with a detailed description of the functions and call examples
-### * 28305f511aa1708efc19e3ab4370be2ee2389a73 added annotation to files rectangle, square, triangle
-### * de2fc05c098f111c3e90163026dceef5647ef371 added an annotation to the file circle
-### * 8ec2e6903530be7cdd92a13b2756d41d215a39e6 added a def file with an annotation
-### * 10191788228947bda6fcbab6e196ffce55e49344 (new_features_408606) corrected the mistace rectangle
-### * fddfc8e000ad3d78bbd867bd1f7978c75f9b4da1 add triangle
-### * 9d47ebd1584d78745fb7dfd5fdd6783f3bbb7a73 add rectangle
-### * 0c1ac2fbd755e29d501763cc1d93aae04d0098c1 (origin/main, origin/HEAD) corrected the mistake rectangle.py
-### * 109ca664e7571b5a14eda224e2bcc8cd34b14a28 add triangle.py
-### * d95b85248f7b9dbab8ffdaf90d686aaf83960588 add rectangle.py
-### * d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
-### * 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
+```
+  51dab6ad09b32019d3078197b1706b1853ce569f (HEAD -> main) corrected an annotation to the triatgle file
+  a85333ec9ebf037b504b35aff9cf225f812e7b54 corrected an annotation to the square file
+  2c69c83bc208850694f28485710dfaa6da32a8b2 corrected an annotation to the rectangle file
+  3377fb2472d2e407ebdeab68badcf055f9d87d4d added an annotation to the README file with a detailed description of the functions and call examples
+  28305f511aa1708efc19e3ab4370be2ee2389a73 added annotation to files rectangle, square, triangle
+  de2fc05c098f111c3e90163026dceef5647ef371 added an annotation to the file circle
+  8ec2e6903530be7cdd92a13b2756d41d215a39e6 added a def file with an annotation
+  10191788228947bda6fcbab6e196ffce55e49344 (new_features_408606) corrected the mistace rectangle
+  fddfc8e000ad3d78bbd867bd1f7978c75f9b4da1 add triangle
+  9d47ebd1584d78745fb7dfd5fdd6783f3bbb7a73 add rectangle
+  0c1ac2fbd755e29d501763cc1d93aae04d0098c1 (origin/main, origin/HEAD) corrected the mistake rectangle.py
+  109ca664e7571b5a14eda224e2bcc8cd34b14a28 add triangle.py
+  d95b85248f7b9dbab8ffdaf90d686aaf83960588 add rectangle.py
+  d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
+  8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
+```
