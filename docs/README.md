@@ -135,7 +135,56 @@
 
 # История изменений проекта
 ```
-commit 87d6a36eba1be2e12a5996d7127440705a81c869 (HEAD -> main, origin/main, origin/HEAD)
+commit 84fb42f6545e760236fbfd9e99eae8c03c95b6d7 (HEAD -> main, origin/main, origin/HEAD)
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 09:55:41 2023 +0300
+
+    Исправил пример вызова функции
+```
+```
+commit 920f6a484b5721198dedd1db2ea4e3056c5acc83
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 09:53:58 2023 +0300
+
+    Исправил пример вызова функций
+```
+```
+commit 2924e932e4b7d7ce48e15695892b51d6a2e46266
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Thu Oct 5 23:44:04 2023 +0300
+
+    Update README.md
+```
+```
+commit 87d6a36eba1be2e12a5996d7127440705a81c869
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Thu Oct 5 23:41:37 2023 +0300
+
+:...skipping...
+```
+```
+commit 84fb42f6545e760236fbfd9e99eae8c03c95b6d7 (HEAD -> main, origin/main, origin/HEAD)
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 09:55:41 2023 +0300
+
+    Исправил пример вызова функции
+```
+```
+commit 920f6a484b5721198dedd1db2ea4e3056c5acc83
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 09:53:58 2023 +0300
+
+    Исправил пример вызова функций
+```
+```
+commit 2924e932e4b7d7ce48e15695892b51d6a2e46266
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Thu Oct 5 23:44:04 2023 +0300
+
+    Update README.md
+```
+```
+commit 87d6a36eba1be2e12a5996d7127440705a81c869
 Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
 Date:   Thu Oct 5 23:41:37 2023 +0300
 
@@ -259,5 +308,4 @@ Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:54:08 2021 +0300
 
     L-03: Circle and square added
-
 ```
