@@ -34,5 +34,10 @@
 - perimeter(a, b, c) Вычисление периметра (a,b,c - стороны треугольника)
 > Пример вызова: perimeter(3, 4, 5) -> 12
 
-
+# Changelog
+- 68eb5b9 Fixed rectangle.py
+- 0737645 Added triangle.py
+- 176e072 Added rectangle.py
+- d078c8d L-03: Docs added
+- 8ba9aeb L-03: Circle and square added
 
