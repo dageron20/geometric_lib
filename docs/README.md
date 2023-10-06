@@ -28,14 +28,14 @@
     perimeter(2, 4)  # return : 12  
   ```
 3. Square[^3]
-   - The functions accept integer values ​​and returns them accordingly.
+  - The functions accept integer values ​​and returns them accordingly.
   ```py
   if __ name__ == __"main__":
     area(5)       # return : 25
     perimeter(5)  # return : 20
   ```
 4. Triangle[^4]
-   - The functions take float values ​​and returns them accordingly.
+  - The functions take float values ​​and returns them accordingly.
   ```py
   if __ name__ == __"main__":
     area(1.0, 3.0)             # return : 1.5 
@@ -57,10 +57,10 @@
 
 
 # Links to files
-- [^1]: [Circle](https://github.com/klorainy/fork_geometric_lib/blob/main/circle.py)
-- [^2]: [Rectangle](https://github.com/klorainy/fork_geometric_lib/blob/main/rectangle.py)
-- [^3]: [Square](https://github.com/klorainy/fork_geometric_lib/blob/main/square.py)
-- [^4]: [Triangle](https://github.com/klorainy/fork_geometric_lib/blob/main/triangle.py)
+[^1]: [Circle](https://github.com/klorainy/fork_geometric_lib/blob/main/circle.py)
+[^2]: [Rectangle](https://github.com/klorainy/fork_geometric_lib/blob/main/rectangle.py)
+[^3]: [Square](https://github.com/klorainy/fork_geometric_lib/blob/main/square.py)
+[^4]: [Triangle](https://github.com/klorainy/fork_geometric_lib/blob/main/triangle.py)
 
 # Link to the original creator of my work.
 - [dageron20](https://github.com/dageron20)
