@@ -59,7 +59,7 @@
   - perimeter:
     - This function is designed to calculate the area of ​​a square;
     -  The function accepts one number (int):
-      -  side : one side of the square;
+      - side : one side of the square;
     - Returns the perimeter of the figure, namely side multiplied by 4 (int).
   ```py
   if __name__ == "__main__":
