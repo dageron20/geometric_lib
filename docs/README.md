@@ -16,28 +16,28 @@
 1. Circle[^1]
   - The functions take float values ​​and returns them accordingly.
   ```py
-  if __ name__ == __"main__":
+  if __ name__ == "__main__":
     area(1.0)       # return : 3.141592653589793
     perimeter(1.0)  # return : 6.283185307179586  
   ```
 2. Rectangle[^2]
   - The functions accept integer values ​​and returns them accordingly.
   ```py
-  if __ name__ == __"main__":
+  if __ name__ == "__main__":
     area(1, 3)       # return : 3
     perimeter(2, 4)  # return : 12  
   ```
 3. Square[^3]
   - The functions accept integer values ​​and returns them accordingly.
   ```py
-  if __ name__ == __"main__":
+  if __ name__ == "__main__":
     area(5)       # return : 25
     perimeter(5)  # return : 20
   ```
 4. Triangle[^4]
   - The functions take float values ​​and returns them accordingly.
   ```py
-  if __ name__ == __"main__":
+  if __ name__ == "__main__":
     area(1.0, 3.0)             # return : 1.5 
     perimeter(2.0, 3.0, 4.0)   # return : 9.0  
   ```
