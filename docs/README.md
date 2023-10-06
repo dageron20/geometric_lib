@@ -9,9 +9,9 @@
     return 2 * math.pi * r
 
 ## rectangle
-### def area(a, b):
+###( def area(a, b):
    "функция area,получает на вход a,b (длина ,высота) ,возвращает a умноженное на b(площадь фигуры)"
-    return a * b
+    return a * b)
 ### def perimeter(a, b):
      "функция perimeter,получает на вход числа a,b (длина ,высота) , возвращает a плюс b плюс a плюс b (периметр фигуры)"
     return a + b + a + b
