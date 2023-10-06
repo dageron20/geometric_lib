@@ -120,3 +120,58 @@
 - input-> `3 4 5`
 - perimeter(`3, 4, 5`)
 - output-> `12`
+- # История изменения проекта с хешами комитов
+- commit 7e05f5938c53f1d401c8921b11116d1b51b124c3 (HEAD -> laba2)
+Author: nek1tk0 <408882@niuitmo.ru>
+Date:   Sun Oct 1 00:40:39 2023 +0300
+
+     add documentation for the triangle.py file
+
+commit f1f67061a01f1c526776240f6f6449174b4315cf
+Author: nek1tk0 <408882@niuitmo.ru>
+Date:   Sun Oct 1 00:40:12 2023 +0300
+
+     add documentation for the square.py file
+
+commit b278549393c330e5f5ba413281c7efc57caf3fc6
+Author: nek1tk0 <408882@niuitmo.ru>
+Date:   Sun Oct 1 00:39:31 2023 +0300
+
+     add documentation for the rectangle.py file
+
+commit ce3b694e17ed86318e3ab18fea66b4823337cefc
+Author: nek1tk0 <408882@niuitmo.ru>
+Date:   Sun Oct 1 00:38:54 2023 +0300
+
+     add documentation for the circle.py file
+
+commit 7a500eca363ee7c690e7a897fa195572527564e7 (myserver/main, main)
+Author: nek1tk0 <408882@niuitmo.ru>
+Date:   Thu Sep 21 17:20:40 2023 +0300
+
+    Исправлена ошибка в файле rectangle.py
+
+commit 10ccd71e8c134843bf6b13d6336b29925dc34ebc
+Author: nek1tk0 <408882@niuitmo.ru>
+Date:   Thu Sep 21 17:18:44 2023 +0300
+
+    Добавлен новый файл triangle.py
+
+commit f5aff5160ef8ee7bd7dc32824fade7c746092cdb
+Author: nek1tk0 <408882@niuitmo.ru>
+Date:   Thu Sep 21 17:16:06 2023 +0300
+
+    Добавлен новый файл rectangle.py
+
+commit d078c8d9ee6155f3cb0e577d28d337b791de28e2 (origin/main, origin/HEAD)
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added
+
+commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300
+
+    L-03: Circle and square added
+![image](https://github.com/nek1tk0/geometric_lib/assets/144416728/eed952e7-fedb-4b20-b568-4ba50cbb8494)
