@@ -77,8 +77,10 @@
   - perimeter:
     - This function is designed to calculate the area of ​​a triangle;
     - The function accepts two numbers (float):
-      - height : the value of the height adjacent to one of the sides of the triangle;
-      - ground : the value of the base of the triangle, otherwise the side to which the height is lowered;
+    - The function accepts three numbers (float):
+      - a : first side of the triangle;
+      - b : second side of the triangle;
+      - c : third side of triangle;
     - Returns the area of ​​a figure, namely the addition of all three sides (float).
   ```py
   if __name__ == "__main__":
