@@ -39,7 +39,7 @@
   ```py
   if __name__ == "__main__":
     area(1.0, 3.0)             # input : side; output : 1.5 
-    perimeter(2.0, 3.0, 4.0)   # input : a, b and c,  where they are sides of a triangle; output : 9.0  
+    perimeter(2.0, 3.0, 4.0)   # input : a, b and c, where they are sides of a triangle; output : 9.0  
   ```
 # Project change history with commit hashes.
 
