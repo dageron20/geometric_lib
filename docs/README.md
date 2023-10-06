@@ -87,3 +87,9 @@
 ### *Пример вызова функции*
 - `perimeter(13, 13)` => 39
 
+# История изменения файлов.
+![Хеши с коммитами](https://github.com/jff133/geometric_lib/blob/main/%D1%85.png?raw=true)
+- 1debcd6 Add blocks with comments in cirle.py file 
+- 8a9d50a Add blocks with comments in triangle.py file 
+- 4425ff0 Add blocks with comments in rectangle.py file 
+- 80af20d Add blocks with comments in square.py file 
