@@ -1,17 +1,17 @@
 # Math formulas
 ## Area
-- Circle: S = πR²
 ###
 Формула площади окружности
-- Rectangle: S = ab
+- Circle: S = πR²
 ###
 Формула площади прямоугольника
-- Square: S = a²
+- Rectangle: S = ab
 ###
 Формула площади квадрата
-- Triangle: S = ah / 2
+- Square: S = a²
 ###
 Формула площади треугольника
+- Triangle: S = ah / 2
 ## Perimeter
 - Circle: P = 2πR
 - 
