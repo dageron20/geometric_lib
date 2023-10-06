@@ -135,6 +135,55 @@
 
 # История изменений проекта
 ```
+commit 64254a8e0f26aa674972eab0bceeeff62a3440a0 (HEAD -> main, origin/main, origin/HEAD)
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 10:02:51 2023 +0300
+
+    Исправил пример вызова функции в triangle.py
+```
+```
+commit a9f7c51695c99a28c49a611c7c4df17626297f68
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 10:02:02 2023 +0300
+
+    Исправил пример вызова функции в square.py
+```
+```
+commit 0429ff4404ee719abdb9762e1b02527b6fd7e136
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 10:01:05 2023 +0300
+
+    Исправил пример вызова функции в rectangle.py
+```
+```
+commit e0750027f6783549b73a89f0ebac24e9619b8973
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 09:59:00 2023 +0300
+
+    Исправил пример вызова функции в circle,py
+```
+```
+commit f02dc81be599ccfaa6c566e215e7e42a037cad14
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 09:57:59 2023 +0300
+
+    Update README.md
+```
+```
+commit 84fb42f6545e760236fbfd9e99eae8c03c95b6d7
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 09:55:41 2023 +0300
+
+    Исправил пример вызова функции
+```
+```
+commit 920f6a484b5721198dedd1db2ea4e3056c5acc83
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Fri Oct 6 09:53:58 2023 +0300
+
+    Исправил пример вызова функций
+```
+```
 commit 84fb42f6545e760236fbfd9e99eae8c03c95b6d7 (HEAD -> main, origin/main, origin/HEAD)
 Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
 Date:   Fri Oct 6 09:55:41 2023 +0300
