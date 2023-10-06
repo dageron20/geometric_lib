@@ -8,52 +8,52 @@
 
 *Пример:*
 ```Python
-area(3) ~ 28.26
+area(3) #input: 3 ; output: ~28.26
 ```
 - perimeter(r) - принимает число r, возвращает длину окружности с радиусом r
 
 *Пример:*
 ```Python
-perimeter(5) ~ 31.4
+perimeter(5) #input: 5 ; output: ~31.4
 ```
 ### rectangle.py
 - area(a,b) - принимает значение сторон a и b прямоугольника, возвращает площадь прямоугольника
 
 *Пример:*
 ```Python
-area(3,2) = 6
+area(3,2) #input: 3 , 2 ; output: 6
 ```
 - perimeter(r) - принимает значение сторон a и b прямоугольника, возвращает периметр прямоугольника
 
 *Пример:*
 ```Python
-perimeter(5,9) = 90
+perimeter(5,9) #input: 5 , 9 ; output: 90
 ```
 ### square.py
 - area(a) - принимает значение стороны a квадрата, возвращает площадь квадрата
 
 *Пример:*
 ```Python
-area(7) = 49 
+area(7) #input: 7 ; output: 49 
 ```
 - perimeter(a) - принимает значение стороны a квадрата, возвращает периметр квадрата
 
 *Пример:*
 ```Python
-perimeter(3) = 12
+perimeter(3) #input: 3 ; output: 12
 ```
 ### triangle.py
 - area(a,h) - принимает значение стороны a треугольника и прилежащей к ней высоте h, возвращает площадь треугольника
 
 *Пример:*
 ```Python
-area(7,4) = 14
+area(7,4) #input: 7 , 4 ; output: 14 
 ```
 - perimeter(a,b,c) - принимает значения сторон a,b и c треугольника, возвращает периметр треугольника
 
 *Пример:*
 ```Python
-perimeter(3,4,5) = 12
+perimeter(3,4,5) #input: 3 , 4 , 5 ; output: 12 
 ```
 # История изменения проекта с хешами коммитов
 <img width="427" alt="image" src="https://github.com/TipperaryKebab/geometric_lib/assets/144373063/dfbc56e6-0c46-4662-9144-989e567b2ef3">
