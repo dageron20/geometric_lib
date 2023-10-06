@@ -1,10 +1,18 @@
-# Math formulas
-## Area
+# Математические формулы
+## Нахождение площади
 - Circle: S = πR²
 - Rectangle: S = ab
 - Square: S = a²
 
-## Perimeter
+## Нахождение периметра
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+
+# Функции
+## Круг
+- area(r) Вычиселине площади (r - радиус)
+> Пример вызова: area(5) -> 78.53981633974483
+
+
+
