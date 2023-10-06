@@ -1,33 +1,33 @@
 # Фигуры
 ## circle
-###def area(r):     
+### def area(r):     
     "функция area,на входе принимает число r(радиус), возвдращает квадрат r умноженный на число П(22седьмых) (на выходе площадь фигуры)"
     return math.pi * r * r
 
-###def perimeter(r):
+### def perimeter(r):
     "функция perimeter, получает на вход r(радиус),возвращает число П(22седьмых) умноженное на 2*r(периметр фигуры)"
     return 2 * math.pi * r
 
 ## rectangle
-###def area(a, b):
+### def area(a, b):
    "функция area,получает на вход a,b (длина ,высота) ,возвращает a умноженное на b(площадь фигуры)"
     return a * b
-###def perimeter(a, b):
+### def perimeter(a, b):
      "функция perimeter,получает на вход числа a,b (длина ,высота) , возвращает a плюс b плюс a плюс b (периметр фигуры)"
     return a + b + a + b
 ## square
-###def area(a):
+### def area(a):
     "функция area, (получает сторону квадрата) а,возвращает a умноженное на a(площадь фигуры)"
     return a * a
 
-###def perimeter(a):
+### def perimeter(a):
      "функция perimeter,(получает сторону квадрата) a, возвращает a умноженное на 4 (периметр фигуры)"
     return 4 * a
 
 ## triangle
-###def area(a, h):
+### def area(a, h):
     "функция area, получает (сторону треугольника) a и h (высоту треугольника),возвращает произведение a на h, разделённое на 2"
     return a * h / 2
-###def perimeter(a, b, c):
+### def perimeter(a, b, c):
       "функция perimeter,получает a,b,c(три стороны треугольника),выводит сумму a,b,c"
     return a + b + c
