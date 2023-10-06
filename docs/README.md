@@ -76,7 +76,6 @@
     - Returns the area of ​​the figure, namely ground multiplied by height divided by hit (float).
   - perimeter:
     - This function is designed to calculate the area of ​​a triangle;
-    - The function accepts two numbers (float):
     - The function accepts three numbers (float):
       - a : first side of the triangle;
       - b : second side of the triangle;
