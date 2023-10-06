@@ -47,7 +47,7 @@
   ```py
   if __name__ == "__main__":
     area(1, 3)       # input : side, ground; output : 3
-    perimeter(2, 4)  # input : side, ground; output : : 12  
+    perimeter(2, 4)  # input : side, ground; output : 12  
   ```
 3. Square[^3]
   - The functions accept integer values ​​and returns them accordingly.
@@ -58,7 +58,7 @@
     - Returns the area of ​​the figure, namely side multiplied by side (int);
   - perimeter:
     - This function is designed to calculate the area of ​​a square;
-    -  The function accepts one number (int):
+    - The function accepts one number (int):
       - side : one side of the square;
     - Returns the perimeter of the figure, namely side multiplied by 4 (int).
   ```py
