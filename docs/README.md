@@ -4,7 +4,6 @@
 #Description of functions:
 ##Circle:
 
-'''python
 
 import math
 
@@ -18,10 +17,10 @@ def area(r):
 def perimeter(r):
  - Принимает число r, возращает произведение из 2*r и числа Pi 
     return 2 * math.pi * r
-'''python
+
 ##Rectangle:
 
-'''python
+
 
 def area(a, b): 
 - Принимает числа a и b, возвращает произведение a на b
@@ -30,9 +29,9 @@ def area(a, b):
 def perimeter(a, b): 
 - Принимает числа a и b, возвращает произведение удвоенное a на b
     return 2*a + 2*b 
-'''python
+
 ##Square:
-'''python
+
 def area(a, b): 
 - Принимает числа a и b, возвращает произведение a на b
     return a * b 
@@ -40,7 +39,7 @@ def area(a, b):
 def perimeter(a, b): 
 - Принимает числа a и b, возвращает произведение удвоенное a на b
     return 2*a + 2*b 
-'''python
+
 
 ##Triangle:
 '''python
@@ -52,7 +51,7 @@ def area(a):
 def perimeter(a):
  - Принимает число a, прозведение 4 на a  
     return 4 * a
-'''python
+
 
 #History with commits hashes:
 commit 059bcc3ca4cff3652ca783d641f35b7e239eb56e (HEAD -> main, origin/main, origin/HEAD)
