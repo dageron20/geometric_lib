@@ -12,7 +12,8 @@ def area(r):
                    math.pi * r * r (int/float): площадь круга
                    
            Пример вызова функции:
-                   area(1.5) = 7.068583
+                   area(1.5)
+                   Output: 7.068583
     '''
     return math.pi * r * r
 
@@ -28,7 +29,8 @@ def perimeter(r):
                    2 * math.pi * r (int/float): длина окружности
                    
            Пример вызова функции:
-                   perimeter(1.5) = 9.424778
+                   perimeter(1.5)
+                   Output: 9.424778
     '''
     return 2 * math.pi * r
 
