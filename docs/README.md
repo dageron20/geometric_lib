@@ -13,11 +13,11 @@
     def perimeter(r):
     - Принимает число r, возвращает число r умноженное на два и на число пи
         return 2 * math.pi * r
-'''
+```
 a = 2
 print(area(a))
-print(perimeter(r))
-'''        
+print(perimeter(a))
+```       
 ## Rectangle:
     def area(a, b):
     - Принимает число a и число b, возвращает число a умноженное на число b
