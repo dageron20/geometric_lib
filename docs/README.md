@@ -2,65 +2,42 @@
 
 # Description of function:
 ## Circle:
-'''python
     import math
-'''
+
     - Импортирую библиотеку math для того чтобы использовать число пи
-'''python
+
     def area(r):
-'''
     - Принимает число r, возвращает квадрат числа r, умноженный на число пи
-''' python
         return math.pi * r * r
 
     def perimeter(r):
-'''
-    - Принимает число r, возвращает число r умноженное на два и на число п
-'''python
+    - Принимает число r, возвращает число r умноженное на два и на число пи
         return 2 * math.pi * r
-'''
+        
 ## Rectangle:
-'''python
     def area(a, b):
-'''
         - Принимает число a и число b, возвращает число a умноженное на число b
-'''python
         return a * b
 
     def perimeter(a, b):
-'''
         - Принимает число a и число b, возвращает сумму чисел a и b, умноженную на 2
-'''python
         return 2*(a + b)
-'''
 ## Square:
-'''python
     def area(a):
-'''
         - Принимает число a, возвращает квадрат числа а
-'''python
         return a * a
 
     def perimeter(a):
-'''
         - Принимает число a, возвращает число a умноженное на 4
-'''python
         return 4 * a
-'''
 ## Tringle:
-'''python
     def area(a, h):
-'''
         - Принимает число a и число h, возвращает среднее геометрическое чисел а и b
-'''python
         return a * h / 2
 
     def perimeter(a, b, c):
-'''
         - Принимает число a, число b и число с, возвращает сумму чисел a,b,c
-'''python
-        return a + b + c
-'''
+        return a + b + с
 
 #History of project:
 commit 0af89386f54bbb8cc6c67752bdc371216fc2958c (HEAD -> main, origin/main, origin/HEAD)
