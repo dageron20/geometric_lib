@@ -4,3 +4,7 @@ def area(a, h):
 
 def perimeter(a, b, c):
     return a + b + c
+
+
+def semiPerimiter(a, b, c):
+    return (a + b + c) / 2
