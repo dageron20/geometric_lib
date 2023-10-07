@@ -6,5 +6,5 @@ def area(a):
 def perimeter(a):
     return 4 * a
 
-def semiPerimiter(a):
+def semiPerimiter(a, b, c):
     return a * 2
