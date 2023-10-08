@@ -11,8 +11,8 @@
 
 # Functions
 ## Area calculation
-- Circle
+-- Circle
 ```
-Area(r):
+Area(r)
 ```
 Gets a number r - radius of Circe. Returns circle Area using formula S = πR²
