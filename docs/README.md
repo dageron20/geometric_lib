@@ -11,7 +11,6 @@
 - Triangle: P = a + b + c
 
 # Functions
-## Area calculation
 ### Circle
 ```
 area(r)
