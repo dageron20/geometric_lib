@@ -12,7 +12,7 @@
 
 # Functions
 ## Area calculation
-- Circle
+### Circle
 ```
 area(r)
 ```
@@ -23,7 +23,7 @@ perimeter(r)
 ```
 Gets number r - radius of Circle. Returns circle perimiter using formula P = 2πR
 
-- Rectangle
+### Rectangle
 ```
 area(a, b)
 ```
@@ -33,7 +33,7 @@ perimiter(a, b)
 ```
 Gets two numbers a, b - sides of rectangle. Returns rectangle perimeter using formula P = 2a + 2b
 
-- Square
+### Square
 ```
 area(a)
 ```
@@ -43,7 +43,7 @@ perimiter(a)
 ```
 Gets number a - side of square. Returns Square perimiter using formula P = 4a
 
-- Triangle
+### Triangle
 ```
 area(a, h)
 ```
