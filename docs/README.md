@@ -15,39 +15,39 @@
 ```
 area(r)
 ```
-Gets a number r - radius of Circle. Returns circle area using formula S = πR²
+Gets a number r - radius of Circle. Returns circle area using formula _S = πR²_
 
 ```
 perimeter(r)
 ```
-Gets number r - radius of Circle. Returns circle perimiter using formula P = 2πR
+Gets number r - radius of Circle. Returns circle perimiter using formula _P = 2πR_
 
 ### Rectangle
 ```
 area(a, b)
 ```
-Gets two numbers a, b - sides of rectangle. Returns rectangle area using formula S = ab
+Gets two numbers a, b - sides of rectangle. Returns rectangle area using formula _S = ab_
 ```
 perimiter(a, b)
 ```
-Gets two numbers a, b - sides of rectangle. Returns rectangle perimeter using formula P = 2a + 2b
+Gets two numbers a, b - sides of rectangle. Returns rectangle perimeter using formula _P = 2a + 2b_
 
 ### Square
 ```
 area(a)
 ```
-Gets number a - side of square. Returns Square area using formula S = a²
+Gets number a - side of square. Returns Square area using formula _S = a²_
 ```
 perimiter(a)
 ```
-Gets number a - side of square. Returns Square perimiter using formula P = 4a
+Gets number a - side of square. Returns Square perimiter using formula _P = 4a_
 
 ### Triangle
 ```
 area(a, h)
 ```
-Gets two numbers a and h - base and height of triangle. Returns its area using formula S = a * h / 2
+Gets two numbers a and h - base and height of triangle. Returns its area using formula _S = a * h / 2_
 ```
 perimiter(a, b, c)
 ```
-Gets three numbers a, b, c - sides of triangle. Returns its perimeter using formula P = a + b + c
+Gets three numbers a, b, c - sides of triangle. Returns its perimeter using formula _P = a + b + c_
