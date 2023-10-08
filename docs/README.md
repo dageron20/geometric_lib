@@ -51,3 +51,13 @@ Gets two numbers a and h - base and height of triangle. Returns its area using f
 perimiter(a, b, c)
 ```
 Gets three numbers a, b, c - sides of triangle. Returns its perimeter using formula _P = a + b + c_
+
+# Commit history
+```
+9a5259b Added comments with info about all funcs
+8d82e0b Small fix
+eb9990a Rectangle perimeter issue was solved
+251e942 File ractangle.py has been added
+d078c8d L-03: Docs added
+8ba9aeb L-03: Circle and square added
+```
