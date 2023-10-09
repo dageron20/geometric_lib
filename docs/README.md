@@ -78,15 +78,9 @@
 
 ![16.PNG](16.PNG)
 # История изменения проекта с хешами комитов
-1) Был добавлен новый файл rectangle.py
-Хэш - a529b2f
-3) Исправлена ошибка в функции perimeter в файле rectangle.py
-Хэш - 10b16c7
-4) Добавил комментарии к функция area, perimeter в файле circle.py
-Хэш - b384e23
-5) Добавил комментарии к функция area, perimeterв в файле rectangle.py
-Хэш - 82714d6
-6) Добавил комментарии к функция area, perimeter в файле square.py 
-Хэш - f20f772
-7) Добавил комментарии к функциям area, perimeter в файле  triangle.py
-Хэш - 0204ee5
+1) Был добавлен новый файл rectangle.py  Хэш - a529b2f
+3) Исправлена ошибка в функции perimeter в файле rectangle.py  Хэш - 10b16c7
+4) Добавил комментарии к функция area, perimeter в файле circle.py  Хэш - b384e23
+5) Добавил комментарии к функция area, perimeterв в файле rectangle.py  Хэш - 82714d6
+6) Добавил комментарии к функция area, perimeter в файле square.py  Хэш - f20f772
+7) Добавил комментарии к функциям area, perimeter в файле  triangle.py  Хэш - 0204ee5
