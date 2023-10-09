@@ -5,8 +5,8 @@
 
 ### Пример вызова
 ```
-print(perimeter(3));
-print(area(2));
+print(perimeter(3))
+print(area(2))
 ```
 
 Выходные данные:
@@ -20,8 +20,8 @@ print(area(2));
 
 ### Пример вызова
 ```
-print(perimeter(2,3));
-print(area(2,2));
+print(perimeter(2,3))
+print(area(2,2))
 ```
 
 Выходные данные:
@@ -35,8 +35,8 @@ print(area(2,2));
 
 ### Пример вызова
 ```
-print(perimeter(2));
-print(area(2));
+print(perimeter(2))
+print(area(2))
 ```
 
 Выходные данные:
@@ -51,8 +51,8 @@ print(area(2));
 
 ### Пример вызова
 ```
-print(perimeter(3,4,5));
-print(area(3,4));
+print(perimeter(3,4,5))
+print(area(3,4))
 ```
 
 Выходные данные:
