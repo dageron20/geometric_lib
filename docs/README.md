@@ -92,3 +92,11 @@ def perimeter(a):
 ####
 Output = 20
 #
+# Хэши коммитов
+##
+* b229ba0d5e9280161ebdaef950f73609b24cccf9 (HEAD -> doc_branch, origin/main, origin/doc_branch, origin/HEAD, main) Был исправлен файл: rectangle.py
+* a7032c6d7498efc05d4c42e5a650c05a0c397a24 Был добавлен новый файл: triangle.py
+* 32888cb1b9908baec81693a89c330e3d1f721325 Был добавлен новый файл: rectangle.py
+* d078c8d9ee6155f3cb0e577d28d337b791de28e2 (upstream/main) L-03: Docs added
+* 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
+#
