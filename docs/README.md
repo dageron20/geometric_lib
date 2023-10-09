@@ -16,7 +16,7 @@
 ## Треугольник
 
 ### Определение площади
-````
+````python
 import triangle
 
 a = 2
@@ -28,7 +28,7 @@ print(area)
 > Вывод: 4.0
 
 ### Определение периметра
-````
+````python
 import triangle
 
 a = 2
@@ -43,7 +43,7 @@ print(perimeter)
 ## Прямоугольник
 
 ### Определение площади
-````
+````python
 import rectangle
 
 a = 7
@@ -56,7 +56,7 @@ print(area)
 
 
 ### Определение периметра
-````
+````python
 import rectangle
 
 a = 7
@@ -71,7 +71,7 @@ print(perimeter)
 ## Окружность
 
 ### Определение площади
-````
+````python
 import circle
 
 r = 7
@@ -83,7 +83,7 @@ print(area)
 
 
 ### Определение периметра
-````
+````python
 import circle
 
 r = 7
@@ -97,7 +97,7 @@ print(area)
 ## Квадрат
 
 ### Определение площади
-````
+````python
 import square
 
 a = 8
@@ -109,7 +109,7 @@ print(area)
 
 
 ### Определение периметра
-````
+````python
 import square
 
 a = 8
