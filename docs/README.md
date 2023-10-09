@@ -35,12 +35,9 @@
 > Пример вызова: perimeter(3, 4, 5) -> 12
 
 # Changelog
-* 317fdd59f93c3e16822da57ec03ce1f5f8067e66 Improve README.md
-* a1b64f69787ae9331a71b30f8fdfd6697953a775 Improve README.md
-* 0d869e86d7ea0b682c344dda509a9e9d97eb56c1 Improve README.md
-* 68eb5b9fa84158b73667fd18002cd3c1c36a62bf Fixed rectangle.py
-* 0737645eb11b576050358c21c90d048ab8ff9a61 Added triangle.py
-* 176e0720cda60b0d434ee8ba5a3a934610403548 Added rectangle.py
-* d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
-* 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
+- [Fixed rectangle.py](https://github.com/soilow/geometric_lib/commit/68eb5b9fa84158b73667fd18002cd3c1c36a62bf)
+- [Added triangle.py](https://github.com/soilow/geometric_lib/commit/0737645eb11b576050358c21c90d048ab8ff9a61)
+- [Added rectangle.py](https://github.com/soilow/geometric_lib/commit/176e0720cda60b0d434ee8ba5a3a934610403548)
+- [L-03: Docs added](https://github.com/soilow/geometric_lib/commit/d078c8d9ee6155f3cb0e577d28d337b791de28e2)
+- [L-03: Circle and square added](https://github.com/soilow/geometric_lib/commit/8ba9aeb3cea847b63a91ac378a2a6db758682460)
 
