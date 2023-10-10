@@ -96,6 +96,7 @@ print(perimeter(1)) --> 6,28
 
 
 ## commit history
-- [The first commit](https://github.com/dageron20/geometric_lib/pull/19/commits/2d93ce1e05456ae9ef7d9637588df28092c395dc) was made with errors in some formulas
-- The half-meter function was added in [the second commit](https://github.com/dageron20/geometric_lib/commit/6431fe50093f40b6ff7ec2c2ec8d7a9028b0c1e4)
-- Function descriptions have been added in [the third commit](https://github.com/dageron20/geometric_lib/commit/7221095add246cd080ff45ad40b69db5d37aaff2)
+- The first commit was made with errors in some formulas (2d93ce1e05456ae9ef7d9637588df28092c395dc)
+- The half-meter function was added in the second commit (6431fe50093f40b6ff7ec2c2ec8d7a9028b0c1e4)
+- The half-meter function was added again in the third commit (6431fe50093f40b6ff7ec2c2ec8d7a9028b0c1e4)
+- Function descriptions have been added in the fourth commit (7221095add246cd080ff45ad40b69db5d37aaff2)
