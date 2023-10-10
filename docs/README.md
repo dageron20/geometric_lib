@@ -13,10 +13,10 @@
 
     * Примеры использования:
     ```python
-    	import circle
-    	r=5
-    	print(circle.area(r))
-    	print(circle.perimeter(r))
+    import circle
+    r=5
+    print(circle.area(r))
+    print(circle.perimeter(r))
     ```
     ожидаемый вывод: 78.53981633974483 - площадь круга и 31.41592653589793 - периметр круга.
 
@@ -31,11 +31,11 @@
 
     * Примеры использования:
     ```python
-    	import rectangle
-    	a=5
-    	b=10
-    	print(rectangle.area(a,b))
-    	print(rectangle.perimeter(a,b))
+    import rectangle
+    a=5
+    b=10
+    print(rectangle.area(a,b))
+    print(rectangle.perimeter(a,b))
     ```
     Ожидаемый вывод: 50 - площадь прямоугольника и 30 - периметр прямоугольника.
 
@@ -50,10 +50,10 @@
 
     * Примеры использования:
     ```python
-    	import square
-    	a=5
-    	print(square.area(a))
-    	print(square.perimeter(a))
+    import square
+    a=5
+    print(square.area(a))
+    print(square.perimeter(a))
     ```
     Ожидаемый вывод: 25 - площадь квадрата и 20 - периметр квадрата.
 
@@ -68,13 +68,13 @@
 
     * Примеры использования:
     ```python
-    	import triangle
-    	a=8
-    	h=4
-    	b=10
-    	c=12
-    	print(triangle.area(a,h))
-    	print(triangle.perimeter(a,b,c))
+    import triangle
+    a=8
+    h=4
+    b=10
+    c=12
+    print(triangle.area(a,h))
+    print(triangle.perimeter(a,b,c))
     ```
     Ожидаемый вывод: 16 - площадь треугольника и 30 - периметр треугольника.
 
