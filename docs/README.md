@@ -14,7 +14,7 @@
       Возвращает площадь круга.
     * **Пример вызова:**
       ```python
-      circle_area = area(7)
+      circle_area = area(7) # вывод 153.93804002589985
       ```
 * **`def perimeter(r)`**
     * **Описание:** вычисляет периметр круга по формуле.
@@ -25,7 +25,7 @@
 
     * **Пример вызова:**
       ```python
-      circle_perimeter = perimeter(10)
+      circle_perimeter = perimeter(10) # выврод 62.83185307179586
       ```
 
 ### Функции в `rectangle.py`
@@ -40,7 +40,7 @@
 
     - **Пример вызова:**
       ```python
-      rectangle_area = area(7, 10)
+      rectangle_area = area(7, 10) # вывод 70
       ```
 * **`def perimeter(a, b)`**
     * **Описание:** вычисляет значение периметра прямоугольника.
@@ -53,7 +53,7 @@
 
     * **Пример вызова:**
       ```python
-      rectangle_perimeter = perimeter(7, 10)
+      rectangle_perimeter = perimeter(7, 10) # вывод 34
       ```
 
 ### Функции в `square.py`
@@ -65,7 +65,7 @@
         Возвращает int значение площади квадрата.
     * **Пример вызова:**
       ```python
-      square_area = area(4)
+      square_area = area(4) # вывод 16
       ```
 * **`def perimeter(a)`**
     * **Описание:** вычисляет значение периметра квадрата.
@@ -75,7 +75,7 @@
         Возвращает int значение периметра квадрата.
     * **Пример вызова:**
       ```python
-      square_perimeter = perimeter(4)
+      square_perimeter = perimeter(4) # вывод 16
       ```
 
 ### Функции в `triangle.py`
@@ -89,7 +89,7 @@
         Возвравщает int значение площади треугольника.
     * **Пример вызова:**
       ```python
-      triangle_area = area(5, 6)
+      triangle_area = area(5, 6) # вывод 15
       ```
 * **`def perimeter(a, b, c)`**
     * **Описание:** вычисляет значение периметра треугольника.
@@ -101,7 +101,7 @@
         Возвравщает int значение периметра.
     * **Пример вызова:**
       ```python
-      triangle_perimeter = perimeter(3, 4, 5)
+      triangle_perimeter = perimeter(3, 4, 5) # вывод 12
       ```
 
 ## История изменений
