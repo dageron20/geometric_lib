@@ -18,7 +18,7 @@ ___
 - triangle.py
 - square.py
 
-Ниже приведены способы работы с данными файлам и функциями, которые они содержут
+Ниже приведены способы работы с данными файлам и функциями, которые они содержат
 
 ## Файл circle.py
 Содержит две функции:
@@ -97,8 +97,8 @@ print(trianglePerimeter) # 12
 ```
 
 ___
-# История изменения комитов
-3bd17ce: Add new file and fix issue in rectangle.py  
+# История изменения 
+3bd17ce: Add new file triangle.py and fix issue in rectangle.py  
 a4b396c: Add new file rectangle.py  
 d078c8d: L-03: Docs added  
 8ba9aeb: L-03: Circle and square added  
