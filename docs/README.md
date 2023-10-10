@@ -16,56 +16,58 @@
 ### area function
 - Taken parametrs: r - circle radius
 - Output: area of circle with current radius
+- Execute: area(r)
 - Example:
-- Input: 10 
-- Output: 314.159265
+- area(10) Output: 314.1592653589793
+
 ### perimetr function
 - Taken parametrs: r - circle radius
 - Output: perimete of circle with current radius
+- Execute: perimetr(r)
 - Example:
-- Input: 10. Output: 62.83185
+- perimetr(10) Output: 62.83185307179586
 
 ## rectangle.py
 ### area function
 - Taken parametrs: a, b - sides of rectangle
 - Output: area of rectangle with current sides
+- Execute: area(a, b)
 - Example:
-- Input: 10 5
-- Output: 50
+- area(10, 5) Output: 50
 ### perimetr function
 - Taken parametrs: a, b - sides of rectangle
 - Output: perimeter of rectangle with current sides
+- Execute: perimetr(a, b)
 - Example:
-- Input: 10 5
-- Output: 30
+- perimetr(10, 5) Output: 30
 
 ## square.py
 ### area function
 - Taken parametrs: a - side of square
 - Output: area of square with current sides
+- Execute: area(a)
 - Example:
-- Input: 10
-- Output: 100
+- area(10) Output: 100
 ### perimetr function
 - Taken parametrs: a - side of square
 - Output: perimeter of square with current sides
+- Execute: perimetr(a)
 - Example:
-- Input: 10
-- Output: 40
+- perimetr(10) Output: 40
 
 ## triangle.py
 ### area function
 - Taken parametrs: a - side of triangle, h - height passed to side a
 - Output: area of triangle with current parametrs
+- Execute: area(a, h)
 - Example:
-- Input: 10 2
-- Output: 10
+- area(10, 2) Output: 10
 ### perimetr function
 - Taken parametrs: a, b, c - sides of triangle
 - Output: perimeter of triangle with current parametrs
+- Execute: perimetr(a, b, c)
 - Example:
-- Input: 10 8 17
-- Output: 35
+- perimetr(10, 8, 17) Output: 35
 
 # History of commits
 - added rectangle.py (commit id: 135c767)
