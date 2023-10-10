@@ -178,13 +178,63 @@ def perimeter(r):
 
 # История изменений проекта с хэшами коммитов
 ```
-$ git reflog
-8eccc25 (HEAD -> main) HEAD@{0}: commit: Исправление ошибок в файлах
-7f38737 (origin/main, origin/HEAD) HEAD@{1}: commit: Добавлены комментарии в файлы
-b79902e HEAD@{2}: merge new_features_408741: Fast-forward
-d078c8d HEAD@{3}: checkout: moving from new_features_408741 to main
-b79902e HEAD@{4}: commit: Исправлена ошибка в файле rectangle.py
-32d79b1 HEAD@{5}: commit: Добавлен файл rectangle.py
-d078c8d HEAD@{6}: checkout: moving from main to new_features_408741
-d078c8d HEAD@{7}: clone: from github.com:krmplov/geometric_lib.git
+commit 8eccc2598b23c67ab05205cdca886496dc769cc8 (HEAD -> main, origin/main, origin/HEAD)
+Author: krmplov <karamyshevapolina@yandex.ru>
+Date:   Mon Oct 9 20:51:25 2023 +0300
+
+    Исправление ошибок в файлах
+
+commit 7f38737171c1dc59e65a5e553e543e53a1adc53b
+Author: krmplov <karamyshevapolina@yandex.ru>
+Date:   Mon Oct 9 20:35:20 2023 +0300
+
+    Добавлены комментарии в файлы
+
+commit b79902e75735900d2d34e0807528c5b6682d0dba
+Author: krmplov <karamyshevapolina@yandex.ru>
+Date:   Thu Sep 21 22:09:54 2023 +0300
+
+    Исправлена ошибка в файле rectangle.py
+
+commit 32d79b1afc1cbcd7931e236a4ec41dace629da1b
+Author: krmplov <karamyshevapolina@yandex.ru>
+Date:   Thu Sep 21 21:58:22 2023 +0300
+
+:...skipping...
+commit 8eccc2598b23c67ab05205cdca886496dc769cc8 (HEAD -> main, origin/main, origin/HEAD)
+Author: krmplov <karamyshevapolina@yandex.ru>
+Date:   Mon Oct 9 20:51:25 2023 +0300
+
+    Исправление ошибок в файлах
+
+commit 7f38737171c1dc59e65a5e553e543e53a1adc53b
+Author: krmplov <karamyshevapolina@yandex.ru>
+Date:   Mon Oct 9 20:35:20 2023 +0300
+
+    Добавлены комментарии в файлы
+
+commit b79902e75735900d2d34e0807528c5b6682d0dba
+Author: krmplov <karamyshevapolina@yandex.ru>
+Date:   Thu Sep 21 22:09:54 2023 +0300
+
+    Исправлена ошибка в файле rectangle.py
+
+commit 32d79b1afc1cbcd7931e236a4ec41dace629da1b
+Author: krmplov <karamyshevapolina@yandex.ru>
+Date:   Thu Sep 21 21:58:22 2023 +0300
+
+    Добавлен файл rectangle.py
+
+commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added
+
+commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300
+
+    L-03: Circle and square added
+
 ```
