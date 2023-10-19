@@ -63,7 +63,7 @@ return math.pi * r * r
 def perimeter(r):
 return 2 * math.pi * r
 ```
-## Примеры выводов
+## Примеры вызова
 ```python
 import math
 
@@ -114,7 +114,7 @@ def perimeter(a, b):
 return (a + b)*2
 ```
 
-## Примеры выводов
+## Примеры вызова
 ```python
 def area(a, b): 
 return a * b 
@@ -162,7 +162,7 @@ def perimeter(a):
 return 4 * a
 ```
 
-## Примеры выводов
+## Примеры вызова
 ```python
 def area(a):
 return a * a
@@ -209,7 +209,7 @@ def perimeter(a, b, c)
 return a + b + c 
 ```
 
-## Примеры выводов
+## Примеры вызова
 ```python
 def area(a, h): 
 return a * h / 2 
