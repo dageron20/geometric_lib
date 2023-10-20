@@ -9,9 +9,12 @@ def area(r):
     return math.pi * r * r
 
 def perimeter(r):
+
     '''
     Takes r - the radius of the circle, outputs the perimeter of the circle
+    
     area (5)
+    
     Output:31.4
     '''
     return 2 * math.pi * r
@@ -19,6 +22,7 @@ def perimeter(r):
 The function calculates the area and perimeter of a circle using one input number
 
  1)Takes r - the radius of a circle, outputs the area of ​​the circle
+ 
  2)Takes r - the radius of the circle, outputs the perimeter of the circle
 
 ## Rectangle
@@ -26,7 +30,9 @@ The function calculates the area and perimeter of a circle using one input numbe
 def area(a, b): 
     '''
     Takes a and b - sides of a rectangle, outputs the area of ​​the rectangle
+    
     area(2, 3)
+    
     Output:6
     '''
     return a * b 
