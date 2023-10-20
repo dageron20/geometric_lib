@@ -17,6 +17,8 @@ def perimeter(r):
     return 2 * math.pi * r
 ### Commit 
 The function calculates the area and perimeter of a circle using one input number
+1)Takes r - the radius of a circle, outputs the area of ​​the circle
+2)Takes r - the radius of the circle, outputs the perimeter of the circle
 
 ## Rectangle
 
@@ -56,6 +58,8 @@ return 2a + 2b
 
 Now the formula for the perimeter of a rectangle is written correctly
 The function calculates the area and perimeter of a rectangle using two input numbers
+1) Takes a and b - sides of a rectangle, outputs the area of ​​the rectangle
+2) Takes a and b - sides of a rectangle, outputs the perimeter of ​​the rectangle
 
 ## Square
 
@@ -78,6 +82,8 @@ def perimeter(a):
 
 ### Commit
 The function calculates the area and perimeter of a circle using one input number
+1)Takes a and b - sides of a square, outputs the area of ​​the square
+2)Takes a and b - sides of a square, outputs the perimeter of ​​the square
 
 ## Triangle
 
@@ -100,6 +106,20 @@ def perimeter(a, b, c):
 
 ### Commit
 The function calculates the area of ​​a triangle using two input numbers and the perimeter of a triangle using three input numbers
+1)Takes a - the side of the triangle and h - the height of the triangle, outputs the area of ​​the triangle
+2)Takes a, b and c - sides of a triangle, outputs the perimeter of ​​the triangle
+
+## project change history
+* 554b014 (HEAD -> main, origin/main, origin/HEAD) Исправлена ошибка с периметром
+* bf68d22 Добавлен файл rectangle
+* 620d8e4 Готово
+* 9821b20 Исправлена ошибка
+* 3888066 Добавлен файл треугольник
+* 8a13da8 Добавлен новый файл
+* 22a6f12 Update workspace.xml
+* 2aa0f7c Create workspace.xml
+* d078c8d (upstream/main, upstream/HEAD) L-03: Docs added
+* 8ba9aeb L-03: Circle and square added
 
 
 
