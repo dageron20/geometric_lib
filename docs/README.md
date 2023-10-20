@@ -36,6 +36,7 @@ The function calculates the area and perimeter of a circle using one input numbe
 
 ## Rectangle
 
+
     def area(a, b):
 
     '''
