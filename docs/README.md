@@ -34,7 +34,7 @@ The function calculates the area and perimeter of a circle using one input numbe
 
 ## Rectangle
 
-def area(a, b):
+ def area(a, b):
 
     '''
     Takes a and b - sides of a rectangle, outputs the area of ​​the rectangle
@@ -46,7 +46,7 @@ def area(a, b):
     
     return a * b 
 
-def perimeter(a, b): 
+ def perimeter(a, b): 
 
     '''
     Takes a and b - sides of a rectangle, outputs the perimeter of ​​the rectangle
@@ -92,7 +92,7 @@ The function calculates the area and perimeter of a rectangle using two input nu
 
 ## Square
 
-def area(a):
+ def area(a):
 
     '''
     Takes a and b - sides of a square, outputs the area of ​​the square
@@ -105,7 +105,7 @@ def area(a):
     return a * a
 
 
-def perimeter(a):
+ def perimeter(a):
 
     '''
     Takes a and b - sides of a square, outputs the perimeter of ​​the square
@@ -127,7 +127,7 @@ The function calculates the area and perimeter of a circle using one input numbe
 ## Triangle
 
 
-def area(a, h): 
+ def area(a, h): 
 
     '''
     Takes a - the side of the triangle and h - the height of the triangle, outputs the area of ​​the triangle
@@ -139,7 +139,7 @@ def area(a, h):
     
     return a* h / 2 
 
-def perimeter(a, b, c): 
+ def perimeter(a, b, c): 
 
     '''
     Takes a, b and c - sides of a triangle, outputs the perimeter of ​​the triangle
@@ -158,7 +158,7 @@ The function calculates the area of ​​a triangle using two input numbers and
 
 2)Takes a, b and c - sides of a triangle, outputs the perimeter of ​​the triangle
 
-## **project change history**
+## project change history
 * 554b014 (HEAD -> main, origin/main, origin/HEAD) Исправлена ошибка с периметром
   
 * bf68d22 Добавлен файл rectangle
