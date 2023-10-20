@@ -1,7 +1,7 @@
 # Figures
 ## Circle
 
- def area(r):
+    def area(r):
  
     '''
     Takes r - the radius of a circle, outputs the area of ​​the circle
@@ -13,7 +13,7 @@
     
     return math.pi * r * r
 
-def perimeter(r):
+    def perimeter(r):
 
     '''
     Takes r - the radius of the circle, outputs the perimeter of the circle
@@ -36,7 +36,7 @@ The function calculates the area and perimeter of a circle using one input numbe
 
 ## Rectangle
 
- def area(a, b):
+    def area(a, b):
 
     '''
     Takes a and b - sides of a rectangle, outputs the area of ​​the rectangle
@@ -48,7 +48,7 @@ The function calculates the area and perimeter of a circle using one input numbe
     
     return a * b 
 
- def perimeter(a, b): 
+    def perimeter(a, b): 
 
     '''
     Takes a and b - sides of a rectangle, outputs the perimeter of ​​the rectangle
@@ -94,7 +94,7 @@ The function calculates the area and perimeter of a rectangle using two input nu
 
 ## Square
 
- def area(a):
+    def area(a):
 
     '''
     Takes a and b - sides of a square, outputs the area of ​​the square
@@ -107,7 +107,7 @@ The function calculates the area and perimeter of a rectangle using two input nu
     return a * a
 
 
- def perimeter(a):
+    def perimeter(a):
 
     '''
     Takes a and b - sides of a square, outputs the perimeter of ​​the square
@@ -129,7 +129,7 @@ The function calculates the area and perimeter of a circle using one input numbe
 
 ## Triangle
 
- def area(a, h): 
+    def area(a, h): 
 
     '''
     Takes a - the side of the triangle and h - the height of the triangle, outputs the area of ​​the triangle
@@ -141,7 +141,7 @@ The function calculates the area and perimeter of a circle using one input numbe
     
     return a* h / 2 
 
- def perimeter(a, b, c): 
+    def perimeter(a, b, c): 
 
     '''
     Takes a, b and c - sides of a triangle, outputs the perimeter of ​​the triangle
