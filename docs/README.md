@@ -158,7 +158,7 @@ The function calculates the area of ​​a triangle using two input numbers and
 
 2)Takes a, b and c - sides of a triangle, outputs the perimeter of ​​the triangle
 
-## project change history
+## **project change history**
 * 554b014 (HEAD -> main, origin/main, origin/HEAD) Исправлена ошибка с периметром
   
 * bf68d22 Добавлен файл rectangle
