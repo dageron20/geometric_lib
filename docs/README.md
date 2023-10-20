@@ -1,5 +1,6 @@
 # Figures
 ## Circle
+
  def area(r):
  
     '''
@@ -24,6 +25,7 @@ def perimeter(r):
     
     return 2 * math.pi * r
 ### Commit 
+
 The function calculates the area and perimeter of a circle using one input number
 
 
@@ -118,6 +120,7 @@ The function calculates the area and perimeter of a rectangle using two input nu
     return 4 * a
 
 ### Commit
+
 The function calculates the area and perimeter of a circle using one input number
 
 1)Takes a and b - sides of a square, outputs the area of ​​the square
@@ -125,7 +128,6 @@ The function calculates the area and perimeter of a circle using one input numbe
 2)Takes a and b - sides of a square, outputs the perimeter of ​​the square
 
 ## Triangle
-
 
  def area(a, h): 
 
@@ -152,6 +154,7 @@ The function calculates the area and perimeter of a circle using one input numbe
     return a + b + c 
 
 ### Commit
+
 The function calculates the area of ​​a triangle using two input numbers and the perimeter of a triangle using three input numbers
 
 1)Takes a - the side of the triangle and h - the height of the triangle, outputs the area of ​​the triangle
@@ -159,6 +162,7 @@ The function calculates the area of ​​a triangle using two input numbers and
 2)Takes a, b and c - sides of a triangle, outputs the perimeter of ​​the triangle
 
 ## project change history
+
 * 554b014 (HEAD -> main, origin/main, origin/HEAD) Исправлена ошибка с периметром
   
 * bf68d22 Добавлен файл rectangle
