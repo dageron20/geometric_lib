@@ -28,4 +28,9 @@ def perimeter(a, b, c):
 
         Пример вызова функции: perimeter(10, 20, 30) -> 60
         '''
-    return a + b + c
+    if a == 0 or b == 0 or c == 0:
+        return 0
+    elif (a + b) > c and (a + c) > b and (b + c) > a:
+        return a + b + c
+    else:
+        return 0
