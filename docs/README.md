@@ -17,9 +17,71 @@ triangle.py
 ```
 
 ## Testing
+### Usage
 ```bash
 python -m unittest tests.py -v
 ```
+### Testing results
+<table>
+    <thead>
+        <tr>
+            <th>TestCase</th>
+            <th>Input</th>
+            <th>Expected</th>
+            <th>Test Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>RectangleTest.test_area</td>
+          <td>(5, 5)</td>
+          <td>25</td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>RectangleTest.test_perimeter</td>
+          <td>(13, 13)</td>
+          <td>52</td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>SquareTest.test_area</td>
+          <td>70</td>
+          <td>4900</td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>SquareTest.test_perimeter</td>
+          <td>15</td>
+          <td>60</td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>TriangleTest.test_area</td>
+          <td>(5, 3)</td>
+          <td>7.5</td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>TriangleTest.test_perimeter</td>
+          <td>(1, 2, 3)</td>
+          <td>6</td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>CircleTest.test_area</td>
+          <td>1.3</td>
+          <td>1.69π</td>
+          <td>OK</td>
+        </tr>
+        <tr>
+          <td>CircleTest.test_perimeter</td>
+          <td>1.3</td>
+          <td>2.6π</td>
+          <td>OK</td>
+        </tr>
+    </tbody>
+</table>
 
 # Usage
 ## circle.py
