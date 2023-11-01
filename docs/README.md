@@ -16,6 +16,11 @@ square.py
 triangle.py
 ```
 
+## Testing
+```bash
+python -m unittest tests.py -v
+```
+
 # Usage
 ## circle.py
 ### area(r)
