@@ -162,6 +162,40 @@ The function calculates the area of ​​a triangle using two input numbers and
 
 2)Takes a, b and c - sides of a triangle, outputs the perimeter of ​​the triangle
 
+## UnitTest
+Testing functions for finding area and perimeter
+### CircleTest.test1
+Input data: 2
+Expected Result: 4π
+execution result: OK
+### CircleTest.test2
+Input data: 3
+Expected Result: 6π
+execution result: OK
+### SquareTest.test1
+Input data: 2
+Expected Result: 4
+execution result: OK
+### SquareTest.test2
+Input data: 3
+Expected Result: 24
+execution result: OK
+### RectangleTest.test1
+Input data: 2,3
+Expected Result: 6
+execution result: OK
+### RectangleTest.test2
+Input data: 5,6
+Expected Result: 30
+execution result: OK
+### TriangleTest.test1
+Input data: 2,3
+Expected Result: 3
+execution result: OK
+### TriangleTest.test2
+Input data: 3,4,5
+Expected Result: 12
+execution result: OK
 ## project change history
 
 * 554b014 (HEAD -> main, origin/main, origin/HEAD) Исправлена ошибка с периметром
@@ -183,6 +217,9 @@ The function calculates the area of ​​a triangle using two input numbers and
 * d078c8d (upstream/main, upstream/HEAD) L-03: Docs added
  
 * 8ba9aeb L-03: Circle and square added
+  
+* afd54d7 Added unit tests
+  
 
 
 
