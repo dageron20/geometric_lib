@@ -152,6 +152,14 @@ Usage:
 ```
 
 # Changelog
+## UnitTests
+
+Commit: 54153e0c0125a867a1d38657b390c3fcc4052f40
+
+Date: 01.11.2023
+
+UnitTests created for the `area()` and `perimeter()` functions in modules `circle.py`, `rectangle.py`, `square.py`, `triangle.py`
+
 ## Docs
 
 Commit: 783a968f2cbe24b51d3ae3922fbc9155abeaff91
