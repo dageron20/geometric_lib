@@ -163,6 +163,7 @@ print(perimetr(2, 3, 4))
 ```
 - Result area function = 4
 - Result perimeter function = 9
+<<<<<<< HEAD
 
 ### Unit Tests
 - File code tests.py
@@ -300,3 +301,17 @@ class CircleTest(BaseTestCase, unittest.TestCase):
 - | Date:   Thu Mar 4 14:55:29 2021 +0300
 - |
 - |    L-03: Docs added
+=======
+# Project change history with commit hashes
+> commit 2ece1a3e14338db587397651f785c5c348ea4248
+- | Author: Maxim <karimovmaksim121@gmail.com>
+- | Date:   Wed Oct 4 20:45:56 2023 +0500
+- |
+- | ADD: rectangle.py
+
+> commit 5f79b2c971f70f66fa2594759e236839c84bc683 (HEAD -> main, origin/main, origin/HEAD)
+- | Author: Maxim <karimovmaksim121@gmail.com>
+- | Date:   Wed Oct 4 20:47:36 2023 +0500
+- |
+- | ADD triangle.py; FIX: rectangle.py
+>>>>>>> 532f9ecd9dd7a08e0e9ca867044f1a13a00236ab
