@@ -1,3 +1,14 @@
+import unittest
+
+class RectangleTestCase(unittest.TestCase):
+    def test_square_area(self):
+        res = area(0)
+        self.assertEqual(res, 0)
+
+    def test_square_perimetr(self):
+        res = perimeter(0)
+        self.assertEqual(res, 0)
+
 def area(a):
     '''
     На вход поступает число, равное длине стороны квадрата.
