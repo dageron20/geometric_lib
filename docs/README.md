@@ -159,6 +159,10 @@ def perimeter(a):
 
 # __История изменений__ #
 
+
+#### _commit hash : 3c4469d1f4181008914b1680ce9f07e362cdd3fe_ ####
++ Добавлены тесты в папку tests для rectangle.py, circle.py, triangle.py, square.py
++ Изменена документация - добавлен пункт о тестировании
 #### _commit hash : 1b99d6aba3bcd18fa3bce18a907379faf5c42f26_ ####
 + Добавлен файл rectangle.py
 #### _commit hash : 6b7d68a1ed835ff8980dad5e86562dfad9e46ab2_ ####
