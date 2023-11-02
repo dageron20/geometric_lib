@@ -3,3 +3,14 @@ def area(a, h):
 
 def perimeter(a, b, c)
     return a + b + c 
+
+import unittest
+
+class triangleTestCase(unittest.TestCase):
+   def test_zero_mul(self):
+       res = area(10, 4, 2)
+       self.assertEqual(res, 20)
+       
+   def test_square_mul(self):
+       res = area(10, 8, 6)
+       self.assertEqual(res, 24)
