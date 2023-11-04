@@ -1,22 +1,49 @@
 import unittest
 import circle
-import math
 
 
-class TriangleTest(unittest.TestCase):
-    """unit test, который проверяет правильность работы функции для вычисления площади круга на диапазоне
-    радиусов от 0 до 100"""
-    def test_area_mul(self):
-        for r in range(0, 100):
-            res = circle.area(r)
-            self.assertEqual(res, math.pi * r * r)
+class CircleTest(unittest.TestCase):
+    """Набор unit test, который проверяет правильность работы функции для вычисления площади круга"""
+    def test_area_1(self):
+        res = circle.area(3)
+        self.assertEqual(res, 28.274333882308138)
 
-    """unit test, который проверяет правильность работы функции для вычисления длины окружности на диапазоне
-    радиусов от 0 до 100"""
-    def test_perimeter_mul(self):
-        for r in range(0, 100):
-            res = circle.perimeter(r)
-            self.assertEqual(res, 2 * math.pi * r)
+    def test_area_2(self):
+        res = circle.area(0)
+        self.assertEqual(res, "The figure doesn't exist")
+
+    def test_area_3(self):
+        res = circle.area(-1)
+        self.assertEqual(res, 'Invalid input')
+
+    def test_area_4(self):
+        res = circle.area('qw')
+        self.assertEqual(res, 'Invalid input')
+
+    def test_area_5(self):
+        res = circle.area(True)
+        self.assertEqual(res, 'Invalid input')
+
+    """Набор unit test, который проверяет правильность работы функции для вычисления длины окружности"""
+    def test_perimeter_1(self):
+        res = circle.perimeter(3)
+        self.assertEqual(res, 18.84955592153876)
+
+    def test_perimeter_2(self):
+        res = circle.perimeter(0)
+        self.assertEqual(res, "The figure doesn't exist")
+
+    def test_perimeter_3(self):
+        res = circle.perimeter(-1)
+        self.assertEqual(res, 'Invalid input')
+
+    def test_perimeter_4(self):
+        res = circle.perimeter('qw')
+        self.assertEqual(res, 'Invalid input')
+
+    def test_perimeter_5(self):
+        res = circle.perimeter(True)
+        self.assertEqual(res, 'Invalid input')
 
 
 if __name__ == '__main__':
