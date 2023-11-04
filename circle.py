@@ -13,6 +13,14 @@ def area(r):
 
     Пример вызова функции: area(10) -> 314.1592653589793
     '''
+    if isinstance(r, bool):
+        return 'Invalid input'
+    if isinstance(r, str):
+        return 'Invalid input'
+    if r < 0:
+        return 'Invalid input'
+    if r == 0:
+        return "The figure doesn't exist"
     return math.pi * r * r
 
 
@@ -28,5 +36,14 @@ def perimeter(r):
 
     Пример вызова функции: perimeter(10) -> 62.83185307179586
     '''
+    if isinstance(r, bool):
+        return 'Invalid input'
+    if isinstance(r, str):
+        return 'Invalid input'
+    if r < 0:
+        return 'Invalid input'
+    if r == 0:
+        return "The figure doesn't exist"
     return 2 * math.pi * r
+
 
