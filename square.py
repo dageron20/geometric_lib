@@ -11,6 +11,14 @@ def area(a):
 
     Пример вызова функции: area(10) -> 100
     '''
+    if isinstance(a, bool):
+        return 'Invalid input'
+    if isinstance(a, str):
+        return 'Invalid input'
+    if a < 0:
+        return 'Invalid input'
+    if a == 0:
+        return "The figure doesn't exist"
     return a * a
 
 
@@ -26,4 +34,13 @@ def perimeter(a):
 
     Пример вызова функции: perimeter(10) -> 40
     '''
+    if isinstance(a, bool):
+        return 'Invalid input'
+    if isinstance(a, str):
+        return 'Invalid input'
+    if a < 0:
+        return 'Invalid input'
+    if a == 0:
+        return "The figure doesn't exist"
     return 4 * a
+
