@@ -3,29 +3,49 @@ import rectangle
 
 
 class RectangleTest(unittest.TestCase):
-    """unit test, который проверяет правильность работы функции для вычисления площади прямоугольника на диапазоне
-    сторон от 0 до 100"""
+    """Набор unit test, который проверяет правильность работы функции для вычисления площади прямоугольника"""
 
-    def test_area_mul(self):
-        for i in range(0, 100):
-            for j in range(0, 100):
-                res = rectangle.area(i, j)
-                self.assertEqual(res, i * j)
+    def test_area_1(self):
+        res = rectangle.area(10, 0)
+        self.assertEqual(res, "The figure doesn't exist")
 
-    """unit test, который проверяет правильность работы функции для вычисления периметра прямоугольника на диапазоне 
-    сторон от 0 до 100"""
+    def test_area_2(self):
+        res = rectangle.area(50, 100)
+        self.assertEqual(res, 5000)
 
-    def test_perimeter_mul(self):
+    def test_area_3(self):
+        res = rectangle.area(-2, 20)
+        self.assertEqual(res, 'Invalid input')
 
-        for i in range(0, 100):
-            for j in range(0, 100):
-                res = rectangle.perimeter(i, j)
-                """Предсумотрен случай, когда одна из сторон равна 0, значит, фигура в принципе не существует и ответом
-                будет 0"""
-                if i == 0 or j == 0:
-                    self.assertEqual(res, 0)
-                else:
-                    self.assertEqual(res, 2 * (i + j))
+    def test_area_4(self):
+        res = rectangle.area('a', 100)
+        self.assertEqual(res, 'Invalid input')
+
+    def test_area_5(self):
+        res = rectangle.area(True, False)
+        self.assertEqual(res, 'Invalid input')
+
+    """Набор unit test, который проверяет правильность работы функции для вычисления периметра прямоугольника"""
+
+    def test_perimeter_1(self):
+        res = rectangle.perimeter(10, 0)
+        self.assertEqual(res, "The figure doesn't exist")
+
+    def test_perimeter_2(self):
+        res = rectangle.perimeter(50, 100)
+        self.assertEqual(res, 300)
+
+    def test_perimeter_3(self):
+        res = rectangle.perimeter(-2, 20)
+        self.assertEqual(res, 'Invalid input')
+
+    def test_perimeter_4(self):
+        res = rectangle.perimeter('a', 100)
+        self.assertEqual(res, 'Invalid input')
+
+    def test_perimeter_5(self):
+        res = rectangle.perimeter(True, False)
+        self.assertEqual(res, 'Invalid input')
 
 
 if __name__ == '__main__':
