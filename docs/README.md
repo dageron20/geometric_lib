@@ -57,9 +57,25 @@ This project has __tests.py__ file that contains unit test for __area__ and __pe
 
 ## Test functions
 ### Circle Test Case
-- ```test_circle_zero_area```: Tests the ```area()``` function of the circle module with a radius of 0 and verifies that the result is 0.
-- ```test_circle_positive_area```: Tests the ```area()``` function of the circle module with positive radius and verifies that the result is correct.
-- ```test_circle_perimeter```: Tests the ```perimeter()``` function of the circle module with different values of radius and verifies that the result is correct.
+- ```test_circle_zero_area```: Tests the ```area()``` function of the __circle__ module with a radius of 0 and verifies that the result is 0.
+- ```test_circle_positive_area```: Tests the ```area()``` function of the __circle__ module with positive radius and verifies that the result is correct.
+- ```test_circle_perimeter```: Tests the ```perimeter()``` function of the __circle__ module with different values of radius and verifies that the result is correct.
+
+### Rectangle Test Case
+- ```test_rectangle_zero_area```: Tests the ```area()``` function of the __rectangle__ module different cases when area should be 0 and verifies that the result is 0.
+- ```test_rectangle_positive_area```: Tests the ```area()``` function of the __rectangle__ module with positive width and height and verifies that the result is correct.
+- ```test_rectangle_perimeter```: Tests the ```perimeter()``` function of the __rectangle__ module with different values of width and height and verifies that the result is correct.
+
+### Square Test Case
+- ```test_square_zero_area```: Tests the ```area()``` function of the __square__ module with a side of 0 and verifies that the result is 0.
+- ```test_square_positive_area```: Tests the ```area()``` function of the __square__ module with positive side and verifies that the result is correct.
+- ```test_square_perimeter```: Tests the ```perimeter()``` function of the __square__ module with different values of side and verifies that the result is correct.
+
+### Triangle Test Case
+- ```test_triangle_zero_area```: Tests the ```area()``` function of the __triangle__ module with different cases when area should be 0 and verifies that the result is 0.
+- ```test_triangle_positive_area```: Tests the ```area()``` function of the __triangle__ module with positive side and height values and verifies that the result is correct.
+- ```test_triangle_perimeter```: Tests the ```perimeter()``` function of the __triangle__ module with different values of sides of triangles and verifies that the result is correct.
+  
 ## Test cases
 
 | Test name | Input | Expected output | Result |
