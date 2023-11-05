@@ -108,4 +108,5 @@ eb9990a Rectangle perimeter issue was solved
 251e942 File ractangle.py has been added
 d078c8d L-03: Docs added
 8ba9aeb L-03: Circle and square added
+b2403b0 Added unit tests
 ```
