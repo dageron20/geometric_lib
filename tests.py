@@ -30,7 +30,7 @@ class CircleTestCase(unittest.TestCase):
         res_perimeter = circle_perimeter(0)
         self.assertEqual(res_perimeter, 0)
 
-    def test_naturl_value_test(self):
+    def test_natural_value_test(self):
         res_area = circle_area(10)
         self.assertEqual(res_area, 314.1592653589793)
         res_perimeter = circle_perimeter(10)

@@ -69,6 +69,19 @@
 - Example:
 - perimetr(10, 8, 17) Output: 35
 
+# Tests
+| Название теста       | Входные данные        | Ожидаемый результат | Фактический результат |
+|----------------------|-----------------------|---------------------|-----------------------|
+| test_zero_value      | width=10, height=0    | area=0, perimeter=0  | true |
+| test_square_values   | width=10, height=10   | area=100             | true |
+| test_different_values| width=2, height=5     | area=10, perimeter=14| true |
+| test_zero_radius     | radius=0              | area=0, perimeter=0  | true |
+| test_natural_value_test| radius=10            | area=314.1592653589793, perimeter=62.83185307179586| true |
+| test_zero_value      | side_length=0         | area=0, perimeter=0  | true |
+| test_natural_value   | side_length=5         | area=25, perimeter=20| true |
+| test_zero_value      | base=5, height=0      | area=0, perimeter=0  | true |
+| test_different_values| base=5, height=2      | area=5.0, perimeter=10| true |
+
 # History of commits
 - added rectangle.py (commit id: 135c767)
 - added triangle.py and fixed rectangle.py (commit id: eb8ebbb)
