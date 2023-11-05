@@ -7,7 +7,7 @@
 
 ## Perimeter
 - Circle: P = 2πR
-- Rectangle: P = 2a + 2b
+- Rectangle: P = 2sa + 2b
 - Square: P = 4a
 - Triangele P = a + b + c
 
@@ -76,3 +76,4 @@
 - added docummentation for triangle.py (commit id: 087c9a6)
 - added docummentation for circle.py (commit id: 4162728)
 - added docummentation for square.py (commit id: d5c1e5b)
+- added tests.py(commit id: 161b4d0)
