@@ -52,6 +52,32 @@ perimiter(a, b, c)
 ```
 Gets three numbers a, b, c - sides of triangle. Returns its perimeter using formula _P = a + b + c_
 
+#Unit testing
+This project has __tests.py__ file that contains unit test for __area__ and __perimeter__ functions of product's modules.
+## Тест кейсы
+
+| Название теста | Входные данные | Ожидаемый результат | Результат |
+| -------------- | -------------- | ------------------ | --------- |
+| test_circle_zero_area | radius = 0 | 0 | True |
+| test_circle_positive_area | radius = 23, radius = 150, radius = 1777 | 1661, 70685, 9920298 | True |
+| test_circle_perimeter | radius = 0, radius = 23 | 0, 144 | True |
+| test_rectangle_zero_area | width = 0, height = 0, width = 5, height = 0, width = 0, height = 5 | 0, 0, 0 | True |
+| test_rectangle_positive_area | width = 1, height = 1, width = 23, height = 2, width = 2, height = 100, width = 223, height = 576 | 1, 46, 200, 128448 | True |
+| test_rectangle_perimeter | width = 0, height = 0, width = 5, height = 5, width = 23, height = 12, width = 236, height = 867 | 0, 20, 70, 2206 | True |
+| test_square_zero_area | side = 0 | 0 | True |
+| test_square_positive_area | side = 5, side = 23, side = 156, side = 2422 | 25, 529, 24336, 5866084 | True |
+| test_square_perimeter | side = 0, side = 5, side = 23, side = 156 | 0, 20, 92, 624 | True |
+| test_triangle_zero_area | base = 0, height = 0, base = 5, height = 0, base = 0, height = 5 | 0, 0, 0 | True |
+| test_triangle_positive_area | base = 5, height = 2, base = 7, height = 3, base = 123, height = 56, base = 2135, height = 242 | 5, 10.5, 3444, 258335 | True |
+| test_triangle_perimeter | side1 = 0, side2 = 0, side3 = 0, side1 = 2, side2 = 5, side3 = 8, side1 = 23, side2 = 67, side3 = 98, side1 = 2362, side2 = 3924, side3 = 8123 | 0, 15, 188, 14409 | True |
+
+## Запуск тестов
+
+Для запуска всех тестов используйте следующую команду:
+
+```shell
+python -m unittest discover
+
 # Commit history
 ```
 9a5259b Added comments with info about all funcs
