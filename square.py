@@ -13,3 +13,4 @@ def perimeter(a):
     :return: периметр квадрата
     '''
     return 4 * a
+
