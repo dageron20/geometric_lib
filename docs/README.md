@@ -57,9 +57,9 @@ This project has __tests.py__ file that contains unit test for __area__ and __pe
 
 ## Test functions
 ### Circle Test Case
--```test_circle_zero_area```: Tests the ```area()``` function of the circle module with a radius of 0 and verifies that the result is 0.
--```test_circle_positive_area```: Tests the ```area()``` function of the circle module with positive radius and verifies that the result is correct.
--```test_circle_perimeter```: Tests the ```perimeter()``` function of the circle module with different values of radius and verifies that the result is correct.
+- ```test_circle_zero_area```: Tests the ```area()``` function of the circle module with a radius of 0 and verifies that the result is 0.
+- ```test_circle_positive_area```: Tests the ```area()``` function of the circle module with positive radius and verifies that the result is correct.
+- ```test_circle_perimeter```: Tests the ```perimeter()``` function of the circle module with different values of radius and verifies that the result is correct.
 ## Test cases
 
 | Test name | Input | Expected output | Result |
