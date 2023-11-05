@@ -52,11 +52,12 @@ perimiter(a, b, c)
 ```
 Gets three numbers a, b, c - sides of triangle. Returns its perimeter using formula _P = a + b + c_
 
-#Unit testing
+# Unit testing
 This project has __tests.py__ file that contains unit test for __area__ and __perimeter__ functions of product's modules.
-## Тест кейсы
 
-| Название теста | Входные данные | Ожидаемый результат | Результат |
+## Test cases
+
+| Test name | Input | Expected output | Result |
 | -------------- | -------------- | ------------------ | --------- |
 | test_circle_zero_area | radius = 0 | 0 | True |
 | test_circle_positive_area | radius = 23, radius = 150, radius = 1777 | 1661, 70685, 9920298 | True |
@@ -71,13 +72,13 @@ This project has __tests.py__ file that contains unit test for __area__ and __pe
 | test_triangle_positive_area | base = 5, height = 2, base = 7, height = 3, base = 123, height = 56, base = 2135, height = 242 | 5, 10.5, 3444, 258335 | True |
 | test_triangle_perimeter | side1 = 0, side2 = 0, side3 = 0, side1 = 2, side2 = 5, side3 = 8, side1 = 23, side2 = 67, side3 = 98, side1 = 2362, side2 = 3924, side3 = 8123 | 0, 15, 188, 14409 | True |
 
-## Запуск тестов
+## How to launch tests
 
-Для запуска всех тестов используйте следующую команду:
+To launch testing write command below to the shell:
 
 ```shell
-python -m unittest discover
-
+python -m unittest tests.py
+```
 # Commit history
 ```
 9a5259b Added comments with info about all funcs
