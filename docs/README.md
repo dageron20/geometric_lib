@@ -65,6 +65,7 @@ print(triangle_perimeter) #18.84955592153876
 ```
 
 # История изменения проекта с хешами комитов
+- 2a35831 - добавлены Unit тесты
 - 67eca5f Update README.md - добавлена история изменений проекта с хешами комитов
 - c215b0f Update README.md - добавлена документация к вызову функций triangle.py, square.py, rectangle.py, circle.py
 - c484c64 Update triangle.py - добавлено описание работы функций (area(a, b), perimeter(a, b, c))
