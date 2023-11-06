@@ -63,7 +63,11 @@ def perimeter(data):
                     (data[0] + data[1] + data[2]) (float) : число с плавающей точкой в десятичной системе счисления
 
                         Пример вызова функции:
+<<<<<<< HEAD
                             perimeter([60, 80, 100, 40]) = 240.0
+=======
+                            perimeter(60, 80, 100) = 240.0
+>>>>>>> cb5d58100f4bb7589c9032ae3e50d16043e7f1d9
     '''
     def is_digit(a):
         length = len(str(a))
