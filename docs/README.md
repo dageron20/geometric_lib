@@ -211,16 +211,16 @@
 | 11) perimeter(a, b, c) | a = False, b = 3, c = 5 |      'Invalid input'       |      'Invalid input'       | Успешно |
 
 # Результаты ручного тестирования для всех файлов
-| Тестируемая функция            |   Входные данные    |     Ожидаемый результат     |    Фактический результат    | Статус  |
-|--------------------------------|:-------------------:|:---------------------------:|:---------------------------:|---------|        
-| 1) square.area(a)              |        a = 0        | "The figure doesn't exist"  |              6              | Успешно | 
-| 2) square.perimeter(a)         |    a = 1, h = 7     |             16              |             16              | Успешно |
-| 3) circle.area(r)              |        r = 3        |                             |       'Invalid input'       | Успешно |
-| 4) circle.perimeter(r)         |        r = 0        | "The figure doesn't exist"  | "The figure doesn't exist"  | Успешно |
-| 5) rectangle.area(a, b)        |    a = 3, b = 4     |             12              |             12              | Успешно |
-| 6) rectangle.perimeter(a, b)   |    a = 3, b = 4     |             14              |             14              | Успешно |
-| 7) triangle.area(a, h)         |    a = 2, h = 5     |              5              |              5              | Успешно |
-| 8) triangle.perimeter(a, b, c) | a = 1, b = 3, c = 5 | "The figure doesn't exist"  | "The figure doesn't exist"  | Успешно |
+| Тестируемая функция            |   Входные данные    |    Ожидаемый результат     |   Фактический результат    | Статус  |
+|--------------------------------|:-------------------:|:--------------------------:|:--------------------------:|---------|        
+| 1) square.area(a)              |        a = 0        | "The figure doesn't exist" | "The figure doesn't exist" | Успешно | 
+| 2) square.perimeter(a)         |    a = 1, h = 7     |             16             |             16             | Успешно |
+| 3) circle.area(r)              |        r = 3        |     28.274333882308138     |     28.274333882308138     | Успешно |
+| 4) circle.perimeter(r)         |        r = 0        | "The figure doesn't exist" | "The figure doesn't exist" | Успешно |
+| 5) rectangle.area(a, b)        |    a = 3, b = 4     |             12             |             12             | Успешно |
+| 6) rectangle.perimeter(a, b)   |    a = 3, b = 4     |             14             |             14             | Успешно |
+| 7) triangle.area(a, h)         |    a = 2, h = 5     |             5              |             5              | Успешно |
+| 8) triangle.perimeter(a, b, c) | a = 1, b = 3, c = 5 | "The figure doesn't exist" | "The figure doesn't exist" | Успешно |
 
 
 # История изменений проекта
