@@ -210,8 +210,33 @@
 | 10) perimeter(a, b, c) |  a = 2, b = 13, c = 56  | "The figure doesn't exist" | "The figure doesn't exist" | Успешно |
 | 11) perimeter(a, b, c) | a = False, b = 3, c = 5 |      'Invalid input'       |      'Invalid input'       | Успешно |
 
+# Результаты ручного тестирования для всех файлов
+| Тестируемая функция            |   Входные данные    |     Ожидаемый результат     |    Фактический результат    | Статус  |
+|--------------------------------|:-------------------:|:---------------------------:|:---------------------------:|---------|        
+| 1) square.area(a)              |        a = 0        | "The figure doesn't exist"  |              6              | Успешно | 
+| 2) square.perimeter(a)         |    a = 1, h = 7     |             16              |             16              | Успешно |
+| 3) circle.area(r)              |        r = 3        |                             |       'Invalid input'       | Успешно |
+| 4) circle.perimeter(r)         |        r = 0        | "The figure doesn't exist"  | "The figure doesn't exist"  | Успешно |
+| 5) rectangle.area(a, b)        |    a = 3, b = 4     |             12              |             12              | Успешно |
+| 6) rectangle.perimeter(a, b)   |    a = 3, b = 4     |             14              |             14              | Успешно |
+| 7) triangle.area(a, h)         |    a = 2, h = 5     |              5              |              5              | Успешно |
+| 8) triangle.perimeter(a, b, c) | a = 1, b = 3, c = 5 | "The figure doesn't exist"  | "The figure doesn't exist"  | Успешно |
+
+
 # История изменений проекта
--     commit 09ce8e65b88525cc796bfe4fa817d1d2321bcb79 (HEAD -> main)
+-     commit 42486f423e2d9345d58e9a0e42de0edd84466491 (HEAD -> main)
+      Author: ArtemPustunniy <artem1234562005@gmail.com>
+      Date:   Sat Nov 11 21:46:28 2023 +0300
+
+          Добавлен файл для реализации ручного тестирования manual_testing.py
+
+-     commit 05dd36f233c4c5df72a0e1d4f1ee74716e98c9db
+      Author: ArtemPustunniy <artem1234562005@gmail.com>
+      Date:   Sat Nov 11 21:42:18 2023 +0300
+
+          Убрана лишняя строчка из файла rectangle.py
+
+-     commit 09ce8e65b88525cc796bfe4fa817d1d2321bcb79
       Author: ArtemPustunniy <artem1234562005@gmail.com>
       Date:   Sun Nov 5 00:40:29 2023 +0300
 
