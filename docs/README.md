@@ -187,6 +187,11 @@ output ~12.57
 | 10) perimeter(a, b, c) |  a = 2, b = 13, c = 56  | "The figure doesn't exist" | "The figure doesn't exist" | Успешно |
 | 11) perimeter(a, b, c) | a = False, b = 3, c = 5 |      'Invalid input'       |      'Invalid input'       | Успешно |
 
+# Примеры прохождения тестов
+## <img width="1326" alt="Снимок экрана 2023-11-13 в 10 21 20 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/a9eae47b-039b-4be9-8490-e8eb0f3cb4f7">
+## <img width="1326" alt="Снимок экрана 2023-11-13 в 10 23 24 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/1cb3acf7-5474-4b82-8b90-49fce7c571f3">
+## <img width="1326" alt="Снимок экрана 2023-11-13 в 10 26 17 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/770339a7-af36-4f0c-8429-8c1f8f863c0a">
+
 # История изменений в проекте 
 ## <img width="563" alt="Снимок экрана 2023-11-13 в 7 53 02 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/5b71a097-868d-4dda-9b5a-1a18350bc97b">
 ## <img width="883" alt="Снимок экрана 2023-11-13 в 10 02 15 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/5ca9fcb4-d6af-49d7-a0f7-10d3c30bd111">
