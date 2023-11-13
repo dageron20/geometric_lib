@@ -180,7 +180,7 @@ output ~12.57
 | 3) area(a, h)          |      a = -1, h = 3      |      'Invalid input'       |      'Invalid input'       | Успешно |
 | 4) area(a, h)          |     a = 2, b = 'b'      |      'Invalid input'       |      'Invalid input'       | Успешно |
 | 5) area(a, h)          |     a = 3, b = True     |      'Invalid input'       |      'Invalid input'       | Успешно |
-| 6) perimeter(a, b, c)  |   a = 1, b = 2, c = 3   |             6             |             6             | Успешно |
+| 6) perimeter(a, b, c)  |   a = 3, b = 4, c = 5   |             12             |             12             | Успешно |
 | 7) perimeter(a, b, c)  |   a = 0, b = 2, c = 3   | "The figure doesn't exist" | "The figure doesn't exist" | Успешно |
 | 8) perimeter(a, b, c)  |  a = -1, b = 2, c = 3   |      'Invalid input'       |      'Invalid input'       | Успешно |
 | 9) perimeter(a, b, c)  |  a = -1, b = 'N', c = 3  |      'Invalid input'       |      'Invalid input'       | Успешно |
