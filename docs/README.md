@@ -189,4 +189,6 @@ output ~12.57
 
 # История изменений в проекте 
 ## <img width="563" alt="Снимок экрана 2023-11-13 в 7 53 02 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/5b71a097-868d-4dda-9b5a-1a18350bc97b">
+## <img width="883" alt="Снимок экрана 2023-11-13 в 10 02 15 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/5ca9fcb4-d6af-49d7-a0f7-10d3c30bd111">
+
 
