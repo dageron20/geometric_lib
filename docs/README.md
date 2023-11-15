@@ -126,3 +126,23 @@ print(perimeter(5))
 > - Date:   Thu Mar 4 14:54:08 2021 +0300
 >
 - L-03: Circle and square added
+
+# Unittest
+
+|Function       | Values   | Test |
+| :-----------: |:--------:|:----:|
+| Circle.py     | r = 0    |area = 0|
+| Circle.py     | r = 1    |perimeter = 69.11503837897544|
+| Rectangle.py  | a = 33, b = 33|area = 1089|
+| Rectangle.py  | a = -100, b = 23|perimeter = False|
+| Square.py     | a = 0.03    |area = 0.0009|
+| Square.py     | a = 0    |perimeter = 0|
+| Triangle.py   | a = 123, h = 54    |area = 3321|
+| Triangle.py   | a = 'goingstrong', b = 70, c = 'still' |perimeter = False|
+
+
+
+
+
+
+
