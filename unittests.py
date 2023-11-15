@@ -25,6 +25,10 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(circle.area(-472), 0)
         self.assertEqual(circle.perimeter(-472), 0)
 
+    def test_fractional_num(self):
+        self.assertEqual(circle.area(1.31), 5.391287152825444)
+        self.assertEqual(circle.perimeter(5.7), 35.814156250923645)
+
 class RectangleTestCase(unittest.TestCase):
     def test_zero_mul(self):
         self.assertEqual(rectangle.area(10, 0), 0)
@@ -45,6 +49,10 @@ class RectangleTestCase(unittest.TestCase):
     def test_negative_num(self):
         self.assertEqual(rectangle.area(-3, 5), 0)
         self.assertEqual(rectangle.perimeter(36, -10), 0)
+
+    def test_fractional_num(self):
+        self.assertEqual(rectangle.area(1.1, 5.5), 6.050000000000001)
+        self.assertEqual(rectangle.perimeter(3.4, 7.89), 22.58)
 
 class SquareTestCase(unittest.TestCase):
     def test_zero_mul(self):
@@ -67,6 +75,10 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(square.area(-25), 0)
         self.assertEqual(square.perimeter(-67), 0)
 
+    def test_fractional_num(self):
+        self.assertEqual(square.area(19.263), 371.0631690000001)
+        self.assertEqual(square.perimeter(6.7), 26.8)
+
 class TriangleTestCase(unittest.TestCase):
     def test_zero_mul(self):
         self.assertEqual(triangle.area(0, 5), 0)
@@ -87,3 +99,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_negative_num(self):
         self.assertEqual(triangle.area(-67, 41), 0)
         self.assertEqual(triangle.perimeter(-2, 190, -56), 0)
+
+    def test_fractional_num(self):
+        self.assertEqual(triangle.area(1.3, 4.5), 2.9250000000000003)
+        self.assertEqual(triangle.perimeter(6.2, 11.8, 34.36), 52.36)
