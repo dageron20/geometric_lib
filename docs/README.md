@@ -14,14 +14,16 @@
 ## Circle
 ```python
 import math
-- Импортируем библиотеку math
-
+    #Import library math for pi value#
 def area(r):
-- Принимает радиус круга r, возвращает площадь круга
+    #Accepts radius of circle r and returns the area of circle#
+    if (type(r) == str or r < 0):
+        return False
     return math.pi * r * r
-
 def perimeter(r):
-- Принимает радиус круга r, возвращает периметр круга
+    #Accepts radius of circle r and returns the perimeter of circle#
+    if (type(r) == str or r < 0):
+        return False
     return 2 * math.pi * r
 ```
 ### Example of calling Circle:
@@ -30,17 +32,23 @@ print(area(10))
 print(perimeter(3))
 
 ```
-- Результат area(10): 314.1592653589793
-- Результат perimeter(3): 18.84955592153876
+- Result area(10): 314.1592653589793
+- Result perimeter(3): 18.84955592153876
 
 ## Triangle
 ```python
 def area(a, h):
-- Принимает основание a и высоту h треугольника, возвращает площадь треугольника
+    #Accepts side and height of triangle a, h
+    #and returns the area of triangle#
+    if (type(a) == str or type(h) == str or a < 0 or h < 0):
+        return False
     return (a * h) / 2 
-
 def perimeter(a, b, c):
-- Принимает стороны треугольника a, b, c, возвращает периметр треугольника
+    #Accepts sides of triangle a,b,c
+    #and returns the perimeter of triangle#
+    if (type(a) == str or type(b) == str or type(c) == str or \
+        a < 0 or b < 0 or c < 0):
+        return False
     return a + b + c
 ```
 ### Example of calling Triangle
@@ -48,17 +56,20 @@ def perimeter(a, b, c):
 print(area(10, 5))
 print(perimeter(3, 4, 5))
 ```
-- Результат area(10, 5): 25.0
-- Результат perimeter(3, 4, 5): 12
+- Result area(10, 5): 25.0
+- Result perimeter(3, 4, 5): 12
 
 ## Rectangle
 ```python
 def area(a, b):
-- Принимает стороны прямоугольника a,b, возвращает площадь прямоугольника
+    #Accepts sides of rectangle a,b and returns the area of rectangle#
+    if (type(a) == str or type(b) == str or a < 0 or b < 0):
+        return False
     return a * b 
-
 def perimeter(a, b):
-- Принимает стороны прямоугольника a,b, возвращает периметр прямоугольника
+    #Accepts sides of rectangle a,b and returns the perimeter of rectangle#
+    if (type(a) == str or type(b) == str or a < 0 or b < 0):
+        return False
     return 2*(a + b)
 ```
 ### Example of calling Rectangle
@@ -66,17 +77,20 @@ def perimeter(a, b):
 print(area(2, 3))
 print(perimeter(2, 3))
 ```
-- Результат area(2, 3): 6
-- Результат perimeter(2, 3): 10
+- Result area(2, 3): 6
+- Result perimeter(2, 3): 10
 
 ## Square
 ```python
 def area(a):
-- Принимает сторону квадрата a, возвращает площадь квадрата
+    #Accepts side of square a and returns the area of square#
+    if (type(a) == str or a < 0):
+        return False
     return a * a
-
 def perimeter(a):
-- Принимает сторону квадрата a, возвращает периметр квадрата
+    #Accepts side of square a and returns the perimeter of square#
+    if (type(a) == str or a < 0):
+        return False
     return 4 * a
 ```
 ### Example of calling Square
@@ -85,8 +99,8 @@ def perimeter(a):
 print(area(4))
 print(perimeter(5))
 ```
-- Результат area(4): 16
-- Результат perimeter(5): 20
+- Result area(4): 16
+- Result perimeter(5): 20
 
 # Project history with commit hashes
 > __commit 6bdb310472a32ebe476298cd31e2ea04f2de6e2b (origin/new_features_408789, new_features_408789)__
