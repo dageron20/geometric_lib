@@ -27,7 +27,7 @@ class RectangleTest(BaseTestCase, unittest.TestCase):
 						((5, 0), KeyError),
             ((6, 'a'), KeyError),
             ((3, -3), KeyError),
-            ((5, True), 25),
+            ((5, True), KeyError),
         )
         self.perimeter_testcases = (
             ((3, 2), 10),
@@ -55,7 +55,7 @@ class SquareTest(BaseTestCase, unittest.TestCase):
 						((0), KeyError),
             (('a'), KeyError),
             ((-3), KeyError),
-            ((5, True), KeyError),
+            ((True), KeyError),
         )
 
 class TriangleTest(BaseTestCase, unittest.TestCase):
@@ -65,9 +65,9 @@ class TriangleTest(BaseTestCase, unittest.TestCase):
             ((0, 0, ), KeyError),
             ((6, 8,), 24),
             ((6, 0.5), 1.5),
-            ((0, -1, 0), KeyError),
-            ((1, True, 0), KeyError),
-            ((1, 'g', -1), KeyError)
+            ((0, -1), KeyError),
+            ((1, True), KeyError),
+            ((1, 'g'), KeyError)
         )
         self.perimeter_testcases = (
             ((0, 0, 0), KeyError),
