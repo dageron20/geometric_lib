@@ -1,6 +1,8 @@
 import math
 '''Добавление библиотеки math. В контексте кода добавляет число Пи. (3.1415926...)'''
 def area(r):
+    if r < 0:
+        return "Error: radius cannot be negative"
     return math.pi * r * r
     '''
     Возвращает площадь окружности.
@@ -12,6 +14,8 @@ def area(r):
     '''
 
 def perimeter(r):
+    if r < 0:
+        return "Error: radius cannot be negative"
     return 2 * math.pi * r
     '''
         Возвращает периметр окружности.

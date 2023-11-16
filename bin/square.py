@@ -1,4 +1,6 @@
 def area(a):
+    if a < 0:
+        return "Error: side cannot be negative"
     return a * a
     '''
         Возвращает площадь квадрата.
@@ -10,6 +12,8 @@ def area(a):
     '''
 
 def perimeter(a):
+    if a < 0:
+        return "Error: side cannot be negative"
     return 4 * a
     '''
         Возвращает периметр квадрата.

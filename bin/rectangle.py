@@ -1,4 +1,6 @@
 def area(a, b):
+    if a < 0 or b < 0:
+        return "Error: sides cannot be negative"
     return a * b
     '''
         Возвращает площадь прямоугольника.
@@ -10,6 +12,8 @@ def area(a, b):
     '''
 
 def perimeter(a, b):
+    if a < 0 or b < 0:
+        return "Error: sides cannot be negative"
     return (a + b) * 2
     '''
         Возвращает периметр прямоугольника.
