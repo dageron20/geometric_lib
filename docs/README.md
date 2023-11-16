@@ -175,8 +175,8 @@ print(perimetr(a, b, c))
   |  Type of Operation  |      Tests Name      | Input Data |  Excepted Result  |         Result          |
   |:-------------------:|:--------------------:|:----------:|:-----------------:|:-----------------------:|
   |        Area         |    area_testcases    |    3 5     |        15         | $${\color{green}True}$$ |
-  |      Perimetr       |  perimetr_testcases  |    a 2     |     TypeError     |  $${\color{green}True}  |            
-  |        Area         |    area_testcases    |   -1 10    |    ValueError     |  $${\color{green}True}  |         
+  |      Perimetr       |  perimetr_testcases  |    a 2     |     TypeError     | $${\color{green}True}$$ |            
+  |        Area         |    area_testcases    |   -1 10    |    ValueError     | $${\color{green}True}$$ |         
 
 #### Triangle
 | Type of Operation |      Tests Name      | Input Data | Excepted Result |         Result          |
@@ -197,12 +197,24 @@ print(perimetr(a, b, c))
 |:-----------------:|:--------------------:|:----------:|:---------------:|:-----------------------:|
 |       Area        |    area_testcases    |     5      |     10 * pi     | $${\color{green}True}$$ |
 |     Perimetr      |  perimetr_testcases  |     a      |    TypeError    | $${\color{green}True}$$ |            
-|       Area        |    area_testcases    |    1000    |  1000000 * pi   | $${\color{green}True}$$ |         
+|       Area        |    area_testcases    |    1000    | 1000000 * $\pi$ | $${\color{green}True}$$ |         
 
 
 
 # Project change history with commit hashes
-> commit 895de6d4ac25263a47e41d7919260685826c7e5b (HEAD -> main, origin/main, origin/HEAD)
+> commit d0a91108c8311bf647287e9782c3cdb2fc442bad (HEAD -> main)
+- | Author: Taras <nebarrow@yandex.ru>
+- | Date:   Thu Nov 16 18:39:12 2023 +0300
+
+- |    The tests.py file has been added and the README.md has been updated
+
+> commit e9f3a1a982e7c4a33b7c02e3d0d31cb51a0dbb81 (origin/main, origin/HEAD)
+- | Author: Taras <nebarrow@yandex.ru>
+- | Date:   Sat Sep 30 22:09:11 2023 +0300
+
+- |     The docs directory appeared in the project structure, which contains documentation on the project written in markdown notation
+
+> commit 895de6d4ac25263a47e41d7919260685826c7e5b
 - | Author: Taras <nebarrow@yandex.ru>
 - | Date:   Mon Sep 18 19:12:37 2023 +0300
 - |
