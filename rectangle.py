@@ -1,4 +1,8 @@
-def area(a, b): 
+def area(a, b):
+    if isinstance(a,str) or isinstance(b,str):
+        return "input can not contain characters"
+    if a <= 0 or b <= 0:
+        return "input must be greater than zero"
     '''
     Возвращает площадь прямоугольника со сторонами a и b.
 
@@ -16,6 +20,10 @@ def area(a, b):
     return a * b 
 
 def perimeter(a, b):
+    if isinstance(a,str) or isinstance(b,str):
+        return "input can not contain characters"
+    if a <= 0 or b <= 0:
+        return "input must be greater than zero"
     '''
     Возвращает периметр прямоугольника со сторонами a и b.
 
