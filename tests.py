@@ -22,72 +22,78 @@ class RectangleTest(BaseTestCase, unittest.TestCase):
     def setUp(self):
         self.module = rectangle
         self.area_testcases = (
-            ((0, 0), 0),
-						((5, 0), 0),
-            ((0, 'a'), KeyError),
+            ((3, 2), 6),
+            ((3.2, 2), 6.4),
+						((5, 0), KeyError),
+            ((6, 'a'), KeyError),
             ((3, -3), KeyError),
-            ((5, 5), 25),
+            ((5, True), 25),
         )
         self.perimeter_testcases = (
-            ((0, 0), 0),
-            ((5, 'a'), KeyError),
-            ((-10, 0), KeyError),
-            ((0, 10), 20),
-            ((10, -10), KeyError),
+            ((3, 2), 10),
+            ((3.2, 2), 10.4),
+						((5, 0), KeyError),
+            ((6, 'a'), KeyError),
+            ((3, -3), KeyError),
+            ((5, True), KeyError),
         )
 
 class SquareTest(BaseTestCase, unittest.TestCase):
     def setUp(self):
         self.module = square
         self.area_testcases = (
-            ((10, ), 100),
-            (('a', ), KeyError),
-            ((-1, ), KeyError),
-            ((1.5, ), 2.25),
-            ((12, ), 144),
+            ((3), 9),
+            ((0.5), 0.25),
+						((0), KeyError),
+            (('a'), KeyError),
+            ((-3), KeyError),
+            ((5, True), KeyError),
         )
         self.perimeter_testcases = (
-            ((0, ), 0),
-            ((1, ), 4),
-            ((-2, ), KeyError),
-            ((100, ), 400),
-            ((15, ), 60),
+            ((3), 12),
+            ((0.5), 2),
+						((0), KeyError),
+            (('a'), KeyError),
+            ((-3), KeyError),
+            ((5, True), KeyError),
         )
 
 class TriangleTest(BaseTestCase, unittest.TestCase):
     def setUp(self):
         self.module = triangle
         self.area_testcases = (
-            ((0, 123), 0),
-            ((0, 2), 0),
-            ((5, 0), 0),
-            ((999999999999, 0), 0),
-            ((5, -3), KeyError),
+            ((0, 0, ), KeyError),
+            ((6, 8,), 24),
+            ((6, 0.5), 1.5),
+            ((0, -1, 0), KeyError),
+            ((1, True, 0), KeyError),
+            ((1, 'g', -1), KeyError)
         )
         self.perimeter_testcases = (
-            ((0, 0, 0), 0),
-            ((0, 0, 1), KeyError),
-            ((0, 1, 0), KeyError),
-            ((1, 0, 0), KeyError),
-            ((1, 0, -1), KeyError)
+            ((0, 0, 0), KeyError),
+            ((6, 8, 10), 24),
+            ((6, 8.2, 10), 24.2),
+            ((0, -1, 0), KeyError),
+            ((1, True, 0), KeyError),
+            ((1, 'g', -1), KeyError)
         )
 
 class CircleTest(BaseTestCase, unittest.TestCase):
     def setUp(self):
         self.module = circle
         self.area_testcases = (
-            ((0, ), 0),
+            ((0, ), KeyError),
             ((1, ), math.pi),
-            ((2, ), math.pi * 4),
+            (('a', ), KeyError),
             ((0.5, ), math.pi * 0.25),
+            ((True), KeyError),
+            ((-1), KeyError)
         )
         self.perimeter_testcases = (
-            ((0, ), 0),
+            ((0, ), KeyError),
             ((1, ), math.pi * 2),
-            ((2, ), math.pi * 4),
-            ((3, ), math.pi * 6),
-            ((10, ), math.pi * 20),
-            ((100, ), math.pi * 200),
-            ((0.5, ), math.pi),
+            ((-1, ), KeyError),
+            ((True, ), KeyError),
+            (("a", ), KeyError),
             ((1.3, ), math.pi * 2.6),
         )
