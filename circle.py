@@ -7,8 +7,8 @@ def area(r):
         return "error"
     elif r <= 0:
         return "error"
-
-    return math.pi * r * r
+    else:
+        return math.pi * r * r
 
 
 def perimeter(r):
@@ -21,8 +21,8 @@ def perimeter(r):
             perimeter(r): периметр круга с радиусом r
     '''
      if not isinstance(r, int) and not isinstance(r, float):
-            return "error"
-        elif r <= 0:
-            return "error"
-    
+        return "error"
+    elif r <= 0:
+        return "error"
+     else:
         return 2 * math.pi * r
