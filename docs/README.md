@@ -170,6 +170,37 @@ int h = 2
 print(area(a, h))
 print(perimetr(a, b, c))
 ```
+### Unit Tests
+#### Rectangle
+  |  Type of Operation  |      Tests Name      | Input Data |  Excepted Result  |         Result          |
+  |:-------------------:|:--------------------:|:----------:|:-----------------:|:-----------------------:|
+  |        Area         |    area_testcases    |    3 5     |        15         | $${\color{green}True}$$ |
+  |      Perimetr       |  perimetr_testcases  |    a 2     |     TypeError     |  $${\color{green}True}  |            
+  |        Area         |    area_testcases    |   -1 10    |    ValueError     |  $${\color{green}True}  |         
+
+#### Triangle
+| Type of Operation |      Tests Name      | Input Data | Excepted Result |         Result          |
+|:-----------------:|:--------------------:|:----------:|:---------------:|:-----------------------:|
+|       Area        |    area_testcases    |   -10 8    |   ValueError    | $${\color{green}True}$$ |
+|     Perimetr      |  perimetr_testcases  |   a b c    |    TypeError    | $${\color{green}True}$$ |            
+|       Area        |    area_testcases    |    7 8     |        28        | $${\color{green}True}$$ |    
+
+#### Square
+| Type of Operation |      Tests Name      | Input Data | Excepted Result |         Result          |
+|:-----------------:|:--------------------:|:----------:|:---------------:|:-----------------------:|
+|       Area        |    area_testcases    |     a      |    TypeError    | $${\color{green}True}$$ |
+|     Perimetr      |  perimetr_testcases  |    100     |       400       | $${\color{green}True}$$ |            
+|       Area        |    area_testcases    |     -2     |   ValueError    | $${\color{green}True}$$ |         
+
+#### Circle
+| Type of Operation |      Tests Name      | Input Data | Excepted Result |         Result          |
+|:-----------------:|:--------------------:|:----------:|:---------------:|:-----------------------:|
+|       Area        |    area_testcases    |     5      |     10 * pi     | $${\color{green}True}$$ |
+|     Perimetr      |  perimetr_testcases  |     a      |    TypeError    | $${\color{green}True}$$ |            
+|       Area        |    area_testcases    |    1000    |  1000000 * pi   | $${\color{green}True}$$ |         
+
+
+
 # Project change history with commit hashes
 > commit 895de6d4ac25263a47e41d7919260685826c7e5b (HEAD -> main, origin/main, origin/HEAD)
 - | Author: Taras <nebarrow@yandex.ru>
