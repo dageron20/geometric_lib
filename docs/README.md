@@ -71,6 +71,91 @@
  	def square(a):
  		return 4 * a
  	```
+ # Unittests
+
+|название теста| входные данные |    ожидание   | результат     |
+|     :---:    |     :---:      |     :---:     |   :---:       |
+|int, rectangle|a = 5, b = 4    |  20           | 20            |
+|0, rectangle  |a = 0, b = 5    |"Invalid input"|"Invalid Input"|
+|float, circle |a = 1.1         |3.7993         | 3.7993        |
+|- int, circle |a = -1          |"Invalid input"|"Invalid input"|
+|str, square   |a = "a"         |"Invalid input"|"Invalid input"|
+|bool, square  |a = True        |"Invalid input"|"Invalid input"|
+|int, triangle |a = 1, b = 2    | 1             | 1             |
+|-int, triangle|a = -1,b = c = 2|"Invalid input"|"Invalid input"|
+
+## types unittests
+
+- Integer
+ ```py
+a = 5
+b = 0
+c = -1
+```
+
+- String
+```py
+a = "papa"
+```
+
+- Boolean
+```py
+a = True
+b = False
+```
+
+- Float
+```py
+a = 1.1
+```
+
+- List
+```py
+a = [123, "papa", 12.3]
+```
+
+- Dictionaries
+```py
+a = {"mama": "papa"}
+```
+
+- Tuples
+```py
+a = (123, "papa", 12.3)
+```
+
+- Sets
+```py
+a = {"a", "b"}
+```
+
+- Enter
+```py
+a = '\n'
+```
+
+### Также были проведены такие тесты как:
+
+- Nothing
+```
+на вход ничего не поступает
+```
+
+- Space
+```
+пользователь вводит пробел
+```
+
+- Overflow
+```
+пользователь вводит излишние данные
+```
+
+### Результаты тестов
+
+Первый вызов **unittests** показал недочёты в коде.
+Они были оперативно устранены.
+При втором вызове **unittests** все тесты кроме **Overflow** были пройдены успешно.
 
 # project modification history
 ```
