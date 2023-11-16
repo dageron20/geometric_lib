@@ -1,4 +1,8 @@
 def area(a, h):
+    if isinstance(a, str) or isinstance(h, str):
+        return "input can not contain characters"
+    if a <= 0 or h <= 0:
+        return "input must be greater than zero"
     '''
     Возвращает площадь треугольника с основанием длины а и высотой длины h.
 
@@ -16,6 +20,10 @@ def area(a, h):
     return a * h / 2 
 
 def perimeter(a, b, c):
+    if isinstance(a, str) or isinstance(b, str) or isinstance(c, str):
+        return "input can not contain characters"
+    if a <= 0 or b <= 0 or c <= 0:
+        return "input must be greater than zero"
     '''
     Возвращает периметр треугольника со сторонами длины a,b,c.
 
