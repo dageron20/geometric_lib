@@ -133,7 +133,55 @@
 + perimeter(5,4,3)  
   Output: 12
 
+# Юнит-тестирование
+**В файле unittests.py находятся тесты формул для нахождения площади и периметра круга, прямоугольника, квадрата, треугольника**
+## Таблица тест-кейсов
+| Название теста | Входные данные | Ожидаемые выходные данные | Результат |
+| -------------- | -------------- | ------------------ | --------- |
+| test_circle_area | 1413 | 6272406.50278512 | True |
+| test_circle_perimeter | 1413 | 8878.140839044756 | True |
+| test_rectangle_area | 0.5, 5 | 2.5 | True |
+| test_rectangle_perimeter | 1413, 796 | 4418 | True |
+| test_square_area | 0.5 | 0.25 | True |
+| test_square_perimeter | 1413 | 5652 | True |
+| test_triangle_area | 1413, 10 | 7065 | True |
+| test_triangle_perimeter | 0.1, 0.5, 0.4 | 1 | True |
 # История изменений проекта
+```
+commit a3fae37bc8985ca8b869967fbcebbe59c01673c5 
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Thu Nov 16 18:50:12 2023 +0300
+
+    Create unittests.py
+```
+```
+commit e38609fffb3631cfe58788e99958dbd4b4527252
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Thu Nov 16 18:45:39 2023 +0300
+
+    Добавил новые условия в triangle.py
+```
+```
+commit f1739d164d8a9b59c6f29974afa5ff3330e14403
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Thu Nov 16 18:44:01 2023 +0300
+
+    Добавил новые условия в square.py
+```
+```
+commit a4bea5530723ae2ad57bf885c088b85d84ebe5c6
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Thu Nov 16 18:42:43 2023 +0300
+
+    Добавил новые условия в rectangle.py
+```
+```
+commit 71c1f31f7fb91078ac81f170eb095d4de046a031
+Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
+Date:   Thu Nov 16 18:41:21 2023 +0300
+
+    Добавил новые условия в circle.py
+```
 ```
 commit 64254a8e0f26aa674972eab0bceeeff62a3440a0 (HEAD -> main, origin/main, origin/HEAD)
 Author: Soltan Dydymov <144336474+Soltan-Dydymov@users.noreply.github.com>
