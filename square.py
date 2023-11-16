@@ -1,7 +1,7 @@
 def area(a):
     if str(a).isalpha() == 1:
         return TypeError
-    if a < 0:
+    if a <= 0:
         return ValueError
     return a * a
 
@@ -10,7 +10,7 @@ def area(a):
 def perimetr(a):
     if str(a).isalpha() == 1:
         return TypeError
-    if a < 0:
+    if a <= 0:
         return ValueError
     return 4 * a
 

@@ -13,7 +13,7 @@ class PerimetrAreaTestCase(object):
             self.assertEqual(
                 result,
                 outp,
-                f'{self.module.__name__}:perimetr\t{inp=} expected={outp} returned={result}'
+                f'{self.module.__name__}:perimetr\t{inp=} excepted={outp} returned={result}'
             )
 
     def test_area(self):
@@ -22,7 +22,7 @@ class PerimetrAreaTestCase(object):
             self.assertEqual(
                 result,
                 outp,
-                f'{self.module.__name__}:area\t{inp=} expected={outp} returned={result}'
+                f'{self.module.__name__}:area\t{inp=} exсepted={outp} returned={result}'
             )
 
 
@@ -31,21 +31,21 @@ class RectangleTestCase(PerimetrAreaTestCase, unittest.TestCase):
         self.module = rectangle
         
         self.area_testcases = (
-            ((10, 0), 0), 
+            ((10, 2), 20), 
             (("a", 3), TypeError), 
             ((-3, 10), ValueError),
-            ((10, 10), 100),
-            ((5, 5), 25),
             ((100, 100), 10000),
-            ((5, 3), 15)
+            ((1000000, 1000000), 1000000000000),
+            ((2, 0), ValueError)
         )
 
         self.perimetr_testcases = (
             (('a', 2), TypeError),
             ((5, 4), 18),
-            ((10, 0), 20),
+            ((2, 4), 12),
             ((-1, 10), ValueError),
-            ((10, 10), 40)
+            ((10, 10), 40),
+            ((10000, 100000), 220000)
         )
 
 class TriangleTestCase(PerimetrAreaTestCase, unittest.TestCase):
@@ -54,15 +54,17 @@ class TriangleTestCase(PerimetrAreaTestCase, unittest.TestCase):
         
         self.area_testcases = (
             ((-10, 8), ValueError),
-            (('a', 7), TypeError),
-            ((7, 8), 28)
+            (('b', 10), TypeError),
+            ((7, 8), 28),
+            ((30000, 1000000), 15000000000),
+            ((3, 0), ValueError)
         )
 
         self.perimetr_testcases = (
             (('a', 'b', 'c'), TypeError),
             ((-23, 1, 4), ValueError),
+            ((200000, 200000, 30000000000), 30000400000),
             ((9, 8, 4), 21),
-            ((-2, 3, 0), ValueError),
             ((1000, 1000, 1000), 3000),
         )
 
@@ -73,20 +75,19 @@ class SquareTestCase(PerimetrAreaTestCase, unittest.TestCase):
 
         self.area_testcases = (
             (('a', ), TypeError),
-            ((-5, ), ValueError),
-            ((10, ), 100),
             ((-2, ), ValueError),
-            ((1000, ), 1000000),
+            ((10, ), 100),
+            ((-20000, ), ValueError),
+            ((1000000, ), 1000000000000),
         )
 
         self.perimetr_testcases = (
-            (('a', ), TypeError),
-            ((-2, ), ValueError),
-            ((2, ), 8),
+            ((-9, ), ValueError),
             ((100, ), 400),
             ((15, ), 60),
-            ((3, ), 12),
-            ((1000, ), 4000),
+            ((4.5, ), 18),
+            ((10000, ), 40000),
+            (('p', ), TypeError)
         )
 class CircleTestCase(PerimetrAreaTestCase, unittest.TestCase):
     def setUp(self):
@@ -94,16 +95,20 @@ class CircleTestCase(PerimetrAreaTestCase, unittest.TestCase):
         self.module = circle
 
         self.perimetr_testcases = (
-            ((-2, ), ValueError),
-            ((5, ),  10 * math.pi),
-            (('a', ), TypeError),
-            ((1000, ), 2000 * math.pi)
+            ((-123, ), ValueError),
+            (('p', ), TypeError),
+            ((1000, ), 2000 * math.pi),
+            ((0, ), ValueError),
+            ((5, ), 10 * math.pi)
+
         )
 
         self.area_testcases = (
             ((3, ), math.pi * 9),
-            (('a', ), TypeError),
-            ((1000, ), math.pi * 1000000)
+            (('f', ), TypeError),
+            ((1000, ), math.pi * 1000000),
+            ((0, ), ValueError),
+            ((1000000, ), math.pi * 1000000000000)
         )
 
         

@@ -172,18 +172,18 @@ print(perimetr(a, b, c))
 ```
 ### Unit Tests
 #### Rectangle
-  |  Type of Operation  |      Tests Name      | Input Data |  Excepted Result  |         Result          |
-  |:-------------------:|:--------------------:|:----------:|:-----------------:|:-----------------------:|
-  |        Area         |    area_testcases    |    3 5     |        15         | $${\color{green}True}$$ |
-  |      Perimetr       |  perimetr_testcases  |    a 2     |     TypeError     | $${\color{green}True}$$ |            
-  |        Area         |    area_testcases    |   -1 10    |    ValueError     | $${\color{green}True}$$ |         
+|  Type of Operation  |      Tests Name      | Input Data |  Excepted Result  |         Result          |
+|:-------------------:|:--------------------:|:----------:|:-----------------:|:-----------------------:|
+|        Area         |    area_testcases    |    10 2     |        20         | $${\color{green}True}$$ |
+|      Perimetr       |  perimetr_testcases  |    a 2     |     TypeError     | $${\color{green}True}$$ |            
+|        Area         |    area_testcases    |   -3 10    |    ValueError     | $${\color{green}True}$$ |         
 
 #### Triangle
 | Type of Operation |      Tests Name      | Input Data | Excepted Result |         Result          |
 |:-----------------:|:--------------------:|:----------:|:---------------:|:-----------------------:|
-|       Area        |    area_testcases    |   -10 8    |   ValueError    | $${\color{green}True}$$ |
+|       Area        |    area_testcases    |   7 8      |       28        | $${\color{green}True}$$ |
 |     Perimetr      |  perimetr_testcases  |   a b c    |    TypeError    | $${\color{green}True}$$ |            
-|       Area        |    area_testcases    |    7 8     |        28        | $${\color{green}True}$$ |    
+|     Perimetr      |  perimetr_testcases  |  -23 1 4   |   ValueError    | $${\color{green}True}$$ |    
 
 #### Square
 | Type of Operation |      Tests Name      | Input Data | Excepted Result |         Result          |
@@ -196,19 +196,26 @@ print(perimetr(a, b, c))
 | Type of Operation |      Tests Name      | Input Data | Excepted Result |         Result          |
 |:-----------------:|:--------------------:|:----------:|:---------------:|:-----------------------:|
 |       Area        |    area_testcases    |     5      |     10 * pi     | $${\color{green}True}$$ |
-|     Perimetr      |  perimetr_testcases  |     a      |    TypeError    | $${\color{green}True}$$ |            
+|     Perimetr      |  perimetr_testcases  |     p      |    TypeError    | $${\color{green}True}$$ |            
 |       Area        |    area_testcases    |    1000    | 1000000 * $\pi$ | $${\color{green}True}$$ |         
 
 
 
 # Project change history with commit hashes
-> commit d0a91108c8311bf647287e9782c3cdb2fc442bad (HEAD -> main)
+> commit e5e2156488367bbc0afe1b270d6078bd25cbf590 (HEAD -> main)
+- | Author: Taras <nebarrow@yandex.ru>
+- | Date:   Thu Nov 16 19:08:25 2023 +0300
+
+- |    An error with markup in readme.md has been fixed
+
+
+> commit d0a91108c8311bf647287e9782c3cdb2fc442bad (origin/main, origin/HEAD)
 - | Author: Taras <nebarrow@yandex.ru>
 - | Date:   Thu Nov 16 18:39:12 2023 +0300
 
 - |    The tests.py file has been added and the README.md has been updated
 
-> commit e9f3a1a982e7c4a33b7c02e3d0d31cb51a0dbb81 (origin/main, origin/HEAD)
+> commit e9f3a1a982e7c4a33b7c02e3d0d31cb51a0dbb81
 - | Author: Taras <nebarrow@yandex.ru>
 - | Date:   Sat Sep 30 22:09:11 2023 +0300
 
