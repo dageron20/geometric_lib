@@ -1,5 +1,8 @@
-
 def area(a):
+    if isinstance(a,str):
+        return "input can not contain characters"
+    if a <= 0:
+        return "input must be greater than zero"
     '''
     Возвращает площадь квадрата со сторонами длины а.
 
@@ -17,6 +20,10 @@ def area(a):
 
 
 def perimeter(a):
+    if isinstance(a,str):
+        return "input can not contain characters"
+    if a <= 0:
+        return "input must be greater than zero"
     '''
     Возвращает периметр квадрата со сторонами длины а.
 
