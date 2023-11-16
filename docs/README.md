@@ -200,10 +200,11 @@ output 18,84
 
 
 ## изображения подстверждающие прохождение тестов
-
-
-
-- Изображения подстверждающие прохождение тестов:
+- :
 - ![image](https://github.com/Aleksandra1uni/geometric_lib/assets/144417987/fe337d87-29d6-4624-8e2e-1d119a48ac76)
+- ![image](https://github.com/Aleksandra1uni/geometric_lib/assets/144417987/d02954ba-9835-40fd-a837-265043ac54a4)
+- ![image](https://github.com/Aleksandra1uni/geometric_lib/assets/144417987/6c796e9e-2928-4b42-8c89-61ce9bcb40be)
+
+
 
 
