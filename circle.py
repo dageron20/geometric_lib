@@ -2,6 +2,10 @@ import math
 
 
 def area(r):
+    if isinstance(r,str):
+        return "input can not contain characters"
+    if r < 0:
+        return "input must be greater than or equal to zero"
     '''
     Возвращает площадь круга
 
@@ -19,6 +23,11 @@ def area(r):
 
 
 def perimeter(r):
+    if isinstance(r,str):
+        return "input can not contain characters"
+    if r < 0:
+        return "input must be greater than or equal to zero"
+
     '''
     Возвращает длину окружности
 
