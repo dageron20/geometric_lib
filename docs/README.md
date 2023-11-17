@@ -70,7 +70,6 @@
 | testAreaNegative()               | Проверка реакции на отрицательные числа      | -5, 10           | Incorrect input           |
 | testAreaFloat()                  | Проверка реакции на рациональные числа       | 0.5, 0.2         | Incorrect input           |
 | testPerimeterFloat()             | Проверка реакции на рациональные числа       | 0.5, 0.6         | Incorrect input           |
-| testAreaStr()                    | Проверка реакции на отрицательные числа      | -10, 5           | Incorrect input           |
 ### circle_tests.py
 | Метод                            | Описание кейса                               | Входные данные   | Выходные данные           |
 |----------------------------------|----------------------------------------------|:----------------:|:-------------------------:|
@@ -78,7 +77,6 @@
 | testAreaNegative()               | Проверка реакции на отрицательные числа      | -10              | Incorrect input           |
 | testAreaFloat()                  | Проверка реакции на рациональные числа       | 0.5              | Incorrect input           |
 | testPerimeterFloat()             | Проверка реакции на рациональные числа       | 0.5              | Incorrect input           |
-| testAreaStr()                    | Проверка реакции на отрицательные числа      | -10, 5           | Incorrect input           |
 
 # История изменений
 - Circle and square added 
