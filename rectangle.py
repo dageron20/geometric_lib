@@ -1,4 +1,8 @@
 def area(side: int, ground: int) -> int:
+    if not isinstance(side, int):
+        raise TypeError("Side must be an integer")
+    if not isinstance(ground, int):
+        raise TypeError("Ground must be an integer")
     # Данная функция предназначенна для подсчета площади прямоугольника
 
     # Функция принимает два числа (int):
@@ -14,6 +18,10 @@ def area(side: int, ground: int) -> int:
     return side * ground
 
 def perimeter(side: int , ground: int) -> int:
+    if not isinstance(side, int):
+        raise TypeError("Side must be an integer")
+    if not isinstance(ground, int):
+        raise TypeError("Ground must be an integer")
     # Данная функция предназначенна для подсчета периметра прямоугольника
 
     # Функция принимает два числа (int):
