@@ -89,15 +89,78 @@
 # Project change history with commit hashes.
 
 ```
-* 14ac63a (HEAD -> main) Добавлены описания функций и примеры вызовов
-* a01b696 Добавлены описания функций и примеры их вызовов
-* 488c909 Добавлены примеры вызовов функций
-* 07027ab Добавлено общее описание функций
-* 22800e7 (new_features_408596) Ошибка в периметре исправлена.
-* f30cf7e Добавлена последняя фигура 1 лабораторной.
-* aa86678 Добавлена еще одна фигура.
-* d078c8d (origin/main, origin/HEAD) L-03: Docs added
-* 8ba9aeb L-03: Circle and square added
+* commit 615754d9ce49c72f1530416ee1718ac5fbbe0be0 (HEAD -> main, 4-labs)
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Nov 17 03:42:05 2023 +0300
+|
+|     Update readme.md
+|
+* commit 158ee61e60222efc535cfbb53b0e87471d53b7ab
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Nov 17 03:17:40 2023 +0300
+|
+|     Added unit tests
+|
+* commit 8131cd87902c1a29ccbfff526900d31406b03f10
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Nov 17 03:17:05 2023 +0300
+|
+|     Added data type check for functions
+|
+* commit 14ac63af35a3e63ca7984720b65d806113b1fb5d
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Oct 6 02:58:51 2023 +0300
+|
+|     Добавлены описания функций и примеры вызовов
+|
+* commit a01b69643efe095d406407fd889c4a1cd85b58d7
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Oct 6 02:42:37 2023 +0300
+|
+|     Добавлены описания функций и примеры их вызовов
+|
+* commit 488c90900869677af523c33fbb548aeb076166c6
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Oct 6 02:28:42 2023 +0300
+|
+|     Добавлены примеры вызовов функций
+|
+* commit 07027ab97d854b2af11ed263adc850c3b89adb6c
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Oct 6 02:23:01 2023 +0300
+|
+|     Добавлено общее описание функций
+|
+* commit 22800e731623f3f13297f82e881bb60749166116 (new_features_408596)
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Sep 8 22:00:23 2023 +0300
+|
+|     Ошибка в периметре исправлена.
+|
+* commit f30cf7e1b6b9130042824ba3771e47fa47136f9e
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Sep 8 21:50:35 2023 +0300
+|
+|     Добавлена последняя фигура 1 лабораторной.
+|
+* commit aa86678a435730f20855a7b1ccddd4b01e68e11e
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Sep 8 21:49:23 2023 +0300
+|
+|     Добавлена еще одна фигура.
+|
+* commit d078c8d9ee6155f3cb0e577d28d337b791de28e2 (origin/main, origin/HEAD)
+| Author: smartiqa <info@smartiqa.ru>
+| Date:   Thu Mar 4 14:55:29 2021 +0300
+|
+|     L-03: Docs added
+|
+* commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+  Author: smartiqa <info@smartiqa.ru>
+  Date:   Thu Mar 4 14:54:08 2021 +0300
+
+      L-03: Circle and square added
+
 ```
 # Link to the original creator of my work.
 - [dageron20](https://github.com/dageron20)
