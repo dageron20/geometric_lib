@@ -1,4 +1,8 @@
 def area(ground: float, height: float) -> float:
+    if not isinstance(ground, float):
+        raise TypeError("Ground must be an float")
+    if not isinstance(height, float):
+        raise TypeError("Height must be an float")
     # Данная функция предназначенна для подсчета площади треугольника
 
     # Функция принимает два числа (float):
@@ -15,6 +19,12 @@ def area(ground: float, height: float) -> float:
     return ground * height / 2
 
 def perimeter(a: float, b: float, c: float) -> float:
+    if not isinstance(a, float):
+        raise TypeError("First param must be an float")
+    if not isinstance(b, float):
+        raise TypeError("Second param must be an float")
+    if not isinstance(c, float):
+        raise TypeError("Third param must be an float")
     # Данная функция предназначенна для подсчета периметра треугольника
 
     # Функция принимает три числа (float):

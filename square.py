@@ -1,5 +1,7 @@
 
 def area(side: int) -> int:
+    if not isinstance(side, int):
+        raise TypeError("Side must be an integer")
     # Данная функция предназначенна для подсчета площади квадрата
 
     # Функция принимает одно число (int):
@@ -16,6 +18,8 @@ def area(side: int) -> int:
 
 
 def perimeter(side: int) -> int:
+    if not isinstance(side, int):
+        raise TypeError("Side must be an integer")
     # Данная функция предназначенна для подсчета площади квадрата
 
     # Функция принимает одно число (int):
@@ -27,5 +31,5 @@ def perimeter(side: int) -> int:
     # Пример вызова:
     # 1) side = 5 (входные данные)
     # 2) 5 * 4 = 20 (полученние возвращаемого значения функции)
-    
+
     return 4 * side

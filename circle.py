@@ -2,6 +2,8 @@ import math
 
 
 def area(radius: float) -> float:
+    if not isinstance(radius, float):
+        raise TypeError("Radius must be an float")
     # Данная функция предназначенна для подсчета площади круга
     # В функции использовались библиотечная функция pow, а также число pi
     # Импортированная библиотека -> math
@@ -20,6 +22,8 @@ def area(radius: float) -> float:
 
 
 def perimeter(radius: float) -> float:
+    if not isinstance(radius, float):
+        raise TypeError("Radius must be an float")
     # Данная функция предназначенна для подсчета периметра круга
     # В функции использовалось число    ->  pi
     # Импортированная библиотека        ->  math
