@@ -10,10 +10,22 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(perimeter(5), 31)
 
     def testAreaNegative(self):
-        self.assertEqual(area(-10), "Length cannot be negative")
+        self.assertEqual(area(-10), "Incorrect input")
 
     def testPerimeterNegative(self):
-        self.assertEqual(perimeter(-10), "Length cannot be negative")
+        self.assertEqual(perimeter(-10), "Incorrect input")
+
+    def testAreaFloat(self):
+        self.assertEqual(area(0.5), "Incorrect input")
+
+    def testPerimeterFloat(self):
+        self.assertEqual(perimeter(0.5), "Incorrect input")
+
+    def testAreaStr(self):
+        self.assertEqual(area('xyz'), "Incorrect input")
+
+    def testPerimeterStr(self):
+        self.assertEqual(perimeter('xyz'), "Incorrect input")
 
 
 if __name__ == "__main__":
