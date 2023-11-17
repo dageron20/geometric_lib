@@ -1,7 +1,7 @@
 import math
 
 
-def area(r):
+def circle(r):
     '''Принимает радиус r 
        возвращает площадь круга'''
     return math.pi * r * r
