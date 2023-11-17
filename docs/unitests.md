@@ -7,7 +7,7 @@
 > All functions are focused on checking two key factors:
 > * Checks whether the correct data type came into the function;
 > * Check the correctness of calculations.
-## Весь список функций:
+## All list of functions:
 1) test_circle_area(self);
 2) test_circle_perimeter(self);
 3) test_rectangle_area(self);
