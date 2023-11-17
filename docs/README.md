@@ -89,6 +89,11 @@
 # Project change history with commit hashes.
 
 ```
+* commit 1b0783f7ca5683601ef57d4601dc4a75cf6a8d6f (HEAD -> upgrade-tests, main)
+| Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
+| Date:   Fri Nov 17 06:21:05 2023 +0300
+|
+|     Improving tests by adding types of data to tests
 * commit 615754d9ce49c72f1530416ee1718ac5fbbe0be0 (HEAD -> main, 4-labs)
 | Author: Erusalimcev Petr Vasilevich <114782849+klorainy@users.noreply.github.com>
 | Date:   Fri Nov 17 03:42:05 2023 +0300
