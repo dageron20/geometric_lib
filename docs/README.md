@@ -21,21 +21,32 @@
   
 ### Test cases
 
-| Название теста                     | Входные данные                        | Ожидаемый результат                                                | Результат программы |
-|------------------------------------|---------------------------------------|--------------------------------------------------------------------|---------------------|
-| Circle - test_zero_multiply        | r = 0, 0                              | 0, 0                                                               | True                |
-| Circle - test_negative_multiply    | r = -10, -5                           | Error: radius cannot be negative, Error: radius cannot be negative | True                |
-| Circle - test_integer_multiply     | r = 10, r = 5                         | 314.1592653589793, 31.41592653589793                               | True                |
-| Rectangle - test_zero_multiply     | a, b = (0, 10), (0, 0)                | 0, 0                                                               | True                |
-| Rectangle - test_integer_multiply  | a, b = (10, 5), (5, 7)                | 50, 24                                                             | True                |
-| Rectangle - test_negative_multiply | a, b = (-10, -5), (-5, -7)            | Error: sides cannot be negative, Error: sides cannot be negative   | True                |
-| Square - test_zero_multiply        | a = 0, 0                              | 0, 0                                                               | True                |
-| Square - test_integer_multiply     | a = 4, 9                              | 16, 36                                                             | True                |
-| Square - test_negative_multiply    | a = -4, -9                            | Error: side cannot be negative, Error: side cannot be negative     | True                |
-| Triangle - test_zero_multiply      | a = 3, h = 0                          | 0                                                                  | True                |
-| Triangle - test_integer_multiply   | a = 3, 17, b = 23, c = 16, h = 9      | 13.5, 56                                                           | True                |
-| Triangle - test_negative_multiply  | a = -3, -17, b = -23, c = -16, h = -9 | Error: sides cannot be negative, Error: sides cannot be negative   | True                |
-| Triangle - test_triangle_exist     | a = 7, b = 1, c = 2                   | Error: triangle doesn't exist                                      | True                |
+| Название теста                     | Входные данные                                 | Ожидаемый результат                                          | Результат                                                    | Статус |
+|------------------------------------|------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|--------|
+| Circle - test_zero_multiply        | r = 0, 0                                       | 0, 0                                                         | 0, 0                                                         | True   |
+| Circle - test_integer_multiply     | r = 10, r = 5                                  | 314.15927, 31.41593                                          | 314.15927, 31.41593                                          | True   |
+| Circle - test_negative_multiply    | r = -10, -5                                    | Error: radius cannot be negative                             | Error: radius cannot be negative                             | True   |
+| Circle - test_boolean_type         | r = True, r = True                             | Error: function cannot work with not integer or float values | Error: function cannot work with not integer or float values | True   |
+| Circle - test_string_type          | r = "10", r = "5"                              | Error: function cannot work with not integer or float values | Error: function cannot work with not integer or float values | True   |
+| Rectangle - test_zero_multiply     | a, b = (0, 10), (0, 0)                         | 0, 0                                                         | 0, 0                                                         | True   |
+| Rectangle - test_integer_multiply  | a, b = (10, 5), (5, 7)                         | 50, 24                                                       | 0, 24                                                        | True   |
+| Rectangle - test_negative_multiply | a, b = (-10, -5), (-5, -7)                     | Error: sides cannot be negative                              | Error: sides cannot be negative                              | True   |
+| Rectangle - test_float_number      | a, b = (5.2, 5.2), (3.6, 3.6)                  | 18.72, 17.6                                                  | 18.72, 17.6                                                  | True   |
+| Rectangle - test_boolean_type      | a, b = (True, True), (False, False)            | Error: function cannot work with not integer or float values | Error: function cannot work with not integer or float values | True   |
+| Rectangle - test_string_type       | a, b = ("1", "2"), ("2", "3")                  | Error: function cannot work with not integer or float values | Error: function cannot work with not integer or float values | True   |
+| Square - test_zero_multiply        | a = 0, 0                                       | 0, 0                                                         | 0, 0                                                         | True   |
+| Square - test_integer_multiply     | a = 4, 9                                       | 16, 36                                                       | 16, 36                                                       | True   |
+| Square - test_negative_multiply    | a = -4, -9                                     | Error: side cannot be negative                               | Error: side cannot be negative                               | True   |
+| Square - test_float_number         | a = 7.7, 7.7                                   | 59.29, 30.8                                                  | 59.29, 30.8                                                  | True   |
+| Square - test_boolean_type         | a = True, True                                 | Error: function cannot work with not integer or float values | Error: function cannot work with not integer or float values | True   |
+| Square - test_string_type          | a = "123", "123"                               | Error: function cannot work with not integer or float values | Error: function cannot work with not integer or float values | True   |
+| Triangle - test_zero_multiply      | a = 3, h = 0                                   | 0                                                            | 0                                                            | True   |
+| Triangle - test_integer_multiply   | a = 3, 17, b = 23, c = 16, h = 9               | 13.5, 56                                                     | 13.5, 56                                                     | True   |
+| Triangle - test_negative_multiply  | a = -3, -17, b = -23, c = -16, h = -9          | Error: sides cannot be negative                              | Error: sides cannot be negative                              | True   |
+| Triangle - test_triangle_exist     | a = 7, b = 1, c = 2                            | Error: triangle doesn't exist                                | Error: sides cannot be negative                              | True   |
+| Triangle - test_float_number       | a = 2.22, 2.22, b = 3.33, c = 4.44, h = 3.33   | 3.6963, 9.99                                                 | 3.6963, 9.99                                                 | True   |
+| Triangle - test_boolean_type       | a = True, True, b = False, c = True, h = False | Error: function cannot work with not integer or float values | Error: function cannot work with not integer or float values | True   |
+| Triangle - test_string_type        | a = "1", "2", b = "3", c = "4", h = "2"        | Error: function cannot work with not integer or float values | Error: function cannot work with not integer or float values | True   |
 
 ### Как запустить тесты
 
