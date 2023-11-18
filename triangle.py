@@ -19,7 +19,7 @@ def semiPerimiter(a, b, c):
         return (a + b + c) / 2
     return "error"
 
-class SquareTestCase(unittest.TestCase):
+class TriangleTestCase(unittest.TestCase):
     def test_triangle_area(self):
         cases = [(10, 6), (8, 2), (4, 1), (15, 2)]
         answers = [30, 8, 2, 15]
