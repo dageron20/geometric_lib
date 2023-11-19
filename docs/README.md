@@ -72,15 +72,31 @@
 # Tests
 | Название теста       | Входные данные        | Ожидаемый результат | Фактический результат |
 |----------------------|-----------------------|---------------------|-----------------------|
-| test_zero_value      | width=10, height=0    | area=0, perimeter=0  | true |
-| test_square_values   | width=10, height=10   | area=100             | true |
-| test_different_values| width=2, height=5     | area=10, perimeter=14| true |
-| test_zero_radius     | radius=0              | area=0, perimeter=0  | true |
-| test_natural_value_test| radius=10            | area=314.1592653589793, perimeter=62.83185307179586| true |
-| test_zero_value      | side_length=0         | area=0, perimeter=0  | true |
-| test_natural_value   | side_length=5         | area=25, perimeter=20| true |
-| test_zero_value      | base=5, height=0      | area=0, perimeter=0  | true |
-| test_different_values| base=5, height=2      | area=5.0, perimeter=10| true |
+| test_zero_value      | width=10, height=0    | area=0, perimeter=0 | 0, 0 |
+| test_square_values   | width=10, height=10   | area=100            | 100 |
+| test_different_values| width=2, height=5     | area=10, perimeter=14 | 10, 14 |
+| test_float_values    | width=2.5, height=4.5| area=11.25 perimeter=14 | 11.25, 14 |
+| test_negative_value  | width=-2, height=5 | Value Error            | -10, 6 |
+| test_char_inputs     | width='a', height=2 | Type Error            | aa, Error |
+| test_bool_inputs     | width=True, height=False | Type Error       | 0, 2 |
+| test_zero_radius     | radius=0              | area=0, perimeter=0 | 0, 0 |
+| test_natural_value   | radius=10             | area=314.1592653589793, perimeter=62.83185307179586| 314.1592653589793, 62.83185307179586 |
+| test_negative_values | radius=-10            | Value Error         | 314.1592653589793 |
+| test_float_values    | radius=2.2            |area=15.205308443374602 perimeter=20.734511513692635 | 15.205308443374602, 20.734511513692635 |
+| test_char_inputs     | radius='a'            | Type Error          | Type Error |         
+| test_bool_inputs     | radius=True           | Type Error          | 3.141592653589793 |       
+| test_zero_value      | side_length=0         | area=0, perimeter=0 | 0, 0 |
+| test_natural_value   | side_length=5         | area=25, perimeter=20 | 25, 20 |
+| test_negative_values | side_length=-5        | Value Error         | 25 |
+| test_float_values    | side_length=3.3       |area=4.840000000000001 perimeter=13.2 | 4.840000000000001, 13.2 |
+| test_char_inputs     | side_length='a'       | Type Error          | Type Error, aaaa |         
+| test_bool_inputs     | side_length=True      | Type Error          | 1, 4 | 
+| test_zero_value      | base=5, height=0, side1=0, side2=0, side3=0 | area=0, perimeter=0  | 0, 0 |
+| test_different_values| base=5, height=2, side1=5, side2=2, side3=3 | area=5.0, perimeter=10| 5.0, 10 |
+| test_negative_values | base = -5, height=2, side1=-3 side2=2, side3=1 | Value Error | -5, 0 |
+| test_float_values    | base=3.3, height=2.2, side1=1.1, side2=2.2, side3=3.3 | area = 3.63, perimeter = 6.6 | 3.63, 6.6 |
+| test_char_inputs     | base='a', height='b', side1='a', side2='b', side3='c' | Type Error | Type Error, abc |
+| test_char_inputs     | base=True, height=False, side1=True, side2=True, side3=False | Type Error | 0.0, 2 |
 
 # History of commits
 - added rectangle.py (commit id: 135c767)
