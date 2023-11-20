@@ -81,6 +81,24 @@ perimeter_triangle = perimeter(4, 6, 5)
 **Date**: Sep 12 2023
 **Description**: add new file
 
+## Test cases
+
+| №  | TestCase          | TestName        | given value | expected value    | received value    | status |
+|----|-------------------|-----------------|-------------|-------------------|-------------------|--------|
+| **1**  | **CircleTestCase**    | `test_zero_mul`   | 0           | 0                 | 0                 | **Passed** |
+| **2**  | **CircleTestCase**    | `test_area`       | 5           | 78.53981633974483 | 78.53981633974483 | **Passed** |
+| **3**  | **CircleTestCase**    | `test_perimeter`  | 5           | 31.41592653589793 | 31.41592653589793 | **Passed** |
+| **4**  | **RectangleTestCase** | `test_zero_mul`   | 0, 2        | 0                 | 0                 | **Passed** |
+| **5**  | **RectangleTestCase** | `test_square_mul` | 10, 10      | 100               | 100               | **Passed** |
+| **6**  | **RectangleTestCase** | `test_area`       | 6, 2        | 12                | 12                | **Passed** |
+| **7**  | **RectangleTestCase** | `test_perimeter`  | 12, 56      | 136               | 136               | **Passed** |
+| **8**  | **SquareTestCase**    | `test_zero_mul`   | 0           | 0                 | 0                 | **Passed** |
+| **9**  | **SquareTestCase**    | `test_area`       | 8           | 64                | 64                | **Passed** |
+| **10** | **SquareTestCase**    | `test_perimeter`  | 4           | 16                | 16                | **Passed** |
+| **11** | **TriangleTestCase**  | `test_zero_mul`   | 0, 3        | 0                 | 0                 | **Passed** |
+| **12** | **TriangleTestCase**  | `test_area`       | 4, 9        | 18                | 18                | **Passed** |
+| **13** | **TriangleTestCase**  | `test_perimeter`  | 34, 7, 3    | 44                | 44                | **Passed** |
+
 # Math formulas
 ## Area
 - Circle: S = πR²
