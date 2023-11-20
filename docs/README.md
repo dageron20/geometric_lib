@@ -82,28 +82,28 @@ This project has __tests.py__ file that contains unit test for __area__ and __pe
 | -------------- | -------------- | ------------------ | --------- |
 | test_circle_zero_area | radius = 0 | 0 | True |
 | test_circle_positive_area | radius = 23 | 1661 | True |
-|  | radius = "23" | None | False |
-|  | radius = True | None | False |
-|  | radius = [] | None | False |
-| | radius = -10 | None | False |
+|  test_circle_positive_area| radius = "23" | None | False |
+|  test_circle_positive_area| radius = True | None | False |
+|  test_circle_positive_area| radius = [] | None | False |
+| test_circle_positive_area| radius = -10 | None | False |
 | test_circle_perimeter | radius = 0 | 0 | True |
-|  | radius = "23" | None | False |
-| | radius = True | None | False |
-|  | radius = [] | None | False |
-|  | radius = -10 | None | False |
+| test_circle_perimeter | radius = "23" | None | False |
+| test_circle_perimeter| radius = True | None | False |
+| test_circle_perimeter | radius = [] | None | False |
+| test_circle_perimeter | radius = -10 | None | False |
 | test_rectangle_zero_area | width = 5, height = 0| 0 | True |
 | test_rectangle_positive_area |width = 23, height = 2 | 46 | True |
-|  |width = "23", height = "22" | None | False |
-|  |width = [], height = {} | None | False |
+| test_rectangle_positive_area |width = "23", height = "22" | None | False |
+| test_rectangle_positive_area |width = [], height = {} | None | False |
 | test_rectangle_perimeter | width = 23, height = 12 | 70 | True |
-|  | width = -100, height = 12 | None | False |
+| test_rectangle_perimeter | width = -100, height = 12 | None | False |
 | test_square_zero_area | side = 0 | 0 | True |
 | test_square_positive_area | side = 5 | 25 | True |
 | test_square_perimeter | side = 2 | 92 | True |
 | test_triangle_zero_area | base = 0, height = 0 | 0 | True |
 | test_triangle_positive_area | base = 2135, height = 242 | 258335 | True |
-|  | base = "23", height = "23" | None | False |
-|  | base = {}, height = [] | None | False |
+| test_triangle_positive_area | base = "23", height = "23" | None | False |
+|  test_triangle_positive_area| base = {}, height = [] | None | False |
 | test_triangle_perimeter | side1 = 2362, side2 = 3924, side3 = 8123 | 14409 | True |
 
 ## How to launch tests
