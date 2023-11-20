@@ -12,4 +12,3 @@ def perimeter(r):
 
 
 
-a = 2;
