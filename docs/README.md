@@ -82,10 +82,10 @@ This project has __tests.py__ file that contains unit test for __area__ and __pe
 | -------------- | -------------- | ------------------ | --------- |
 | test_circle_zero_area | radius = 0 | 0 | True |
 | test_circle_positive_area | radius = 23 | 1661 | True |
-| test_circle_positive_area | radius = "23" | None | False |
-| test_circle_positive_area | radius = True | None | False |
-| test_circle_positive_area | radius = [] | None | False |
-| test_circle_positive_area | radius = -10 | None | False |
+|  | radius = "23" | None | False |
+|  | radius = True | None | False |
+|  | radius = [] | None | False |
+| | radius = -10 | None | False |
 | test_circle_perimeter | radius = 0 | 0 | True |
 | test_circle_perimeter | radius = "23" | None | False |
 | test_circle_perimeter | radius = True | None | False |
