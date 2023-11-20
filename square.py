@@ -7,7 +7,10 @@ def area(a):
     
     Пример: area(10) вернёт 100 т.к. 10*10=100 
     ''' 
-    return a * a
+    if (a>0):
+        return a * a
+    else:
+        return "wrong parameter"
 
 
 def perimeter(a):
@@ -18,4 +21,7 @@ def perimeter(a):
     
     Пример: area(10) вернёт 40 т.к. 4*10=400 
     ''' 
-    return 4 * a
+    if (a>0):
+        return 4 * a
+    else:
+        return "wrong parameter"

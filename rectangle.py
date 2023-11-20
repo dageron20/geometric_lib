@@ -7,7 +7,10 @@ def area(a, b):
 
     Возвращает площадь прямоугольника
     ''' 
-    return a * b 
+    if (a>0) and (b>0):
+        return a * b
+    else:
+        return "wrong parameter(s)" 
 
 def perimeter(a, b):
     '''
@@ -18,4 +21,7 @@ def perimeter(a, b):
 
     Возвращает периметр прямоугольника
     '''  
-    return (a + b)*2
+    if (a>0) and (b>0):
+        return (a + b)*2
+    else:
+        return "wrong parameter(s)"
