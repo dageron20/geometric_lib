@@ -1,10 +1,40 @@
-# Math formulas
-## Area
+# Подсчет площадей и периметров разных фигур
+Этот проект создан для того, чтобы считать площади и периметры кругов, квадратов, прямоугольников и треугольников
+## Файл circle.py
+### Функция area
+- Считает площадь круга по его радиусу
 - Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
-
-## Perimeter
+### Функция perimeter
+- Считает периметр круга по его радиусу
 - Circle: P = 2πR
+## Файл rectangle.py
+### Функция area
+- Считает площадь прямоугольника по его сторонам
+- Rectangle: S = ab
+### Функция perimeter
+- Считает периметр прямоугольника в зависимости от его сторон 
 - Rectangle: P = 2a + 2b
+## Файл square.py
+### Функция area
+- Считает площадь квадрата в зависимости от его стороны
+- Square: S = a²
+### Функция perimeter
+- Считает периметр квадрата в зависимости от его стороны
 - Square: P = 4a
+## Файл triangle.py
+### Функция area
+- Считает площадь треугольника по его стороне и высоте, проведенной к ней
+- Triangle: S = ah/2
+### Функция perimeter
+- Считает периметр треугольника в зависимости от его сторон
+- Triangle: P = a+b+c
+## История коммитов
+- 20b1d2b925d45c07b83d9544468c5287a89c1ceb Update triangle.py
+- dc69550500ce85b183acdc0584dce55832d51278 Update square.py
+- ad66bc5d813cf9c9ee3a933854d049747b64ac4c Update rectangle.py
+- d5a39d76546895cfe66dc3c74e9214e145bc7585 Update circle.py
+- 7415e8b50d082af6da240cfb8a6498005c2b12bb Исправлена ошибка в файле rectangle
+- 2da68a849da67dfd594e2d597ed7881513021093 добавлен новый файл triangle
+- cb8f1efa26b3b55b4cf8e81f0d2fff14e4ed228d добавлен новый файл
+- d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
+- 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
