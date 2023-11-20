@@ -72,8 +72,35 @@ b : 2-я сторона
 Пример: area(10, 5, 10) вернёт 25 т.к. (10 + 5 + 10 = 25)  
 ~~~
 
-# История изменения проекта:
+# Тесты
 
+## RectangleTest
+Название теста | входные данные | результат
+--- | --- | ---
+test_zero_mul_1 | 10; 0 | "wrong parameter(s)"
+test_dif_mul_1 | 23; 10 | 230
+
+## TriangleTest
+Название теста | входные данные | результат
+--- | --- | ---
+test_zero_mul_2 | 0; 0 | "wrong parameter(s)"
+test_dif_mul_1 | 23; 10 | 115
+
+## SquareTest
+Название теста | входные данные | результат
+--- | --- | ---
+test_negative_mul | -6 | "wrong parameter"
+test_square_per | 10 | 40
+
+## CircleTest
+Название теста | входные данные | результат
+--- | --- | ---
+test_negative_mul | -6 | "wrong parameter"
+test_square_per | 10 | 3.14 * 20
+
+# История изменения проекта:
+* c76c3cb => Added tests. Update for circle.py, square.py and etc
+* b0bf727 => added commits
 * 5986f56 => *rectangle.py was fixed, triangle.py was added*
 * 8a3bf67 => *rectangle.py was added*
 * d078c8d => *L-03: Docs added*
