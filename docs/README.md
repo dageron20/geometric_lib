@@ -87,3 +87,15 @@ print(triangle_perimeter) #18.84955592153876
 - Для файла rectange.py (perimeter()):
     - input: 20.5 55.9
     - output: 152.8
+
+- тесты, используемые в ручном тестировании:
+| Файл         | Функция     | Входные данные | Результат         | Ожидаемый результат             |
+|--------------|-------------|----------------|-------------------|---------------------------------|
+| circle.py    | area()      | "5"            | can't multiply... | 78.53981633974483 или TypeError |
+| circle.py    | perimeter() | "6"            | can't multiply... | 37.69911184307752 или TypeError |
+| rectangle.py | area()      | -3 10          | -30               | 0 или Lower than Zero           |
+| rectangle.py | perimeter() | "3" 20         | can't multiply... | 46 или TypeError                |
+| square.py    | area()      | "1"            | can't multiply... | 1 или TypeError                 |
+| square.py    | perimeter() | -10            | -40               | 0 или Lower than Zero           |
+| triangle     | area()      | "10" 2         | can't multiply... | 10 или TypeError                |
+| triangle     | perimeter() | 0 10 20        | 30                | 0                               |
