@@ -151,8 +151,8 @@ Result: 9
 |----------------------------------|-------------------------------|------------------|----------------|--------|
 | testAreaCalcualtion()            | Normal value check            | 5, 10            | 50             | Pass
 | testPerimeterCalcualtion()       | Normal value check            | 5, 10            | 30             | Pass
-| testAreaFloat()                  | Float value check             | 5.5              | 30.25          | Pass
-| testPerimeterFloat()             | Float value check             | 5.5              | 22             | Pass
+| testAreaFloat()                  | Float value check             | 5.5, 5.5         | 30.25          | Pass
+| testPerimeterFloat()             | Float value check             | 5.5, 5.5         | 22             | Pass
 | testAreaStr()                    | Str value check               | 'xyz', 'z'       | error          | Pass
 | testPerimeterStr()               | Str value check               | 'xyz', 'q'       | error          | Pass
 | testAreaNegative()               | Negative value check          | -10, -5          | 50             | Fail(expected error rise)
