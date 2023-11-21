@@ -44,3 +44,4 @@
 | test_area_zero     | a = 10, h = 0   | 0             | 0       |
 | test_perimeter     | a = 10, b = 15, c = 20 | 45        | 45      |
 | test_perimeter_zero| a = 0, b = 0, c = 0 | 0         | 0       |
+| test_exist     | a = 1, b = 5, c = 10 | 0        | 16      |
