@@ -25,6 +25,12 @@ class SquareTestCase(unittest.TestCase):
     def testPerimeterStr(self):
         self.assertEqual(perimeter('xyz'), "Incorrect perimeter() input (string)")
 
+    def testAreaFloat(self):
+        self.assertEqual(area(5.5), 30.25)
+
+    def testPerimeterFloat(self):
+        self.assertEqual(perimeter(5.5), 22)
+
 
 if __name__ == "__main__":
     unittest.main()

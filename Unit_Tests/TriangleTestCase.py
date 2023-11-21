@@ -28,6 +28,11 @@ class TriangleTestCase(unittest.TestCase):
     def testPerimeterStr(self):
         self.assertEqual(perimeter('xyz', 'x', 'z'), "Incorrect perimeter() input (string)")
 
+    def testAreaFloat(self):
+        self.assertEqual(area(10.5, 2.5), 13.125)
+
+    def testPerimeterFloat(self):
+        self.assertEqual(perimeter(5.5, 5.5, 5.5), 16.5)
 
 if __name__ == "__main__":
     unittest.main()

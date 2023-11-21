@@ -21,3 +21,4 @@ def perimeter(a):
                 perimeter (float, int): периметр квадрата со сторонами a
     """
     return 4 * a
+

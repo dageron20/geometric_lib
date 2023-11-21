@@ -25,6 +25,12 @@ class CircleTestCase(unittest.TestCase):
 
     def testPerimeterStr(self):
         self.assertEqual(perimeter('xyz'), "Incorrect perimetr() input (string)")
+    
+    def testAreaFloat(self):
+        self.assertEqual(area(5.5), 95.03317777109123)
+
+    def testPerimeterFloat(self):
+        self.assertEqual(perimeter(5.5), 34.55751918948772)
 
 
 if __name__ == "__main__":

@@ -140,8 +140,11 @@ Result: 9
 | testPerimeterCalcualtion()       | Normal value check            | 9, 7, 4          | 20             | Pass
 | testAreaFloat()                  | Float value check             | 10.5, 2.5        | 13.125         | Pass
 | testPerimeterFloat()             | Float value check             | 5.5, 5.5, 5.5    | 16.5           | Pass
-| testAreaNegative()               | Negative value check          | 9, -7            | -31.5          | Fail
-| testPerimeterNegative()          | Negative value check          | -10, -5, 6       | -9             | Fail
+| testAreaStr()                    | Str value check               | 'xyz', 'z'       | error          | Pass
+| testPerimeterStr()               | Str value check               | 'xyz', 'x', 'z'  | error          | Pass
+| testAreaNegative()               | Negative value check          | 9, -7            | -31.5          | Fail(expected error rise)
+| testPerimeterNegative()          | Negative value check          | -10, -5, 6       | -9             | Fail(expected error rise)
+| testPerimeterIncorrectTriangle() | Invalid triangle sides check  | 22, 4, 3         | 29             | Fail(expected error rise)
 
 ## RectangleTestCase.py
 | Test name                        | Test description              | Input data       | Output         | Result |
@@ -150,18 +153,22 @@ Result: 9
 | testPerimeterCalcualtion()       | Normal value check            | 5, 10            | 30             | Pass
 | testAreaFloat()                  | Float value check             | 5.5              | 30.25          | Pass
 | testPerimeterFloat()             | Float value check             | 5.5              | 22             | Pass
-| testAreaNegative()               | Negative value check          | -10, -5          | 50             | Fail
-| testPerimeterNegative()          | Negative value check          | -10, -5          | -30            | Fail
+| testAreaStr()                    | Str value check               | 'xyz', 'z'       | error          | Pass
+| testPerimeterStr()               | Str value check               | 'xyz', 'q'       | error          | Pass
+| testAreaNegative()               | Negative value check          | -10, -5          | 50             | Fail(expected error rise)
+| testPerimeterNegative()          | Negative value check          | -10, -5          | -30            | Fail(expected error rise)
 
 ## CircleTestCase.py
 | Test name                        | Test description              | Input data       | Output         | Result |
 |----------------------------------|-------------------------------|------------------|----------------|--------|
-| testAreaCalcualtion()            | Normal value check            | 5                | 78.53...       | Pass
-| testPerimeterCalcualtion()       | Normal value check            | 5                | 31.41...       | Pass
-| testAreaFloat()                  | Float value check             | 5.5              | 95.03...       | Pass
-| testPerimeterFloat()             | Float value check             | 5.5              | 34.55...       | Pass
-| testAreaNegative()               | Negative value check          | -10              | 314.15...      | Fail
-| testPerimeterNegative()          | Negative value check          | -10              | -62.83...      | Fail
+| testPerimeterCalcualtion()       | Normal value check            | 5                | 31.41...       | Pass   |
+| testAreaCalcualtion()            | Normal value check            | 5                | 78.53...       | Pass   |    
+| testAreaFloat()                  | Float value check             | 5.5              | 95.03...       | Pass   |
+| testPerimeterFloat()             | Float value check             | 5.5              | 34.55...       | Pass   |
+| testAreaStr()                    | Str value check               | 'xyz'            | error          | Pass
+| testPerimeterStr()               | Str value check               | 'xyz'            | error          | Pass
+| testAreaNegative()               | Negative value check          | -10              | 314.15...      | Fail(expected error rise)|
+| testPerimeterNegative()          | Negative value check          | -10              | -62.83...      | Fail(expected error rise)|
 
 ## SquareTestCase.py
 | Test name                        | Test description              | Input data       | Output         | Result |
@@ -170,8 +177,10 @@ Result: 9
 | testPerimeterCalcualtion()       | Normal value check            | 5                | 20             | Pass
 | testAreaFloat()                  | Float value check             | 5.5              | 30.25          | Pass
 | testPerimeterFloat()             | Float value check             | 5.5              | 22             | Pass
-| testAreaNegative()               | Negative value check          | -10              | 100            | Fail
-| testPerimeterNegative()          | Negative value check          | -10              | -40            | Fail
+| testAreaStr()                    | Str value check               | 'xyz'            | error          | Pass
+| testPerimeterStr()               | Str value check               | 'xyz'            | error          | Pass
+| testAreaNegative()               | Negative value check          | -10              | 100            | Fail(expected error rise)
+| testPerimeterNegative()          | Negative value check          | -10              | -40            | Fail(expected error rise)
 
 
 # Project change history
@@ -181,3 +190,4 @@ Result: 9
 | L-03: Docs added | smartiqa | [d078c8d](https://github.com/Tiipok/geometric_lib/commit/d078c8d9ee6155f3cb0e577d28d337b791de28e2) |
 | added rectangle.py | Tiipok | [817fdfe](https://github.com/Tiipok/geometric_lib/commit/817fdfe3e0c73271e14191f7debbaed9a436f390) |
 | added triangle.py + fixed rectangle's perimeter calculations | Tiipok | [07ca407](https://github.com/Tiipok/geometric_lib/commit/07ca4073bc41cdb7ff15929090f05f99d420965d) |
+| unit tests added | Tiipok | [bf3f111](https://github.com/Tiipok/geometric_lib/commit/bf3f1119e1a996a197eecd3dd6f3a8aac50d92c2) |
