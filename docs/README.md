@@ -155,3 +155,5 @@ def test_overflow_sum(self):
 | L-03: Docs added | smartiqa | [d078c8d](https://github.com/hhhannahmmmontana/geometric_lib/commit/d078c8d9ee6155f3cb0e577d28d337b791de28e2) |
 | added rectangle.py | hhhannahmmmontana | [a8d7cb2](https://github.com/hhhannahmmmontana/geometric_lib/commit/a8d7cb25d5820c435447b411d96e4354e53fd8de) |
 | added triangle.py + fixed rectangle.py | hhhannahmmmontana | [85beed4](https://github.com/hhhannahmmmontana/geometric_lib/commit/85beed4e687fcf35a76ea4f9678cab538cb5a330) |
+| added unittests | hhhannahmmmontana | [c485ea8](https://github.com/hhhannahmmmontana/geometric_lib/commit/c485ea8aa9d4ee6acb9abd71948a9b3adbc52000) |
+| made even more unit tests | hhhannahmmmontana | [9032cc5](https://github.com/hhhannahmmmontana/geometric_lib/commit/9032cc598a794f0c2e3d5da8875c13904c37f174) |
