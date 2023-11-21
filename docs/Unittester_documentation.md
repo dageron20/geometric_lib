@@ -53,7 +53,7 @@
 | circle.py | test_circle_perimeter2 | perimeter | ```3``` | ```18.84955592153876``` | OK
 | circle.py | test_circle_perimeter3 | perimeter | ```"3"``` | ```18.84955592153876``` | ERROR
 
-## triangle
+## triangle.py
 Тест проверяет на корректность работы функции area в файле triangle.py
 
 | FILE | Test name | function | Input | Expected | Status|
