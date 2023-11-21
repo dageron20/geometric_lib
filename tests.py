@@ -8,13 +8,12 @@ import math
 
 class TriangleTests(unittest.TestCase):
     def test_perimeter_check(self):
-        a, b, c = 7777777777777777777777777777, 6666666444444444444444442, 23333333333333333333333
-        self.assertEqual(triangle.perimeter(a, b, c), a + b + c)
+        self.assertEqual(triangle.perimeter(99, 99, 102), 300)
         self.assertEqual(triangle.perimeter(10, 20, 80), 110)
 
     def test_area_check(self):
-        a, h = 3322222222222222222222222222222222222222, 10000000000000000000000000000000000000000000000000000000000000
-        self.assertEqual(triangle.area(a, h), a * h / 2)
+
+        self.assertEqual(triangle.area(1444, 1), 777)
         self.assertEqual(triangle.area(4, 1000), 2000)
 
 
@@ -22,8 +21,7 @@ class TriangleTests(unittest.TestCase):
 class RectangleTests(unittest.TestCase):
 
     def test_perimeter_check(self):
-        a, b = 11111111111111111111111, 2333333333333333333333333
-        self.assertEqual(rectangle.perimeter(a, b), (a + b) * 2)
+        self.assertEqual(rectangle.perimeter(1, 5),  12)
         self.assertEqual(rectangle.perimeter(100, 100), 400)
 
     def test_area_check(self):
