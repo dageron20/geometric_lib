@@ -132,36 +132,48 @@ Result: 9
 <br/>
 
 # Unit tests
+
 ## TriangleTestCase.py
-| Test name                            | Test description                               | Input data   | Output           |
-|----------------------------------|----------------------------------------------|:----------------:|:-------------------------:|
-| testAreaCalcualtion()            | Normal value check            | 10, 5            | 25                        |
-| testPerimeterCalcualtion()       | Normal value check            | 9, 7, 4          | 20                        |
-| testAreaNegative()               | Negative value check      | -10, 5           | fail           |
-| testPerimeeterNegative()         | Negative value check      | 9, -7, 4         | fail           |
-| testPerimeterIncorrectTriangle() | Invalid triangle sides check | 29, 4, 5         | fail      |
+| Test name                        | Test description              | Input data       | Output         | Result |
+|----------------------------------|-------------------------------|------------------|----------------|--------|
+| testAreaCalcualtion()            | Normal value check            | 10, 5            | 25             | Pass
+| testPerimeterCalcualtion()       | Normal value check            | 9, 7, 4          | 20             | Pass
+| testAreaFloat()                  | Float value check             | 10.5, 2.5        | 13.125         | Pass
+| testPerimeterFloat()             | Float value check             | 5.5, 5.5, 5.5    | 16.5           | Pass
+| testAreaNegative()               | Negative value check          | 9, -7            | -31.5          | Fail
+| testPerimeterNegative()          | Negative value check          | -10, -5, 6       | -9             | Fail
+
 ## RectangleTestCase.py
-| Test name                            | Test description                               | Input data   | Output           |
-|----------------------------------|----------------------------------------------|:----------------:|:-------------------------:|
-| testAreaCalcualtion()            | Normal value check            | 5, 10            | 50                        |
-| testPerimeterCalcualtion()       | Normal value check            | 5, 10            | 30                        |
-| testAreaNegative()               | Negative value check      | -5, 10           | fail          |
-| testPerimeeterNegative()         | Negative value check      | 5, -10           | fail          |
+| Test name                        | Test description              | Input data       | Output         | Result |
+|----------------------------------|-------------------------------|------------------|----------------|--------|
+| testAreaCalcualtion()            | Normal value check            | 5, 10            | 50             | Pass
+| testPerimeterCalcualtion()       | Normal value check            | 5, 10            | 30             | Pass
+| testAreaFloat()                  | Float value check             | 5.5              | 30.25          | Pass
+| testPerimeterFloat()             | Float value check             | 5.5              | 22             | Pass
+| testAreaNegative()               | Negative value check          | -10, -5          | 50             | Fail
+| testPerimeterNegative()          | Negative value check          | -10, -5          | -30            | Fail
+
 ## CircleTestCase.py
-| Test name                            | Test description                               | Input data   | Output           |
-|----------------------------------|----------------------------------------------|:----------------:|:-------------------------:|
-| testAreaCalcualtion()            | Normal value check            | 5                | 78                        |
-| testPerimeterCalcualtion()       | Normal value check            | 5                | 31                        |
-| testAreaNegative()               | Negative value check      | -10              | fail           |
-| testPerimeeterNegative()         | Negative value check      | -10              | fail           |
+| Test name                        | Test description              | Input data       | Output         | Result |
+|----------------------------------|-------------------------------|------------------|----------------|--------|
+| testAreaCalcualtion()            | Normal value check            | 5                | 78.53...       | Pass
+| testPerimeterCalcualtion()       | Normal value check            | 5                | 31.41...       | Pass
+| testAreaFloat()                  | Float value check             | 5.5              | 95.03...       | Pass
+| testPerimeterFloat()             | Float value check             | 5.5              | 34.55...       | Pass
+| testAreaNegative()               | Negative value check          | -10              | 314.15...      | Fail
+| testPerimeterNegative()          | Negative value check          | -10              | -62.83...      | Fail
+
 ## SquareTestCase.py
-| Test name                            | Test description                               | Input data   | Output           |
-|----------------------------------|----------------------------------------------|:----------------:|:-------------------------:|
-| testAreaCalcualtion()            | Normal value check            | 5                | 25                        |
-| testPerimeterCalcualtion()       | Normal value check            | 5                | 20                        |
-| testAreaNegative()               | Negative value check      | -10              | fail           |
-| testPerimeeterNegative()         | Negative value check      | -10              | fail           |
-  
+| Test name                        | Test description              | Input data       | Output         | Result |
+|----------------------------------|-------------------------------|------------------|----------------|--------|
+| testAreaCalcualtion()            | Normal value check            | 5                | 25             | Pass
+| testPerimeterCalcualtion()       | Normal value check            | 5                | 20             | Pass
+| testAreaFloat()                  | Float value check             | 5.5              | 30.25          | Pass
+| testPerimeterFloat()             | Float value check             | 5.5              | 22             | Pass
+| testAreaNegative()               | Negative value check          | -10              | 100            | Fail
+| testPerimeterNegative()          | Negative value check          | -10              | -40            | Fail
+
+
 # Project change history
 | Commit | Author | Hash |
 | --- | --- | --- |
