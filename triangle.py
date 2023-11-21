@@ -9,6 +9,8 @@ def area(a, h):
     """
     if a < 0 or h < 0:
         return "нельзя вычеслить для отрицательных входных значний"
+    elif type(a) == str or type(h) == str:
+        return "тип дынных передонных в функцию не подлежит вычеслениям"
     else:
         return a * h / 2
 
@@ -24,5 +26,7 @@ def perimeter(a, b, c):
     """
     if a < 0 or b < 0 or c < 0:
         return "нельзя вычеслить для отрицательных входных значний"
+    elif type(a) == str or type(b) == str or type(c) == str:
+        return "тип дынных передонных в функцию не подлежит вычеслениям"
     else:
         return a + b + c
