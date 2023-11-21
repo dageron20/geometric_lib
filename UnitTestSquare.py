@@ -25,6 +25,9 @@ class CircleTestCase(unittest.TestCase):
     def test_negative_float_area(self):
         res = square.area(-29.5)
         self.assertEqual(res, "нельзя вычеслить для отрицательных входных значний")
+    def test_str_area(self):
+        res = square.area("9")
+        self.assertEqual(res, "тип дынных передонных в функцию не подлежит вычеслениям")
 
 
     '''
@@ -49,3 +52,6 @@ class CircleTestCase(unittest.TestCase):
     def test_negative_float_perimeter(self):
         res = square.perimeter(-29.5)
         self.assertEqual(res, "нельзя вычеслить для отрицательных входных значний")
+    def test_str_perimeter(self):
+        res = square.perimeter("9")
+        self.assertEqual(res, "тип дынных передонных в функцию не подлежит вычеслениям")
