@@ -4,7 +4,7 @@ def area(a, b):
     Возвращает площадь прямоугольника с данными сторонами. 
     """
     if not (a.isdigit() and b.isdigit()):
-        return false
+        return False
     return a * b
 
 def perimeter(a, b):
@@ -13,5 +13,5 @@ def perimeter(a, b):
     Возвращает периметр прямоугольника с данными сторонами. 
     """
     if not (a.isdigit() and b.isdigit()):
-        return false
+        return False
     return (a + b) * 2
