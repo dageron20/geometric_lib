@@ -14,6 +14,11 @@ class CircleTestCases(unittest.TestCase):
         self.assertEqual(circle.perimeter(5), 31.41592653589793)
         self.assertEqual(circle.perimeter(0), 0)
 
+    """ Тестирование невалидных значений """
+    def test_assert(self):
+        self.assertFalse(circle.area("some string"))
+        self.assertFalse(circle.area("0"))
+
 
 import rectangle
 class RectangleTestCases(unittest.TestCase):
@@ -28,6 +33,11 @@ class RectangleTestCases(unittest.TestCase):
         self.assertEqual(rectangle.perimeter(5, 6), 22)
         self.assertEqual(rectangle.perimeter(0, 0), 0)
 
+    """ Тестирование невалидных значений """
+    def test_assert(self):
+        self.assertFalse(rectangle.area("4", 9))
+        self.assertFalse(rectangle.perimeter("4", "1qq"))
+
 
 import square
 class SquareTestCases(unittest.TestCase):
@@ -41,6 +51,11 @@ class SquareTestCases(unittest.TestCase):
     def test_perimeter(self):
         self.assertEqual(square.perimeter(3), 12)
         self.assertEqual(square.perimeter(0), 0)
+        
+    """ Тестирование невалидных значений """
+    def test_assert(self):
+        self.assertFalse(square.area("-"))
+        self.assertFalse(square.perimeter("10"))
 
 
 import triangle
@@ -55,6 +70,12 @@ class TriangleTestCases(unittest.TestCase):
     def test_perimeter(self):
         self.assertEqual(triangle.perimeter(5, 9, 7), 21)
         self.assertEqual(triangle.perimeter(0, 0, 0), 0)
+
+    """ Тестирование невалидных значений """
+    def test_assert(self):
+        self.assertFalse(triangle.area("-", 0))
+        self.assertFalse(triangle.perimeter("10", 3, 9))
+
 
 if __name__ == '__main__':
     unittest.main()
