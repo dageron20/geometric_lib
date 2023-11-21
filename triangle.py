@@ -1,6 +1,7 @@
 
 import unittest
 
+
 class RectangleTestCase(unittest.TestCase):
 	def test_zero_mul(self):
 		res = area(10, 0)
@@ -26,11 +27,22 @@ class RectangleTestCase(unittest.TestCase):
 		res = area(24.24, -10.10)
 		self.assertEqual(res, -122.412)
 
+	def test_char_mul(self):
+		self.assertRaises(TypeError, lambda: area("24", "-10"))
+
+	def test_bool_mul(self):
+		res = area(True, True)
+		self.assertEqual(res, 0.5)
+		res = area(True, False)
+		self.assertEqual(res, 0)
+		res = area(False, False)
+		self.assertEqual(res, 0)
+
 	def test_overflow_mul(self):
 		res = area(153092023, 60247241208)
-		self.assertEqual(res, 4611686018350841892)
+		self.assertEqual(res, 4.611686018350842e+18)
 		res = area(-2**32, 2**31)
-		self.assertEqual(res, -4611686018427387904)
+		self.assertEqual(res, -4.611686018427388e+18)
 
 	def test_zero_sum(self):
 		res = perimeter(0, 0, 0)
@@ -51,6 +63,17 @@ class RectangleTestCase(unittest.TestCase):
 	def test_float_sum(self):
 		res = perimeter(24.24, -10.10, 42.42)
 		self.assertEqual(res, 56.56)
+
+	def test_char_sum(self):
+		self.assertRaises(TypeError, perimeter("24", "-10", "42"))
+
+	def test_bool_sum(self):
+		res = perimeter(True, True, True)
+		self.assertEqual(res, 3)
+		res = perimeter(True, False, True)
+		self.assertEqual(res, 2)
+		res = perimeter(False, False, False)
+		self.assertEqual(res, 0)
 
 	def test_overflow_sum(self):
 		res = perimeter(860234565451967870, 3965625676426056380, 4397511794976751557)
