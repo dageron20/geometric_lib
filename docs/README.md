@@ -61,6 +61,7 @@ triangle_perimeter = perimeter(3, 4, 5)
 print (triangle_perimeter)
 ```
 ## История коммитов
+- 7673f6658d7bb61cfc1c20af2a9ac2bef29dc6a9 added unittest
 - 20b1d2b925d45c07b83d9544468c5287a89c1ceb Update triangle.py
 - dc69550500ce85b183acdc0584dce55832d51278 Update square.py
 - ad66bc5d813cf9c9ee3a933854d049747b64ac4c Update rectangle.py
