@@ -111,6 +111,43 @@ print(perimeter(3, 4, 5))
 # Вывод: 11
 ```
 
+# Unit Тесты
+```python
+def test_zero_mul(self):
+#####
+def test_zero_sum(self):
+# Проверяет, как функция работает с нулевым аргументом
+
+def test_square_mul(self):
+# Проверяет, как функция работает с одинаковыми входными данными
+
+def test_negative_mul(self):
+#####
+def test_negative_sum(self):
+# Проверяет, как функция работает с отрицательными числами
+
+def test_float_mul(self):
+#####
+def test_float_sum(self):
+# Проверяет, как функция работает с дробными числами
+
+def test_char_mul(self):
+#####
+def test_char_sum(self):
+# Проверяет, как функция работает с типом данных char/string (должно вывести ошибку)
+
+def test_bool_mul(self):
+#####
+def test_bool_sum(self):
+# Проверяет, как функция работает с типом данных bool
+
+def test_overflow_mul(self):
+#####
+def test_overflow_sum(self):
+# Проверяет, как функция работает с очень большими значениями
+
+```
+
 # История коммитов
 | Коммит | Автор | Хэш |
 | --- | --- | --- |
