@@ -9,7 +9,11 @@ def area(r):
 
       Возвращает площадь круга
      """
-    return math.pi * r * r
+    if r < 0:
+        return "нельзя вычеслить для отрицательных входных значний"
+    elif r >= 0:
+        return math.pi * r * r
+
 
 
 def perimeter(r):
@@ -20,5 +24,9 @@ def perimeter(r):
 
      Возвращает периметр круга
      """
-    return 2 * math.pi * r
+    if r < 0:
+        return "нельзя вычеслить для отрицательных входных значний"
+    elif r >= 0:
+        return 2 * math.pi * r
+
 
