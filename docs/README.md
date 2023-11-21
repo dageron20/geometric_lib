@@ -107,4 +107,29 @@
   пройдено 4 из 6 тестов
 - ### triangle_test.py
   пройдено 3 из 6 тестов
-
+| Тестируемый файл | Функция   | Входные данные | Результат |
+|------------------|-----------|----------------|-----------|
+| circle.py        | area      | 5              | passed    |
+| circle.py        | area      | "5"            | failed    |
+| circle.py        | area      | 0              | passed    |
+| circle.py        | perimeter | 5              | passed    |
+| circle.py        | perimeter | "5"            | failed    |
+| circle.py        | perimeter | 0              | passed    |
+| rectangle.py     | area      | 5,3            | passed    |
+| rectangle.py     | area      | "5","3"        | failed    |
+| rectangle.py     | area      | 0,0            | passed    |
+| rectangle.py     | perimeter | 5,3            | passed    |
+| rectangle.py     | perimeter | "5","3"        | failed    |
+| rectangle.py     | perimeter | 0,3            | failed    |
+| square.py        | area      | 5              | passed    |
+| square.py        | area      | "5"            | failed    |
+| square.py        | area      | 0              | passed    |
+| square.py        | perimeter | 3              | passed    |
+| square.py        | perimeter | "3"            | failed    |
+| square.py        | perimeter | 0              | passed    |
+| triangle         | area      | 5,3            | passed    |
+| triangle         | area      | "5","3"        | failed    |
+| triangle         | area      | 0,5            | passed    |
+| triangle         | perimeter | 3,2,2          | passed    |
+| triangle         | perimeter | "3","2","2"    | failed    |
+| triangle         | perimeter | 0,0,2          | passed    |
