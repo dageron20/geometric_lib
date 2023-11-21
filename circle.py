@@ -1,10 +1,13 @@
 import math
 
 
-def area(r):
-    return math.pi * r * r
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
 
+    def area(self):
+        return math.pi * self.radius ** 2
 
-def perimeter(r):
-    return 2 * math.pi * r
+    def perimeter(self):
+        return 2 * math.pi * self.radius
 

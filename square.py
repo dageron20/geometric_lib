@@ -1,7 +1,9 @@
+class Square:
+    def __init__(self, side):
+        self.side = side
 
-def area(a):
-    return a * a
+    def area(self):
+        return self.side ** 2
 
-
-def perimeter(a):
-    return 4 * a
+    def perimeter(self):
+        return 4 * self.side

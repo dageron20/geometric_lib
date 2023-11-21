@@ -1,5 +1,14 @@
-def area(a, b): 
-    return a * b 
+import math
 
-def perimeter(a, b): 
-    return a + b + a + b 
+
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
