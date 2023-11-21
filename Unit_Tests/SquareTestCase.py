@@ -14,16 +14,20 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(perimeter(4), 16)
 
     def testAreaNegative(self):
-        self.assertEqual(area(-10), "Negative side input in area()")
+        with self.assertRaises(Exception):
+            area(-10)
 
     def testPerimeterNegative(self):
-        self.assertEqual(perimeter(-10), "Negative side input in perimeter()")
+        with self.assertRaises(Exception):
+            perimeter(-10)
 
     def testAreaStr(self):
-        self.assertEqual(area('xyz'), "Incorrect area() input (string)")
+        with self.assertRaises(TypeError):
+            area('xyz')
 
     def testPerimeterStr(self):
-        self.assertEqual(perimeter('xyz'), "Incorrect perimeter() input (string)")
+        with self.assertRaises(TypeError):
+            perimeter('xyz')
 
     def testAreaFloat(self):
         self.assertEqual(area(5.5), 30.25)

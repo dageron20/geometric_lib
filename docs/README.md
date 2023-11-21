@@ -141,7 +141,7 @@ Result: 9
 | testAreaFloat()                  | Float value check             | 10.5, 2.5        | 13.125         | Pass
 | testPerimeterFloat()             | Float value check             | 5.5, 5.5, 5.5    | 16.5           | Pass
 | testAreaStr()                    | Str value check               | 'xyz', 'z'       | error          | Pass
-| testPerimeterStr()               | Str value check               | 'xyz', 'x', 'z'  | error          | Pass
+| testPerimeterStr()               | Str value check               | 'xyz', 'x', 'z'  | "xyzxz"        | Fail(expected error rise)
 | testAreaNegative()               | Negative value check          | 9, -7            | -31.5          | Fail(expected error rise)
 | testPerimeterNegative()          | Negative value check          | -10, -5, 6       | -9             | Fail(expected error rise)
 | testPerimeterIncorrectTriangle() | Invalid triangle sides check  | 22, 4, 3         | 29             | Fail(expected error rise)
@@ -151,10 +151,10 @@ Result: 9
 |----------------------------------|-------------------------------|------------------|----------------|--------|
 | testAreaCalcualtion()            | Normal value check            | 5, 10            | 50             | Pass
 | testPerimeterCalcualtion()       | Normal value check            | 5, 10            | 30             | Pass
-| testAreaFloat()                  | Float value check             | 5.5, 5.5         | 30.25          | Pass
-| testPerimeterFloat()             | Float value check             | 5.5, 5.5         | 22             | Pass
+| testAreaFloat()                  | Float value check             | 5.5              | 30.25          | Pass
+| testPerimeterFloat()             | Float value check             | 5.5              | 22             | Pass
 | testAreaStr()                    | Str value check               | 'xyz', 'z'       | error          | Pass
-| testPerimeterStr()               | Str value check               | 'xyz', 'q'       | error          | Pass
+| testPerimeterStr()               | Str value check               | 'xyz', 'q'       | 'xyzqxyzq'     | Fail(expected error rise)
 | testAreaNegative()               | Negative value check          | -10, -5          | 50             | Fail(expected error rise)
 | testPerimeterNegative()          | Negative value check          | -10, -5          | -30            | Fail(expected error rise)
 
@@ -178,7 +178,7 @@ Result: 9
 | testAreaFloat()                  | Float value check             | 5.5              | 30.25          | Pass
 | testPerimeterFloat()             | Float value check             | 5.5              | 22             | Pass
 | testAreaStr()                    | Str value check               | 'xyz'            | error          | Pass
-| testPerimeterStr()               | Str value check               | 'xyz'            | error          | Pass
+| testPerimeterStr()               | Str value check               | 'xyz'            | 'xyzxyzxyzxyz' | Fail(expected error rise)
 | testAreaNegative()               | Negative value check          | -10              | 100            | Fail(expected error rise)
 | testPerimeterNegative()          | Negative value check          | -10              | -40            | Fail(expected error rise)
 

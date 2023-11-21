@@ -14,19 +14,24 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(perimeter(9, 7, 4), 20)
 
     def testAreaNegative(self):
-        self.assertEqual(area(-1, 5), "Negative sides input in area()")
+        with self.assertRaises(Exception):
+            area(-1, 5)
 
     def testPerimeterNegative(self):
-        self.assertEqual(perimeter(8, -7, 3), "Negative sides input in perimeter()")
+        with self.assertRaises(Exception):
+            perimeter(8, -7, 3)
 
     def testPerimeterIncorrectTriangle(self):
-        self.assertEqual(perimeter(22, 4, 3), "Invalid triangle sides values in perimeter()")
+        with self.assertRaises(Exception):
+            perimeter(22, 4, 3)
 
     def testAreaStr(self):
-        self.assertEqual(area('xyz', 'z'), "Incorrect area() input (string)")
+        with self.assertRaises(TypeError):
+            area('xyz', 'z')
 
     def testPerimeterStr(self):
-        self.assertEqual(perimeter('xyz', 'x', 'z'), "Incorrect perimeter() input (string)")
+        with self.assertRaises(TypeError):
+            perimeter('xyz', 'x', 'z')
 
     def testAreaFloat(self):
         self.assertEqual(area(10.5, 2.5), 13.125)

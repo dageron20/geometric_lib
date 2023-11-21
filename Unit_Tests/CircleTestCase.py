@@ -9,22 +9,26 @@ import unittest
 
 class CircleTestCase(unittest.TestCase):
     def testAreaCalculation(self):
-        self.assertEqual(area(5), 78)
+        self.assertEqual(area(5), 78.53981633974483)
 
     def testPerimeterCalculation(self):
-        self.assertEqual(perimeter(5), 31)
+        self.assertEqual(perimeter(5), 31.41592653589793)
 
     def testAreaNegative(self):
-        self.assertEqual(area(-10), "Negative radius input in area()")
-
+        with self.assertRaises(Exception):
+            area(-10)
+            
     def testPerimeterNegative(self):
-        self.assertEqual(perimeter(-10), "Negative radius input in perimetr()")
+        with self.assertRaises(Exception):
+            perimeter(-10)
 
     def testAreaStr(self):
-        self.assertEqual(area('xyz'), "Incorrect area() input (string)")
+        with self.assertRaises(TypeError):
+            area('xyz')
 
     def testPerimeterStr(self):
-        self.assertEqual(perimeter('xyz'), "Incorrect perimetr() input (string)")
+        with self.assertRaises(TypeError):
+            perimeter('xyz')
     
     def testAreaFloat(self):
         self.assertEqual(area(5.5), 95.03317777109123)
