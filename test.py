@@ -102,22 +102,22 @@ class SquareTestCase(unittest.TestCase):
             res = square.area(None)
 
     def test_perimeter_zero(self):
-        self.assertEqual(square.area(0), 0)
+        self.assertEqual(square.perimeter(0), 0)
 
     def test_perimeter_positive(self):
-        self.assertEqual(square.area(5), 25)
+        self.assertEqual(square.perimeter(5), 25)
 
     def test_perimeter_negative(self):
         with self.assertRaises(ValueError):
-            res = square.area(-3)
+            res = square.perimeter(-3)
 
     def test_perimeter_text(self):
         with self.assertRaises(TypeError):
-            res = square.area("text")
+            res = square.perimeter("text")
 
     def test_perimeter_none(self):
         with self.assertRaises(TypeError):
-            res = square.area(None)
+            res = square.perimeter(None)
 
 
 class TriangleTestCase(unittest.TestCase):
