@@ -7,7 +7,10 @@ def area(a):
 
       Возвращает площадь
     """
-    return a * a
+    if a < 0:
+        return "нельзя вычеслить для отрицательных входных значний"
+    else:
+        return a * a
 
 
 def perimeter(a):
@@ -18,4 +21,7 @@ def perimeter(a):
 
       Возвращает периметр квадрата
     """
-    return 4 * a
+    if a < 0:
+        return "нельзя вычеслить для отрицательных входных значний"
+    else:
+        return 4 * a
