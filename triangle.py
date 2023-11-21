@@ -13,7 +13,12 @@ def area(a, h):
             Возвращаемое значение:
                     a * h / 2 (float): Площадь треугольника.
     '''
-    return a * h / 2
+    if (type(a) != int and type(a) != float) or (type(h) != int and type(h) != float):
+        return "Error: can't work with not integer or not float types"
+    elif a < 0 or h < 0:
+        return "Error: values can't be negative"
+    else:
+        return a * h / 2
 
 def perimeter(a, b, c):
     '''
@@ -30,4 +35,9 @@ def perimeter(a, b, c):
             Возвращаемое значение:
                     a + b + c (float): Периметр треугольника.
     '''
-    return a + b + c
+    if (type(a) != int and type(a) != float) or (type(b) != int and type(b) != float) or (type(c) != int and type(c) != float):
+        return "Error: can't work with not integer or not float types"
+    elif a < 0 or b < 0 or c < 0:
+        return "Error: values can't be negative"
+    else:
+        return a + b + c

@@ -11,7 +11,12 @@ def area(a):
             Возвращаемое значение:
                     a * a (float): Площадь квадрата.
     '''
-    return a * a
+    if (type(a) != int and type(a) != float):
+        return "Error: can't work with not integer or not float types"
+    elif a < 0:
+        return "Error: values can't be negative"
+    else:
+        return a * a
 
 
 def perimeter(a):
@@ -27,4 +32,9 @@ def perimeter(a):
             Возвращаемое значение:
                     4 * a (float): Периметр квадрата.
     '''
-    return 4 * a
+    if (type(a) != int and type(a) != float):
+        return "Error: can't work with not integer or not float types"
+    elif a < 0:
+        return "Error: values can't be negative"
+    else:
+        return 4 * a
