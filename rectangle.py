@@ -2,44 +2,40 @@ import unittest
 
 def area(a, b):
     '''принимает числа а, b (стороны прямоугольника), возвращает площадь данного прямоугольника'''
-    if a >= 0 and b >= 0:
-        return a * b
-    return "error"
+    if not ((type(a) == int or type(a) == float) and (type(b) == int or type(b) == float)):
+        return "type error"
+    if a <= 0 or b <= 0:
+        return "incorrect arguments"
+    return a * b
+
 
 def perimeter(a, b):
     '''принимает числа а, b (стороны прямоугольника), возвращает периметер данного прямоугольника'''
-    if a >= 0 and b >= 0:
-        return (a + b) * 2
-    return "error"
+    if not ((type(a) == int or type(a) == float) and (type(b) == int or type(b) == float)):
+        return "type error"
+    if a <= 0 or b <= 0:
+        return "incorrect arguments"
+    return (a + b) * 2
 
 
 class RectangleTestCase(unittest.TestCase):
-    def test_zero_mul(self):
-        res = area(10, 0)
-        self.assertEqual(res, 0)
-
-    def test_incorrect_arguments_area(self):
-        cases = [(-5, -5), (-1, 2), (1, -8)]
+    def test_incorrect_type(self):
+        cases = [('5', 5), (5, [5]), ({5}, 0)]
         for case in cases:
-            res = area(case[0], case[1])
-            self.assertEqual(res, "error")
+            self.assertEqual(area(case[0], case[1]), "type error")
+            self.assertEqual(perimeter(case[0], case[1]), "type error")
 
-    def test_incorrect_arguments_perimeter(self):
-        cases = [(-5, -5), (-1, 2), (1, -8)]
+
+    def test_incorrect_arguments(self):
+        cases = [(-5, -5), (-5, 1), (1, -5), (0, 10), (10, 0), (0, 0)]
         for case in cases:
-            res = area(case[0], case[1])
-            self.assertEqual(res, "error")
+            self.assertEqual(area(case[0], case[1]), "incorrect arguments")
+            self.assertEqual(perimeter(case[0], case[1]), "incorrect arguments")
 
     def test_rectangle_area(self):
-        cases = [(10, 10), (2, 2), (7, 1), (24, 38)]
-        answers = [100, 4, 7, 912]
-        for i in range(4):
-            res = area(cases[i][0], cases[i][1])
-            self.assertEqual(res, answers[i])
+        self.assertEqual(area(10, 2.5), 25)
+        self.assertEqual(area(10, 2), 20)
 
     def test_rectangle_perimeter(self):
-        cases = [(10, 10), (2, 2), (7, 1), (24, 38)]
-        answers = [40, 8, 16, 124]
-        for i in range(4):
-            res = perimeter(cases[i][0], cases[i][1])
-            self.assertEqual(res, answers[i])
+        self.assertEqual(perimeter(10, 5), 30)
+        self.assertEqual(perimeter(10, 2.5), 25)
