@@ -102,3 +102,60 @@
 - **[8168515]**: добавил файл rectangle.py
 - **[e1f00fe]**: добавил файл triangle.py
 - **[5190349]**: исправил ошибку в файле rectangle.py
+
+# UnitTest
+
+## Описание тестов различных программ
+
+### Тестирование файла Circle.py 
+| Название теста                       | Входные данные | Ожидаемый результат                                  | Результат (true/false) |
+|--------------------------------------|----------------|------------------------------------------------------|------------------------|
+| test_zero_radius_area                | 0              | 0                                                    | true                   |
+| test_positive_radius_area            | 100            | 31415.926535897932                                   | true                   |
+| test_positive_radius_float_area      | 29.5           | 2733.9710067865176                                   | true                   |
+| test_negative_radius_area            | -100           | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_negative_radius_float_area      | -29.5          | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_zero_radius_perimeter           | 0              | 0                                                    | true                   |
+| test_positive_radius_perimeter       | 100            | 628.3185307179587                                    | true                   |
+| test_positive_radius_float_perimeter | 29.5           | 185.3539665617978                                    | true                   |
+| test_negative_radius_perimeter       | -100           | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_negative_radius_float_perimeter | -29.5          | "нельзя вычеслить для отрицательных входных значний" | true                   |
+### Тестирование файла Rectangle.py 
+| Название теста                | Входные данные | Ожидаемый результат                                  | Результат (true/false) |
+|-------------------------------|----------------|------------------------------------------------------|------------------------|
+| test_zero_area                | 0, 0           | 0                                                    | true                   |
+| test_positive_square_area     | 10, 10         | 100                                                  | true                   |
+| test_positive_float_area      | 29.5, 20.3     | 598.85                                               | true                   |
+| test_negative_square_area     | -10, -10       | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_negative_float_area      | -29.5, -20.3   | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_zero_perimeter           | 0, 0           | 0                                                    | true                   |
+| test_positive_perimeter       | 10, 10         | 40                                                   | true                   |
+| test_positive_float_perimeter | 29.5, 20.3     | 99.6                                                 | true                   |
+| test_negative_perimeter       | -10, -10       | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_negative_float_perimeter | -29.5, - 20.3  | "нельзя вычеслить для отрицательных входных значний" | true                   |
+### Тестирование файла Triangle.py 
+| Название теста                | Входные данные       | Ожидаемый результат                                  | Результат (true/false) |
+|-------------------------------|----------------------|------------------------------------------------------|------------------------|
+| test_zero_area                | 0, 0                 | 0                                                    | true                   |
+| test_positive_square_area     | 10, 10               | 50                                                   | true                   |
+| test_positive_float_area      | 29.5, 20.3           | 299.425                                              | true                   |
+| test_negative_square_area     | -10, -10             | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_negative_float_area      | -29.5, -20.3         | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_zero_perimeter           | 0, 0, 0              | 0                                                    | true                   |
+| test_positive_perimeter       | 10, 10, 10           | 30                                                   | true                   |
+| test_positive_float_perimeter | 29.5, 20.3, 10.4     | 60.199999999999996                                   | true                   |
+| test_negative_perimeter       | -10, -10, -10        | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_negative_float_perimeter | -29.5, - 20.3, -10.4 | "нельзя вычеслить для отрицательных входных значний" | true                   |
+### Тестирование файла Square.py 
+| Название теста                | Входные данные | Ожидаемый результат                                  | Результат (true/false) |
+|-------------------------------|----------------|------------------------------------------------------|------------------------|
+| test_zero_area                | 0              | 0                                                    | true                   |
+| test_positive_square_area     | 10             | 100                                                  | true                   |
+| test_positive_float_area      | 29.5           | 870.25                                               | true                   |
+| test_negative_square_area     | -10            | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_negative_float_area      | -29.5          | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_zero_perimeter           | 0              | 0                                                    | true                   |
+| test_positive_perimeter       | 10             | 40                                                   | true                   |
+| test_positive_float_perimeter | 29.5           | 118.0                                                | true                   |
+| test_negative_perimeter       | -10            | "нельзя вычеслить для отрицательных входных значний" | true                   |
+| test_negative_float_perimeter | -29.5          | "нельзя вычеслить для отрицательных входных значний" | true                   |
