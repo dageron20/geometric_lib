@@ -7,7 +7,10 @@ def area(a, b):
 
       Возвращает площадь прямоугольника
     """
-    return a * b
+    if a < 0 or b < 0:
+        return "нельзя вычеслить для отрицательных входных значний"
+    else:
+        return a * b
 
 def perimeter(a, b):
     """
@@ -18,4 +21,9 @@ def perimeter(a, b):
 
       Возвращает периметр прямоугольника
     """
-    return (a + b) * 2
+    if a < 0 or b < 0:
+        return "нельзя вычеслить для отрицательных входных значний"
+    else:
+        return (a + b) * 2
+
+print(perimeter(29.5, 20.3))
