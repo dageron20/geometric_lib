@@ -129,16 +129,16 @@ print(perimeter(5))
 
 # Unittest
 
-|Function       | Values   | Test |
-| :-----------: |:--------:|:----:|
-| Circle.py     | r = 0    |area = 0|
-| Circle.py     | r = 11  |perimeter = 69.11503837897544|
-| Rectangle.py  | a = 33, b = 33|area = 1089|
-| Rectangle.py  | a = -100, b = 23|perimeter = False|
-| Square.py     | a = 0.03    |area = 0.0009|
-| Square.py     | a = 0    |perimeter = 0|
-| Triangle.py   | a = 123, h = 54    |area = 3321|
-| Triangle.py   | a = 'goingstrong', b = 70, c = 'still' |perimeter = False|
+|Function       | Values   | Expected | Test result |
+| :-----------: |:--------:|:----:|:----:|
+| Circle.py     | r = 0    |area = 0|area = 0|
+| Circle.py     | r = 11  |perimeter = 69.11503837897544|perimeter = 69.11503837897544|
+| Rectangle.py  | a = 33, b = 33|area = 1089|area = 1089|
+| Rectangle.py  | a = -100, b = 23|perimeter expected False, because this case is considered in the funcion|perimeter = False|
+| Square.py     | a = 0.03    |area = 0.0009|area = 0.0009|
+| Square.py     | a = 0    |perimeter = 0|perimeter = 0|
+| Triangle.py   | a = 123, h = 54    |area = 3321|area = 3321|
+| Triangle.py   | a = 'goingstrong', b = 70, c = 'still' |perimeter expected False, because this case is considered in the funcion|perimeter = False|
 
 
 
