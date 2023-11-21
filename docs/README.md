@@ -53,4 +53,53 @@
   - Автор: isosh <tuturu5012@gmail.com>
   - Дата: Tue Oct 10 03:33:10 2023 +0300
   - Сообшение: Добавлены комментарии к функциям.
-  
+# Unit-tests
+## Описание тестов
+
+### Юнит-тесты для rectangle.py
+| Название теста                     | Входные данные                                 | Ожидаемый результат                                          | Результат                                                    | Статус |
+|------------------------------------|------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|--------|
+| test_zero_area                     | a = 0, b = 8                                   | 0                                                            | 0                                                            | True   |
+| test_zero_perimeter                | a = 0, b = 2                                   | 4                                                            | 4                                                            | True   |
+| test_str_area                      | a = '2', b = '4'                               | "Error: can't work with not integer or not float types"      | "Error: can't work with not integer or not float types"      | True   |
+| test_str_perimeter                 | a = '2', b = '8'                               | "Error: can't work with not integer or not float types"      | "Error: can't work with not integer or not float types"      | True   |
+| test_negative_area                 | a = 2, b = -3                                  | "Error: values can't be negative"                            | "Error: values can't be negative"                            | True   |
+| test_negative_perimeter            | a = 3, b = -12                                 | "Error: values can't be negative"                            | "Error: values can't be negative"                            | True   |
+| test_right_area                    | a = 3, b = 2                                   | 6                                                            | 6                                                            | True   |
+| test_right_perimeter               | a = 1, b = 2                                   | 6                                                            | 6                                                            | True   |
+
+### Юнит-тесты для сircle.py
+| Название теста                     | Входные данные                                 | Ожидаемый результат                                          | Результат                                                    | Статус |
+|------------------------------------|------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|--------|
+| test_zero_area                     | r = 0                                          | 0                                                            | 0                                                            | True   |
+| test_zero_perimeter                | r = 0                                          | 0                                                            | 0                                                            | True   |
+| test_str_area                      | r = '2'                                        | "Error: can't work with not integer or not float types"      | "Error: can't work with not integer or not float types"      | True   |
+| test_str_perimeter                 | r = '2'                                        | "Error: can't work with not integer or not float types"      | "Error: can't work with not integer or not float types"      | True   |
+| test_negative_area                 | r = -2                                         | "Error: values can't be negative"                            | "Error: values can't be negative"                            | True   |
+| test_negative_perimeter            | r = -12                                        | "Error: values can't be negative"                            | "Error: values can't be negative"                            | True   |
+| test_right_area                    | r = 3                                          | 28.274333882308138                                           | 28.274333882308138                                           | True   |
+| test_right_perimeter               | r = 3                                          | 18.84955592153876                                            | 18.84955592153876                                            | True   |
+
+### Юнит-тесты для square.py
+| Название теста                     | Входные данные                                 | Ожидаемый результат                                          | Результат                                                    | Статус |
+|------------------------------------|------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|--------|
+| test_zero_area                     | a = 0                                          | 0                                                            | 0                                                            | True   |
+| test_zero_perimeter                | a = 0                                          | 0                                                            | 0                                                            | True   |
+| test_str_area                      | a = '2'                                        | "Error: can't work with not integer or not float types"      | "Error: can't work with not integer or not float types"      | True   |
+| test_str_perimeter                 | a = '2'                                        | "Error: can't work with not integer or not float types"      | "Error: can't work with not integer or not float types"      | True   |
+| test_negative_area                 | a = -7                                         | "Error: values can't be negative"                            | "Error: values can't be negative"                            | True   |
+| test_negative_perimeter            | a = -14                                        | "Error: values can't be negative"                            | "Error: values can't be negative"                            | True   |
+| test_right_area                    | a = 7                                          | 49                                                           | 49                                                           | True   |
+| test_right_perimeter               | a = 2                                          | 8                                                            | 8                                                            | True   |
+
+### Юнит-тесты для triangle.py
+| Название теста                     | Входные данные                                 | Ожидаемый результат                                          | Результат                                                    | Статус |
+|------------------------------------|------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|--------|
+| test_zero_area                     | a = 0, h = 8                                   | 0                                                            | 0                                                            | True   |
+| test_zero_perimeter                | a = 0, b = 2, c = 0                            | 2                                                            | 2                                                            | True   |
+| test_str_area                      | a = '2', h = '4'                               | "Error: can't work with not integer or not float types"      | "Error: can't work with not integer or not float types"      | True   |
+| test_str_perimeter                 | a = '2', b = '8', c = '5'                      | "Error: can't work with not integer or not float types"      | "Error: can't work with not integer or not float types"      | True   |
+| test_negative_area                 | a = 2, h = -3                                  | "Error: values can't be negative"                            | "Error: values can't be negative"                            | True   |
+| test_negative_perimeter            | a = 3, b = -12, c = -2                         | "Error: values can't be negative"                            | "Error: values can't be negative"                            | True   |
+| test_right_area                    | a = 3, h = 8                                   | 12                                                           | 12                                                            | True   |
+| test_right_perimeter               | a = 1, b = 2, c = 3                            | 6                                                            | 6                                                            | True   |
