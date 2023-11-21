@@ -20,4 +20,3 @@ def perimeter(a, b, c):
                 area (float, int): периметр треугольника со сторонами a, b, c
     """
     return a + b + c 
-

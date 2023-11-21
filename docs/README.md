@@ -128,8 +128,41 @@ print(trianglePerimeter)
 ```
 Result: 9
 ```
+
+<br/>
+
+# Unit tests
+## TriangleTestCase.py
+| Test name                            | Test description                               | Input data   | Output           |
+|----------------------------------|----------------------------------------------|:----------------:|:-------------------------:|
+| testAreaCalcualtion()            | Normal value check            | 10, 5            | 25                        |
+| testPerimeterCalcualtion()       | Normal value check            | 9, 7, 4          | 20                        |
+| testAreaNegative()               | Negative value check      | -10, 5           | fail           |
+| testPerimeeterNegative()         | Negative value check      | 9, -7, 4         | fail           |
+| testPerimeterIncorrectTriangle() | Invalid triangle sides check | 29, 4, 5         | fail      |
+## RectangleTestCase.py
+| Test name                            | Test description                               | Input data   | Output           |
+|----------------------------------|----------------------------------------------|:----------------:|:-------------------------:|
+| testAreaCalcualtion()            | Normal value check            | 5, 10            | 50                        |
+| testPerimeterCalcualtion()       | Normal value check            | 5, 10            | 30                        |
+| testAreaNegative()               | Negative value check      | -5, 10           | fail          |
+| testPerimeeterNegative()         | Negative value check      | 5, -10           | fail          |
+## CircleTestCase.py
+| Test name                            | Test description                               | Input data   | Output           |
+|----------------------------------|----------------------------------------------|:----------------:|:-------------------------:|
+| testAreaCalcualtion()            | Normal value check            | 5                | 78                        |
+| testPerimeterCalcualtion()       | Normal value check            | 5                | 31                        |
+| testAreaNegative()               | Negative value check      | -10              | fail           |
+| testPerimeeterNegative()         | Negative value check      | -10              | fail           |
+## SquareTestCase.py
+| Test name                            | Test description                               | Input data   | Output           |
+|----------------------------------|----------------------------------------------|:----------------:|:-------------------------:|
+| testAreaCalcualtion()            | Normal value check            | 5                | 25                        |
+| testPerimeterCalcualtion()       | Normal value check            | 5                | 20                        |
+| testAreaNegative()               | Negative value check      | -10              | fail           |
+| testPerimeeterNegative()         | Negative value check      | -10              | fail           |
   
-## Project change history
+# Project change history
 | Commit | Author | Hash |
 | --- | --- | --- |
 | L-03: Circle and square added | smartiqa | [8ba9aeb](https://github.com/Tiipok/geometric_lib/commit/8ba9aeb3cea847b63a91ac378a2a6db758682460 ) |
