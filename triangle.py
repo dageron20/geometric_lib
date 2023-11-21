@@ -13,6 +13,6 @@ def perimeter(a, b, c):
     Принимает числа a, b и c.
     Возвращает периметр треугольника со сторонами a, b, c. 
     """
-    if not (a.isdigit() and h.isdigit()):
+    if not (a.isdigit() and b.isdigit() and c.isdigit()):
         return False
     return a + b + c
