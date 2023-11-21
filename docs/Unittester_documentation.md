@@ -2,74 +2,71 @@
 
 Файл включает в себя класс, содержащий тесты функций основных программ.
 
-## test_rectangle_area
+## rectangle.py
 Тест проверяет на корректность работы функции area в файле rectangle.py
 
-**Входные данные**: ```10, 0```
-**Ожидаемые выходные данные**: ```0```
+| FILE | Test name | function | Input | Expected | Status|
+| --- | --- | --- | --- | --- | --- |
+| rectangle.py | test_rectangle_area | area | ```10, 0``` | ```0``` | OK
+| rectangle.py | test_rectangle_area | area | ```1123441, 5643234``` | ```6339840448194``` | OK
+| rectangle.py | test_rectangle_area | area | ```"1123441", "5643234"``` | ```6339840448194``` | ERROR
 
-**Входные данные**: ```1123441, 5643234```
-**Ожидаемые выходные данные**: ```6339840448194```
-
-## test_rectangle_perimeter
 Тест проверяет на корректность работы функции perimeter в файле rectangle.py
 
-**Входные данные**: ```15, 0```
-**Ожидаемые выходные данные**: ```30```
+| FILE | Test name | function | Input | Expected | Status|
+| --- | --- | --- | --- | --- | --- |
+| rectangle.py | test_rectangle_perimeter | perimeter | ```15, 0``` | ```30``` | OK
+| rectangle.py | test_rectangle_perimeter | perimeter | ```354, 321``` | ```1350``` | OK
+| rectangle.py | test_rectangle_perimeter | perimeter | ```"354", "321"``` | ```1350``` | ERROR
 
-**Входные данные**: ```354, 321```
-**Ожидаемые выходные данные**: ```1350```
-
-## test_square_area
+## square.py
 Тест проверяет на корректность работы функции area в файле square.py
 
-**Входные данные**: ```11324```
-**Ожидаемые выходные данные**: ```128232976```
+| FILE | Test name | function | Input | Expected | Status|
+| --- | --- | --- | --- | --- | --- |
+| square.py | test_square_area | area | ```11324``` | ```128232976``` | OK
+| square.py | test_square_area | area | ```-11``` | ```121``` | OK
+| square.py | test_square_area | area | ```"-11"``` | ```121``` | ERROR
 
-**Входные данные**: ```-11```
-**Ожидаемые выходные данные**: ```121```
-
-## test_square_perimeter
 Тест проверяет на корректность работы функции perimeter в файле square.py
 
-**Входные данные**: ```153```
-**Ожидаемые выходные данные**: ```612```
+| FILE | Test name | function | Input | Expected | Status|
+| --- | --- | --- | --- | --- | --- |
+| square.py | test_square_perimeter | perimeter | ```153``` | ```612``` | OK
+| square.py | test_square_perimeter | perimeter | ```312``` | ```1248``` | OK
+| square.py | test_square_perimeter | perimeter | ```"312"``` | ```1248``` | ERROR
 
-**Входные данные**: ```312```
-**Ожидаемые выходные данные**: ```1248```
-
-## test_circle_area
+## circle.py
 Тест проверяет на корректность работы функции area в файле circle.py
 
-**Входные данные**: ```14```
-**Ожидаемые выходные данные**: ```615.7521601035994```
+| FILE | Test name | function | Input | Expected | Status|
+| --- | --- | --- | --- | --- | --- |
+| circle.py | test_circle_area | area | ```14``` | ```615.7521601035994``` | OK
+| circle.py | test_circle_area | area | ```164``` | ```84496.27601095107``` | OK
+| circle.py | test_circle_area | area | ```"164"``` | ```84496.27601095107``` | ERROR
 
-**Входные данные**: ```164```
-**Ожидаемые выходные данные**: ```84496.27601095107```
-
-## test_circle_perimeter(self):
 Тест проверяет на корректность работы функции perimeter в файле circle.py
 
-**Входные данные**: ```15```
-**Ожидаемые выходные данные**: ```94.24777960769379```
+| FILE | Test name | function | Input | Expected | Status|
+| --- | --- | --- | --- | --- | --- |
+| circle.py | test_circle_perimeter | perimeter | ```15``` | ```94.24777960769379``` | OK
+| circle.py | test_circle_perimeter | perimeter | ```3``` | ```18.84955592153876``` | OK
+| circle.py | test_circle_perimeter | perimeter | ```"3"``` | ```18.84955592153876``` | ERROR
 
-**Входные данные**: ```3```
-**Ожидаемые выходные данные**: ```18.84955592153876```
-
-## test_triangle_area
+## triangle
 Тест проверяет на корректность работы функции area в файле triangle.py
 
-**Входные данные**: ```15, 48```
-**Ожидаемые выходные данные**: ```360```
+| FILE | Test name | function | Input | Expected | Status|
+| --- | --- | --- | --- | --- | --- |
+| triangle.py | test_triangle_area | area | ```15, 48``` | ```360``` | OK
+| triangle.py | test_triangle_area | area | ```15, 43``` | ```322.5``` | OK
+| triangle.py | test_triangle_area | area | ```"15", "43"``` | ```322.5``` | ERROR
 
-**Входные данные**: ```15, 43```
-**Ожидаемые выходные данные**: ```322.5```
-
-## test_triangle_perimeter
 Тест проверяет на корректность работы функции perimeter в файле triangle.py
 
-**Входные данные**: ```13, 323, 32```
-**Ожидаемые выходные данные**: ```368```
-
-**Входные данные**: ```13, 33, 32```
-**Ожидаемые выходные данные**: ```78```
+| FILE | Test name | function | Input | Expected | Status|
+| --- | --- | --- | --- | --- | --- |
+| triangle.py | test_triangle_perimeter | area | ```13, 323, 32``` | ```368``` | OK
+| triangle.py | test_triangle_perimeter | area | ```13, 33, 32``` | ```78``` | OK
+| triangle.py | test_triangle_perimeter | area | ```"13", "33", "32"``` | ```78``` | ERROR
+| triangle.py | test_triangle_perimeter | area | ```100000, 1000000, 1``` | ```-1``` | ERROR
