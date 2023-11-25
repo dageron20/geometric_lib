@@ -1,6 +1,7 @@
 import unittest
 import math
 
+
 import circle
 class CircleTestCases(unittest.TestCase):
 
@@ -71,10 +72,16 @@ class TriangleTestCases(unittest.TestCase):
         self.assertEqual(triangle.perimeter(5, 9, 7), 21)
         self.assertEqual(triangle.perimeter(0, 0, 0), 0)
 
-    """ Тестирование невалидных значений """
-    def test_assert(self):
+    """ Тестирование проверки типов """
+    def test_other(self):
         self.assertFalse(triangle.area("-", 0))
         self.assertFalse(triangle.perimeter("10", 3, 9))
+
+    """ Тестирование проверки существования треугольника """
+    def test_triangle_existment(self):
+        self.assertFalse(triangle.perimeter(100, 0, 5))
+        self.assertFalse(triangle.perimeter(100, 0, 100))
+        self.assertFalse(triangle.perimeter(0, 0, 0))
 
 
 if __name__ == '__main__':
