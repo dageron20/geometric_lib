@@ -1,4 +1,4 @@
-def area(a: int, h: int) -> float:
+def area(a: int, h: int) -> float | None:
     """
         Возвращает площадь треугольника.
 
@@ -9,10 +9,13 @@ def area(a: int, h: int) -> float:
         Возвращаемое значение:
             `a * h / 2` (float) : площадь треугольника
     """
+    if a < 0 or h < 0:
+        return None
+
     return a * h / 2
 
 
-def perimeter(a: int, b: int, c: int) -> int:
+def perimeter(a: int, b: int, c: int) -> int | None:
     """
         Возвращает периметр треугольника.
 
@@ -24,4 +27,9 @@ def perimeter(a: int, b: int, c: int) -> int:
         Возвращаемое значение:
            `a + b + c` (int) : периметр треугольника
     """
-    return a + b + c
+    result_perimeter = a + b + c
+
+    if result_perimeter < 0:
+        return None
+
+    return result_perimeter

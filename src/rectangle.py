@@ -1,4 +1,4 @@
-def area(a: int, b: int) -> int:
+def area(a: int, b: int) -> int | None:
     """
         Возвращает площадь прямоугольника.
 
@@ -9,10 +9,14 @@ def area(a: int, b: int) -> int:
         Возвращаемое значение:
             `a * b` (int) : площадь прямоугольника
     """
+
+    if a < 0 or b < 0:
+        return None
+
     return a * b
 
 
-def perimeter(a: int, b: int) -> int:
+def perimeter(a: int, b: int) -> int | None:
     """
         Возвращает периметр прямоугольника.
 
@@ -23,4 +27,8 @@ def perimeter(a: int, b: int) -> int:
         Возвращаемое значение:
             `2 * (a + b)` (int) : периметр прямоугольника
     """
+
+    if a + b < 0:
+        return None
+
     return 2 * (a + b)
