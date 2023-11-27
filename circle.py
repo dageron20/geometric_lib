@@ -66,3 +66,52 @@ class CircleTestCase(unittest.TestCase):
         Ожидаемый результат - периметр круга, равный 2 * pi * 10.
         """
         self.assertAlmostEqual(perimeter(10), 2 * math.pi * 10)
+
+
+    def test_area_negative(self):
+        """
+        Тестирование функции area при отрицательном радиусе.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(ValueError):
+            area(-5)
+
+    def test_perimeter_negative(self):
+        """
+        Тестирование функции perimeter при отрицательном радиусе.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(ValueError):
+            perimeter(-5)
+
+    def test_area_string(self):
+        """
+        Тестирование функции area со строковым радиусом.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(TypeError):
+            area("10")
+
+    def test_perimeter_string(self):
+        """
+        Тестирование функции perimeter со строковым радиусом.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(TypeError):
+            perimeter("10")
+
+    def test_area_boolean(self):
+        """
+        Тестирование функции area с булевым радиусом.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(TypeError):
+            area(True)
+
+    def test_perimeter_boolean(self):
+        """
+        Тестирование функции perimeter с булевым радиусом.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(TypeError):
+            perimeter(False)

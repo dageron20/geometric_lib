@@ -25,6 +25,7 @@ def perimeter(a, b, c):
 
 
 class TriangleCalculationsTestCase(unittest.TestCase):
+
     """
     Класс для тестирования функций расчета площади и периметра треугольника.
 
@@ -68,3 +69,59 @@ class TriangleCalculationsTestCase(unittest.TestCase):
         Проверяет, что результат периметра при нулевых значениях сторон треугольника равен 0.
         """
         self.assertEqual(perimeter(0, 0, 0), 0)
+
+    def test_area_negative(self):
+        """
+        Тестирование функции area при отрицательных значениях сторон.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(ValueError):
+            area(-10, 5)
+
+    def test_perimeter_negative(self):
+        """
+        Тестирование функции perimeter при отрицательных значениях сторон.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(ValueError):
+            perimeter(-10, 15, 20)
+
+    def test_area_string(self):
+        """
+        Тестирование функции area со строковыми значениями сторон.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(TypeError):
+            area("10", "5")
+
+    def test_perimeter_string(self):
+        """
+        Тестирование функции perimeter со строковыми значениями сторон.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(TypeError):
+            perimeter("10", "15", "20")
+
+    def test_area_boolean(self):
+        """
+        Тестирование функции area с булевыми значениями сторон.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(TypeError):
+            area(True, False)
+
+    def test_perimeter_boolean(self):
+        """
+        Тестирование функции perimeter с булевыми значениями сторон.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(TypeError):
+            perimeter(True, False, True)
+
+    def test_existence(self):
+        """
+        Тестирование функции perimeter со сторонами, образуюзщими несуществующий треугольник.
+        Ожидаемый результат - ошибка.
+        """
+        with self.assertRaises(ValueError):
+            perimeter(10, 50, 100)

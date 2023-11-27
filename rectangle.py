@@ -22,7 +22,6 @@ def perimeter(a, b):
     """
     return (a + b )*2
 
-
 class RectangleTestCase(unittest.TestCase):
    """
     Класс для тестирования функций расчета площади и периметра прямоугольника.
@@ -37,19 +36,17 @@ class RectangleTestCase(unittest.TestCase):
 
         Проверяет, что площадь прямоугольника с одной стороной 0 равна 0.
         """
-       res = area(10, 0)
-       self.assertEqual(res, 0)
+       self.assertEqual(area(10, 0), 0)
        
    def test_square_mul(self):
         """
         Тестирование функции area.
 
         Проверяет, что функция верно вычисляет площадь прямоугольника.
-        В данном тесте используется радиус 10. 
+        В данном тесте используются стороны 10 и 10. 
         Ожидаемый результат - площадь прямоугольника, равная 100.
         """
-        res = area(10, 10)
-        self.assertEqual(res, 100)
+        self.assertEqual(area(10, 10), 100)
 
    def test_zero_perimeter(self):
        """
@@ -68,5 +65,65 @@ class RectangleTestCase(unittest.TestCase):
         В данном тесте используются стороны 10 и 20. 
         Ожидаемый результат - периметр прямоугольника, равный 60.
         """
-        res = perimeter(10, 20)
-        self.assertEqual(res, 60)
+        self.assertEqual(perimeter(10, 20), 60)
+
+   def test_square_mul_negative(self):
+        """
+        Тестирование функции area при отрицательных значениях.
+
+        Проверяет, результат при отрицательных значениях.
+        В данном тесте используются стороны -10 и 20. 
+        Ожидаемый результат - ошибка.
+        """
+        self.assertAlmostEqual(area(-10, 20),  False)
+
+   def test_square_perimeter_negative(self):
+        """
+        Тестирование функции perimeter при отрицательном значении.
+
+        Проверяет, результат при отрицательном значении.
+        В данном тесте используются стороны -10 и 20. 
+        Ожидаемый результат - ошибка.
+        """
+        self.assertEqual(perimeter(-10, 20), False)
+
+    
+   def test_square_perimeter_string(self):
+        """
+        Тестирование функции perimeter при отрицательном значении.
+
+        Проверяет, результат при отрицательном значении.
+        В данном тесте используются стороны -10 и строка 20. 
+        Ожидаемый результат - ошибка.
+        """
+        self.assertEqual(perimeter(-10, "20"), False)
+
+   def test_square_mul_string(self):
+        """
+        Тестирование функции area при отрицательном значении.
+
+        Проверяет, результат при отрицательном значении.
+        В данном тесте используются стороны 10 и строка 20. 
+        Ожидаемый результат - ошибка.
+        """
+        self.assertAlmostEqual(area(10, "20"),  False)
+
+   def test_square_perimeter_bool(self):
+        """
+        Тестирование функции perimeter при булевом значении.
+
+        Проверяет, результат при булевом значении.
+        В данном тесте используются стороны 10 и False. 
+        Ожидаемый результат - ошибка.
+        """
+        self.assertEqual(perimeter(10, False), False)
+
+   def test_square_mul_bool(self):
+        """
+        Тестирование функции area при булевом значении.
+
+        Проверяет, результат при булевом значении.
+        В данном тесте используются стороны 10 и True. 
+        Ожидаемый результат - ошибка.
+        """
+        self.assertAlmostEqual(area(10, True),  False)
