@@ -125,3 +125,11 @@ class TriangleCalculationsTestCase(unittest.TestCase):
         """
         with self.assertRaises(ValueError):
             perimeter(10, 50, 100)
+
+    def test_exist(self):
+        """
+        Тестирование функции perimeter с неправильными сторонами.
+
+        Проверяет, что результат периметра при нулевых значениях сторон треугольника равен 0.
+        """
+        self.assertEqual(perimeter(1, 5, 10), 0)
