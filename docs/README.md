@@ -70,4 +70,4 @@
 | test_perimeter_non_numeric  | a = "string", b = 15, c = 20 | Error   | TypeError   |
 | test_area_boolean           | a = True, h = 5       | Error         | 2.5         |
 | test_perimeter_boolean      | a = True, b = 15, c = 20 | Error       | 36          |
-
+| test_existence              | a = 10, b = 50, c = 100 | Error       | 160          |
