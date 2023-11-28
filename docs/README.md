@@ -110,4 +110,34 @@
 - commit 8ba9aeb3cea847b63a91ac378a2a6db758682460  
     L-03: Circle and square added
 # Тесты
-Для тестирования программы было напис
+| Tests                  | Input     | Expected output       | Result    |
+|------------------------|-----------|-----------------------|-----------|
+|**RECTANGLE_TESTS**     |           |                       | Passed    |
+|test_normal_area        | 0.7, 10   | 7                     | Passed    |
+|test_normal_perimeter   | 10, 10    | 40                    | Passed    |
+|test_negative_area      | 10, -1    | Negative arguments    | Passed    |
+|test_negative_perimiter | 10, -1    | Negative arguments    | Passed    |
+|test_area_char          | 'c', 3    | Non-integer arguments | Passed    |
+|test_perimeter_char     | 'c', 5    | Non-integer arguments | Passed    |
+|**CIRCLE_TESTS**        |           |                       | Passed    |
+|test_normal_area        | 10        | 314.159265358979323   | Passed    |
+|test_normal_perimeter   | 10        | 62.8318530717958647   | Passed    |
+|test_negative_area      | -1        | Negative arguments    | Passed    |
+|test_negative_perimiter | -1        | Negative arguments    | Passed    |
+|test_area_char          | 'c'       | Non-integer arguments | Passed    |
+|test_perimeter_char     | 'c'       | Non-integer arguments | Passed    |
+|**TRIANGLE_TESTS**      |           |                       | Passed    |
+|test_normal_area        | 5, 4      | 10                    | Passed    |
+|test_normal_perimeter   | 10, 10, 5 | 25                    | Passed    |
+|test_negative_area      | -8, 5     | Negative arguments    | Passed    |
+|test_negative_perimiter | 10, -1, 7 | Negative arguments    | Passed    |
+|test_area_char          | 'c', 2    | Non-integer arguments | Passed    |
+|test_perimeter_char     | 'c', 2, 3 | Non-integer arguments | Passed    |
+|**SQUARE_TESTS**        |           |                       | Passed    |
+|test_normal_area        | 10        | 100                   | Passed    |
+|test_normal_perimeter   | 10        | 40                    | Passed    |
+|test_negative_area      | -10       | Negative arguments    | Passed    |
+|test_negative_perimiter | -3        | Negative arguments    | Passed    |
+|test_area_char          | 'c'       | Non-integer arguments | Passed    |
+|test_perimeter_char     | 'c'       | Non-integer arguments | Passed    |
+
