@@ -97,11 +97,17 @@
     c = 2  
     perimeter(a, b, c) == 10
 # История коммитов
+- commit 5577037b807c0f02b08293086e3c2d46ed00080a  
+    Исправлена ошибка отображения.
+- commit 9727c36cbb8319ea53f2b5877c54258f4ba3f292  
+    Добавлена документация
 - commit 3f9a880449e5a8bbdf343c970c137d6bf25a4cc0  
     Добавлен Файл triangle.py. Иправлена ошибка в файле rectangle.py
-- commit cc8fdc9b3756155b0414f789b4bf1c24d95748ef  
+- commit cc8fdc9b3756155b0414f789b4bf1c24d95748ef    
     Добавлен файл rectangle.py
 - commit d078c8d9ee6155f3cb0e577d28d337b791de28e2  
     L-03: Docs added
 - commit 8ba9aeb3cea847b63a91ac378a2a6db758682460  
     L-03: Circle and square added
+# Тесты
+Для тестирования программы было напис
