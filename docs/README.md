@@ -1,4 +1,4 @@
-# Лабораторная работа по GIT №2
+# **** Лабораторная работа по GIT №2 ****
 ## Общее описание решения
 > В репозитории находятся файлы расширения .py , в каждом ищз который описаны функции нахождения площади и периметра каждой из 4 фигур: треугольника, прямоугольника, квадрата и круга.
 ## Описание каждой функции с примерами вызова
@@ -74,6 +74,7 @@ output ~12.57
 
 <img width="510" alt="Снимок экрана 2023-09-27 в 2 20 10 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/ac1e5749-0fab-47b9-a0e7-c72206333bb5">
 
+# **** Лабораторная работа №4. Написание Unit тестов ****
 # Описание работы unit-тестов для файла circle.py:
 ## Тесты для файла circle.py хранятся в файле test_circle.py:
 ### - Функция `test_area_1()` проверяет корректность работы программы, вычисляющей площадь круга, при вводе валидного значения радиуса круга.
@@ -179,9 +180,20 @@ output ~12.57
 | 3) area(a, h)          |      a = -1, h = 3      |      'Invalid input'       |      'Invalid input'       | Успешно |
 | 4) area(a, h)          |     a = 2, b = 'b'      |      'Invalid input'       |      'Invalid input'       | Успешно |
 | 5) area(a, h)          |     a = 3, b = True     |      'Invalid input'       |      'Invalid input'       | Успешно |
-| 6) perimeter(a, b, c)  |   a = 1, b = 2, c = 3   |             6             |             6             | Успешно |
+| 6) perimeter(a, b, c)  |   a = 3, b = 4, c = 5   |             12             |             12             | Успешно |
 | 7) perimeter(a, b, c)  |   a = 0, b = 2, c = 3   | "The figure doesn't exist" | "The figure doesn't exist" | Успешно |
 | 8) perimeter(a, b, c)  |  a = -1, b = 2, c = 3   |      'Invalid input'       |      'Invalid input'       | Успешно |
 | 9) perimeter(a, b, c)  |  a = -1, b = 'N', c = 3  |      'Invalid input'       |      'Invalid input'       | Успешно |
 | 10) perimeter(a, b, c) |  a = 2, b = 13, c = 56  | "The figure doesn't exist" | "The figure doesn't exist" | Успешно |
 | 11) perimeter(a, b, c) | a = False, b = 3, c = 5 |      'Invalid input'       |      'Invalid input'       | Успешно |
+
+# Примеры прохождения тестов
+## <img width="1326" alt="Снимок экрана 2023-11-13 в 10 21 20 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/a9eae47b-039b-4be9-8490-e8eb0f3cb4f7">
+## <img width="1326" alt="Снимок экрана 2023-11-13 в 10 23 24 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/1cb3acf7-5474-4b82-8b90-49fce7c571f3">
+## <img width="1326" alt="Снимок экрана 2023-11-13 в 10 26 17 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/770339a7-af36-4f0c-8429-8c1f8f863c0a">
+
+# История изменений в проекте 
+## <img width="563" alt="Снимок экрана 2023-11-13 в 7 53 02 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/5b71a097-868d-4dda-9b5a-1a18350bc97b">
+## <img width="883" alt="Снимок экрана 2023-11-13 в 10 02 15 PM" src="https://github.com/ecco2kk/geometric_lib/assets/114879885/5ca9fcb4-d6af-49d7-a0f7-10d3c30bd111">
+
+
