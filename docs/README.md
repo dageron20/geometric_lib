@@ -95,10 +95,20 @@
 
 # История изменений
 - Circle and square added 
-    хэш: 8ba9aeb3cea847b63a91ac378a2a6db758682460
+    hash: 8ba9aeb3cea847b63a91ac378a2a6db758682460
 - Docs added
-    хэш: d078c8d9ee6155f3cb0e577d28d337b791de28e2
+    hash: d078c8d9ee6155f3cb0e577d28d337b791de28e2
 - rectangle.cpp added 
-    хэш: e3a08c587c1b46169de8335d7164a0d30630189a
+    hash: e3a08c587c1b46169de8335d7164a0d30630189a
 - triangle.cpp added and rectangle.cpp changed 
-    хэш: 1d30d8cb6e7c4a0f2bda1739e69d9b338363a6ee
+    hash: 1d30d8cb6e7c4a0f2bda1739e69d9b338363a6ee
+- added comments with function descriptions to source code files, changed readme.md
+    hash: f455c2a1c052e8da2df5dcaaab7a62ddfc14aa2f
+- added unit tests for circle, rectangle and triangle, triangle and rectangle were rewritten on python
+    hash: a75db0bfff06e58e840817f89e57c324655e9cad
+- test-cases table added
+    hash: 642003d04e51bb18c286da68a8e7e32da6e023e5
+- added more test cases
+    hash: fc6258c29b56e56b87f41af22d4ad666c54aa03a
+- readme.md and square.py changed
+    hash 037bb86ab4bd06980d30305b4b977a788ffbcc04
