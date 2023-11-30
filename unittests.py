@@ -109,3 +109,6 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_triangle_perimeter_character(self):
         self.assertEqual(triangle.perimeter("&","a",1), "input can not contain characters")
+
+if __name__ == '__main__':
+    unittest.main()
