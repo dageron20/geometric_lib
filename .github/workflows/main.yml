@@ -1,0 +1,16 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+
+
+jobs:
+  geometry_build:
+    runs-on: [ubuntu-latest, winows-latest]
+    
+     steps:
+      - uses: actions/checkout@v3
+      - name: Run unittests
+        run: python -m unittest
+     
