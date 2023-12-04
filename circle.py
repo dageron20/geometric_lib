@@ -7,6 +7,8 @@ def area(r):
         Возвращает его площадь, вычисленную по формуле math.pi * r * r. 
         math.pi (float) - число пи
     '''
+    if r <= 0:
+        return None
     return math.pi * r * r
 
 
@@ -16,5 +18,7 @@ def perimeter(r):
         Возвращает её длину, вычисленную по формуле 2 * math.pi * r.
         math.pi (float) - число пи
     '''
+    if r <= 0:
+        return None
     return 2 * math.pi * r
 
