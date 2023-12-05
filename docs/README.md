@@ -122,6 +122,7 @@ def perimeter(a, b, c):
 || perimeter | 0 | "Аргументы должны быть больше ноля" | FAILED
 
 # Changelog
+- [Added unittests](https://github.com/soilow/geometric_lib/commit/c40038bb4b7a899f4ff36a28d1f3400fbad9b00c)
 - [Fixed rectangle.py](https://github.com/soilow/geometric_lib/commit/68eb5b9fa84158b73667fd18002cd3c1c36a62bf)
 - [Added triangle.py](https://github.com/soilow/geometric_lib/commit/0737645eb11b576050358c21c90d048ab8ff9a61)
 - [Added rectangle.py](https://github.com/soilow/geometric_lib/commit/176e0720cda60b0d434ee8ba5a3a934610403548)
