@@ -10,7 +10,14 @@ def area(r):
 		Возвращаемое значение:
 			math.pi * r * r: искомая площадь круга
 	'''
-    return math.pi * r * r
+
+	if (type(r) is not int):
+		raise TypeError("Аргумент должен быть int")
+
+	if (r <= 0):
+		raise ValueError("Аргумент должны быть больше ноля")
+
+	return math.pi * r * r
 
 def perimeter(r):
 	'''
@@ -23,5 +30,10 @@ def perimeter(r):
 			2 * math.pi * r: искомый периметр круга
 	'''
 
-    return 2 * math.pi * r
+	if (type(r) is not int):
+		raise TypeError("Аргумент должен быть int")
 
+	if (r <= 0):
+		raise ValueError("Аргумент должны быть больше ноля")
+
+	return 2 * math.pi * r

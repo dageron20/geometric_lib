@@ -9,6 +9,15 @@ def area(a, b):
 		Возвращаемое значение:
 			a * b: искомая площадь прямоугольника
 	'''
+
+	if (type(a) is not int or type(b) is not int):
+		raise TypeError("Аргументы должен быть int")
+
+	if (a <= 0 or b <= 0):
+		raise ValueError("Аргументы должны быть больше ноля")
+
+
+
 	return a * b
 
 def perimeter(a, b):
@@ -22,4 +31,11 @@ def perimeter(a, b):
 		Возвращаемое значение:
 			a * b: искомый периметр прямоугольника
 	'''
+
+	if (type(a) is not int or type(b) is not int):
+		raise TypeError("Аргументы должен быть int")
+
+	if (a <= 0 or b <= 0):
+		raise ValueError("Аргументы должны быть больше ноля")
+	
 	return 2*(a + b)

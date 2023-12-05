@@ -9,6 +9,13 @@ def area(a, h):
 		Возвращаемое значение:
 			a * h / 2: искомая площадь треугольника
 	'''
+
+	if (type(a) is not int or type(h) is not int):
+		raise TypeError("Аргументы должен быть int")
+
+	if (a <= 0 or h <= 0):
+		raise ValueError("Аргументы должны быть больше ноля")
+
 	return a * h / 2
 
 def perimeter(a, b, c):
@@ -23,4 +30,11 @@ def perimeter(a, b, c):
 		Возвращаемое значение:
 			a + b + c: искомый периметр треугольника
 	'''
+
+	if (type(a) is not int or type(b) is not int or type(c) is not int):
+		raise TypeError("Аргументы должен быть int")
+
+	if (a <= 0 or b <= 0 or c <= 0):
+		raise ValueError("Аргументы должны быть больше ноля")
+
 	return a + b + c

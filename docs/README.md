@@ -70,6 +70,57 @@ def perimeter(a, b, c):
 ```
 > Пример вызова: perimeter(3, 4, 5) -> 12
 
+
+# Unit Tests
+
+## circle.py
+| Test name | Function | Input | Expected | Status |
+| --- | --- | --- | --- | --- |
+| test_circle_int_first | area | 5 | 78.53981633974483 | OK
+| | perimeter | 7 | 43.982297150257104 | OK
+| test_circle_string_first | area | "ITMO" | "Аргумент должен быть int" | FAILED
+| | perimeter | "M3108" | "Аргумент должен быть int" | FAILED
+| test_circle_negative_int_first | area | -5 | "Аргумент должен быть больше ноля" | FAILED
+| | perimeter | -7 | "Аргумент должен быть больше ноля" | FAILED
+| test_circle_zero | area | 0 | "Аргумент должен быть больше ноля" | FAILED
+|| perimeter | 0 | "Аргумент должен быть больше ноля" | FAILED
+
+## rectangle.py
+| Test name | Function | Input | Expected | Status |
+| --- | --- | --- | --- | --- |
+| test_rectangle_int_first | area | 5, 19 | 95 | OK
+| | perimeter | 5, 9 | 28 | OK
+| test_rectangle_string_first | area | "ITMO" | "Аргументы должен быть int" | FAILED
+| | perimeter | "M3108" | "Аргументы должен быть int" | FAILED
+| test_rectangle_negative_int_first | area | -5 | "Аргументы должны быть больше ноля" | FAILED
+| | perimeter | -7 | "Аргументы должны быть больше ноля" | FAILED
+| test_rectangle_zero | area | 0 | "Аргументы должны быть больше ноля" | FAILED
+|| perimeter | 0 | "Аргументы должны быть больше ноля" | FAILED
+
+## square.py
+| Test name | Function | Input | Expected | Status |
+| --- | --- | --- | --- | --- |
+| test_square_int_first | area | 5 | 25 | OK
+| | perimeter | 7 | 28 | OK
+| test_square_string_first | area | "ITMO" | "Аргумент должен быть int" | FAILED
+| | perimeter | "M3108" | "Аргумент должен быть int" | FAILED
+| test_square_negative_int_first | area | -5 | "Аргумент должен быть больше ноля" | FAILED
+| | perimeter | -7 | "Аргумент должен быть больше ноля" | FAILED
+| test_square_zero | area | 0 | "Аргумент должен быть больше ноля" | FAILED
+|| perimeter | 0 | "Аргумент должен быть больше ноля" | FAILED
+
+## triangle.py
+| Test name | Function | Input | Expected | Status |
+| --- | --- | --- | --- | --- |
+| test_triangle_int_first | area | 5, 8 | 20 | OK
+| | perimeter | 5, 8, 2 | 15 | OK
+| test_triangle_string_first | area | "ITMO" | "Аргументы должен быть int" | FAILED
+| | perimeter | "M3108" | "Аргументы должен быть int" | FAILED
+| test_triangle_negative_int_first | area | -5 | "Аргументы должны быть больше ноля" | FAILED
+| | perimeter | -7 | "Аргументы должны быть больше ноля" | FAILED
+| test_triangle_zero | area | 0 | "Аргументы должны быть больше ноля" | FAILED
+|| perimeter | 0 | "Аргументы должны быть больше ноля" | FAILED
+
 # Changelog
 - [Fixed rectangle.py](https://github.com/soilow/geometric_lib/commit/68eb5b9fa84158b73667fd18002cd3c1c36a62bf)
 - [Added triangle.py](https://github.com/soilow/geometric_lib/commit/0737645eb11b576050358c21c90d048ab8ff9a61)
