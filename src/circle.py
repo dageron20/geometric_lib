@@ -17,7 +17,7 @@ def area(r):
 	if (r <= 0):
 		raise ValueError("Аргумент должны быть больше ноля")
 
-	print("helloj")
+	print("ITMO")
 
 	return math.pi * r * r
 
