@@ -8,7 +8,7 @@ class SquareAreaTestCases(unittest.TestCase):
 		self.assertEqual(area(5), 5 * 5)
 
 	def test_square_int_second(self):
-		self.assertEqual(area(57285), 57285 * 57285)
+		self.assertEqual(area(68), 57285 * 57285)
 
 	def test_square_string_first(self):
 		with self.assertRaises(TypeError):
