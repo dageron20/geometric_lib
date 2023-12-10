@@ -15,10 +15,6 @@ jobs:
           python-version: "3.10"
       - name: Instal tests
         run: pip install -r npm.txt
-             circle.py install
-             rectangle.py install
-             square.py install
-             triangle.py install
       - name: Run tests
         run: pytest
 
