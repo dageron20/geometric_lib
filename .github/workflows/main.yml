@@ -29,6 +29,10 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: List files
+      run: |
+        ls -la
+    
     - name: Run tests
       run: |
         python -m unittest circle.py
