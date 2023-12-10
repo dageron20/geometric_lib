@@ -1,0 +1,22 @@
+name: "Main Workflow"
+on: push
+jobs:
+  run_unit_tests:
+    continue-on-error: true
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v3
+      - name: Name
+        run: echo "Unit tests"
+      - name: Run circle unit tests
+        run: python3 -m unittest circle.py
+      - name: Run rectangle unit tests
+        run: python3 -m unittest rectangle.py
+      - name: Run square unit tests
+        run: python3 -m unittest square.py
+      - name: Run triangle unit tests
+        run: python3 -m unittest triangle.py
