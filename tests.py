@@ -51,7 +51,6 @@ class BaseFigureTest(object):
             return
         for inp, outp in self.area_testcases:
             result = self.module.area(*inp)
-            # print(f'{self.module.__name__}.area', inp, outp, 'OK' if outp == result else 'FAILED', sep='\t', file=open('res.txt', 'a', encoding='utf-8'))
             self.assertEqual(
                 result,
                 outp,
@@ -65,7 +64,6 @@ class BaseFigureTest(object):
             return
         for inp, outp in self.perimeter_testcases:
             result = self.module.perimeter(*inp)
-            # print(f'{self.module.__name__}.area', inp, outp, 'OK' if outp == result else 'FAILED', sep='\t', file=open('res.txt', 'a', encoding='utf-8'))
             self.assertEqual(
                 result,
                 outp,
@@ -78,7 +76,6 @@ class BaseFigureTest(object):
         except:
             return
         for inp, func, expected in self.exception_testcases:
-            # print(f'{self.module.__name__}.area', inp, expected, 'OK', sep='\t', file=open('res.txt', 'a', encoding='utf-8'))
             self.assertRaises(
                 expected,
                 func,
@@ -102,8 +99,8 @@ class RectangleTest(unittest.TestCase, BaseFigureTest):
             ((3, 5), 15),
             ((100, 1), 100),
             ((1, 100), 100),
-            ((0.2, 0.2), 0.4),
-            ((0.02, 0.02), 0.04),
+            ((0.2, 0.2), 0.2*0.2),
+            ((0.02, 0.02), 0.02*0.02),
             ((-1, -1), 1),
             ((1000000, 5000000), 5000000000000),
             ((-1, 5), -5),
@@ -122,7 +119,7 @@ class RectangleTest(unittest.TestCase, BaseFigureTest):
             ((20, 10), 60),
             ((13, 12), 50),
             ((1, 2), 6),
-            ((0.1, 0.2), 0.6),
+            ((0.1, 0.2), (0.1 + 0.2) * 2),
             ((0.01, 0.02), 0.06),
         )
         self.exception_testcases = (
