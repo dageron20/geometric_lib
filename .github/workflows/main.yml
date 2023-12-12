@@ -7,7 +7,11 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
 
     steps:
     - name: Checkout Repository
@@ -20,3 +24,4 @@ jobs:
 
     - name: Run Tests
       run: python -m unittest rectangle_unittests.py 
+
