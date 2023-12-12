@@ -11,6 +11,7 @@ jobs:
 
     strategy:
       matrix:
+        files: [circle_unittests.py, circle_unittests.py, square_unittests.py, triangle_unittests.py]
         os: [ubuntu-latest, windows-latest]
 
     steps:
@@ -23,8 +24,5 @@ jobs:
         python-version: 3.8
 
     - name: Run Tests
-      run: |
-        python -m unittest circle_unittests.py
-        python -m unittest rectangle_unittests.py 
-        python -m unittest square_unittests.py 
-        python -m unittest triangle_unittests.py 
+      run: python -m unittest ${{ matrix.files }}
+    
