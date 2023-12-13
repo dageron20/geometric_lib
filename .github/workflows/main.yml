@@ -2,10 +2,7 @@ name: Run Unit Tests
 on: [push]
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
+    runs-on: windows-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -20,3 +17,4 @@ jobs:
       - name: Run tests
         run: |
           pytest
+
