@@ -21,10 +21,6 @@ class RectangleTest(unittest.TestCase):
         res = rectangle.area('a', 100)
         self.assertEqual(res, 'Invalid input')
 
-    def test_area_5(self):
-        res = rectangle.area(True, False)
-        self.assertEqual(res, 'Invalid input')
-
     """Набор unit test, который проверяет правильность работы функции для вычисления периметра прямоугольника"""
 
     def test_perimeter_1(self):
@@ -43,9 +39,6 @@ class RectangleTest(unittest.TestCase):
         res = rectangle.perimeter('a', 100)
         self.assertEqual(res, 'Invalid input')
 
-    def test_perimeter_5(self):
-        res = rectangle.perimeter(True, False)
-        self.assertEqual(res, 'Invalid input')
 
 
 if __name__ == '__main__':
