@@ -12,7 +12,7 @@ class BaseTestCase(object):
             result = self.module.perimeter(*inp)
             self.assertEqual(result, outp, f'{self.module.__name__}:perimeter\t{inp=} expected={outp} returned={result}')
             
-    def test_area(self):
+    def test_area(self): 
         for inp, outp in self.area_testcases:
             result = self.module.area(*inp)
             self.assertEqual(result, outp, f'{self.module.__name__}:area\t{inp=} expected={outp} returned={result}')
