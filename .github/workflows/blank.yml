@@ -28,7 +28,11 @@ jobs:
           architecture: "x64"
       - name: Running unittests
         run: 
-          python -m tests
+          python -m test_rectangle
+          python -m test_triangle
+          python -m test_square
+          python -m test_circle
+        
   CICD_tests-try-tests-windows:
     runs-on: windows-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -47,4 +51,7 @@ jobs:
           architecture: "x64"
       - name: Running unittests
         run: 
-          python -m tests
+          python -m test_rectangle
+          python -m test_triangle
+          python -m test_square
+          python -m test_circle
