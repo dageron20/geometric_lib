@@ -14,15 +14,14 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest, ubuntu-latest]
-        python: [3.8]
+        python: [3.10]
 
     steps:
     - name: Check repository
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Set up python
-      uses: actions/setup-python@v2
+    - uses: actions/setup-python@v4
       with:
-        python-version: ${{ matrix.python }}
+        python-version: '3.10' 
     - name: Run Unittests
-      run:
-        python Unittester.py
+    - run: python Unittester.py
