@@ -19,10 +19,10 @@ jobs:
         with:
             python-version: '3.11'
       - name: Circle tests
-        run: python -m tests/circle_tests.py
+        run: python -m unittest discover tests/circle_tests.py
       - name: Rectangle tests
-        run: python tests/rectangle_tests.py
+        run: python -m unittest discover tests/rectangle_tests.py
       - name: Square tests
-        run: python tests/square_tests.py
+        run: python -m unittest discover tests/square_tests.py
       - name: Triangle tests
-        run: python tests/triangle_tests.py
+        run: python -m unittest discover tests/triangle_tests.py
