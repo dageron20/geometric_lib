@@ -20,5 +20,7 @@ def perimeter(r):
     '''
     if r < 0:
         raise ValueError("radius cannot be negative")
+    elif r == 0:
+        raise ValueError("Error: radius can`t be 0")
     
     return round(2 * math.pi * r, 3)

@@ -92,3 +92,6 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_triangle_perimeter_negative(self):
         self.assertRaises(ValueError, triangle.perimeter, -2, -5, 2)
+
+if __name__ == '__main__':
+    unittest.main()
