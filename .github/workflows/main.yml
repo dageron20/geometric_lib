@@ -17,6 +17,8 @@ jobs:
         python: [3.8]
 
     steps:
+    - name: Check Git version
+      run: git --version
     - name: Check repository
       uses: actions/checkout@v2
     - name: Set up python
