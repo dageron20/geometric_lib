@@ -22,4 +22,4 @@ def perimeter(r):
     if ((type(r) not in [float, int]) or r <= 0):
         return 'Не корректные входные данные'
     else:
-        return 2 * (math.pi * r)
+        return (2 * (math.pi * r))
