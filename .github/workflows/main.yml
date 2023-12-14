@@ -18,7 +18,17 @@ jobs:
 
     steps:
     - name: Check repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2.4.3
+      with:
+        repository: Mangust1333/geometric_lib
+        token: ${{ secrets.GITHUB_TOKEN }}
+        ssh-strict: true
+        persist-credentials: true
+        clean: true
+        fetch-depth: 1
+        lfs: false
+        submodules: false
+        set-safe-directory: true
     - name: Set up python
       uses: actions/setup-python@v2
       with:
