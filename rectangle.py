@@ -16,3 +16,4 @@ def perimetr(a, b):
     if a <= 0 or b <= 0:
         return ValueError
     return 2 * (a + b)
+print(perimetr(3, 4))

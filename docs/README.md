@@ -202,14 +202,26 @@ print(perimetr(a, b, c))
 
 
 # Project change history with commit hashes
-> commit e5e2156488367bbc0afe1b270d6078bd25cbf590 (HEAD -> main)
+> commit 6f8689d1df655ec46153baf42b798d81b7a75f1a (HEAD -> main)
+- | Author: Taras <nebarrow@yandex.ru>
+- | Date:   Thu Nov 16 21:47:18 2023 +0300
+
+- |    A bug in README.md has been fixed
+
+>commit e5e2156488367bbc0afe1b270d6078bd25cbf590 (origin/main, origin/HEAD)
 - | Author: Taras <nebarrow@yandex.ru>
 - | Date:   Thu Nov 16 19:08:25 2023 +0300
 
 - |    An error with markup in readme.md has been fixed
 
 
-> commit d0a91108c8311bf647287e9782c3cdb2fc442bad (origin/main, origin/HEAD)
+> commit e5e2156488367bbc0afe1b270d6078bd25cbf590
+- | Author: Taras <nebarrow@yandex.ru>
+- | Date:   Thu Nov 16 19:08:25 2023 +0300
+
+- |    An error with markup in readme.md has been fixed
+
+> commit d0a91108c8311bf647287e9782c3cdb2fc442bad
 - | Author: Taras <nebarrow@yandex.ru>
 - | Date:   Thu Nov 16 18:39:12 2023 +0300
 
