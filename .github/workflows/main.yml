@@ -9,14 +9,14 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest, windows-latest
+    runs-on: [ubuntu-latest, windows-latest]
     steps:
     - name: Check repository
       uses: actions/checkout@v2
     - name: Set up python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: [3.8]
     - name: Run Unittests
       run:
         python Unittester.py
