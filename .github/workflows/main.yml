@@ -17,14 +17,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: message
-        run: echo "running tests..."
-
       - name: Set up Python
         uses: actions/setup-python@v2
 
       - name: Run unit-tests
-        run: echo python3 tests.py
-
-      - name: End
-        run: echo "tests run"
+        run: python3 tests.py
