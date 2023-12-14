@@ -8,7 +8,7 @@ circle_testcase_area_perimeter = (
     (0.0,                0.0,                   0.0),
 
     (5.0,                78.53981633974483,     31.41592653589793),
-    (12.3,               {123, 31},             None),
+    ({123, 31},          None,                  None),
     (1,                  None,                  None),
     ((123, 312),         None,                  None),
     ([1, 2],             None,                  None),
