@@ -3,6 +3,7 @@ name: Runner Unittests
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   test:
@@ -13,10 +14,8 @@ jobs:
     - name: Set up python
       uses: actions/setup-python@v2
       with:
-        python-version: [3.8]
+        python-version: 3.8
     - name: Run Unittests
       run:
         python Unittester.py
-
-    
     
