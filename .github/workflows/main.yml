@@ -1,9 +1,9 @@
 name: main
 on:
   push:
-    branches: [ main ]
+    branches: [ main , 4-labs, upgrade-tests ]
   pull_request:
-    branches: [ main ]
+    branches: [ main , 4-labs, upgrade-tests ]
 jobs:
   build:
     strategy:
