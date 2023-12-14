@@ -12,13 +12,14 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checking repository
+        uses: actions/checkout@v4
       - name: Starting Python set up on 3.11
         uses: actions/setup-python@v4
         with:
             python-version: '3.11'
       - name: Circle tests
-        run: python tests/circle_tests.py
+        run: python -m tests/circle_tests.py
       - name: Rectangle tests
         run: python tests/rectangle_tests.py
       - name: Square tests
