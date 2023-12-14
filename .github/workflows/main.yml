@@ -1,0 +1,28 @@
+name: main
+on:
+  push:
+    branches: [ main , 4-labs, upgrade-tests ]
+  pull_request:
+    branches: [ main , 4-labs, upgrade-tests ]
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checking repository
+        uses: actions/checkout@v4
+      - name: Starting Python set up on 3.11
+        uses: actions/setup-python@v4
+        with:
+            python-version: '3.11'
+      - name: Circle tests
+        run: python -m unittest tests/circle_tests.py
+      - name: Rectangle tests
+        run: python -m unittest tests/rectangle_tests.py
+      - name: Square tests
+        run: python -m unittest tests/square_tests.py
+      - name: Triangle tests
+        run: python -m unittest tests/triangle_tests.py
