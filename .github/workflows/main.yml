@@ -7,26 +7,24 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-
+  linux_tests:
+    runs_on: ubuntu-latest
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+        - uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
+        - name: unittests
+          run: python3 Lysenko_Egor_M3114\tests\circle.py
+          run: python3 Lysenko_Egor_M3114\tests\rectangle.py
+          run: python3 Lysenko_Egor_M3114\tests\square.py
+          run: python3 Lysenko_Egor_M3114\tests\triangle.py
 
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt  # Замените на ваш файл с зависимостями
+  Windows_tests:
+    runs_on: windows-latest
+    steps:
+        - uses: actions/checkout@v3
 
-    - name: Run Unit Tests
-      run: |
-        python -m unittest discover -s tests -p 'test_*.py'
+        - name: unittests
+          run: python3 Lysenko_Egor_M3114\tests\circle.py
+          run: python3 Lysenko_Egor_M3114\tests\rectangle.py
+          run: python3 Lysenko_Egor_M3114\tests\square.py
+          run: python3 Lysenko_Egor_M3114\tests\triangle.py
