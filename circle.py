@@ -1,12 +1,21 @@
 import math
-
-
 def area(r):
-    return math.pi * r * r
-'''Принимает значение аргумента (радиуса) и возвращает площадь круга (радиус в квдрате умножить на пи'''
+    if isinstance(r, (bool, str, float)):
+        return "Incorrect input"
+    if r <= 0:
+        return "Doesn't exist"
+    else:
+       return math.pi * r * r
+
 
 def perimeter(r):
-    return 2 * math.pi * r
-'''Принимает значние аргумента (радиуса) и возвращает длину окружности (2 радиуса умножить на пи)'''
 
-print(area(13), perimeter(13))
+    if isinstance(r, (bool, str, float)):
+        return "Incorrect input"
+    if r <= 0:
+        return "Doesn't exist"
+    else:
+        return 2 * math.pi * r
+
+
+
