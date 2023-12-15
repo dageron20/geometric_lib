@@ -1,4 +1,4 @@
-name: Run Unit Tests
+name: main
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: 3.9
 
-     - name: Run unit tests
+      - name: Run unit tests
         run: python -m unittest tests.py
 
   test_windows:
