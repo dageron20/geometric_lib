@@ -13,10 +13,10 @@ jobs:
 
           - name: unittests
             run: | 
-              python3 Lysenko_Egor_M3114/tests/test_circle.py
-              python3 Lysenko_Egor_M3114/tests/test_rectangle.py
-              python3 Lysenko_Egor_M3114/tests/test_square.py
-              python3 Lysenko_Egor_M3114/tests/test_triangle.py
+              python3 tests/test_circle.py
+              python3 tests/test_rectangle.py
+              python3 tests/test_square.py
+              python3 tests/test_triangle.py
      
     windows-tests:
       runs-on: windows-latest
@@ -25,7 +25,7 @@ jobs:
           
           - name: unittests
             run: | 
-              python3 Lysenko_Egor_M3114/tests/test_circle.py
-              python3 Lysenko_Egor_M3114/tests/test_rectangle.py
-              python3 Lysenko_Egor_M3114/tests/test_square.py
-              python3 Lysenko_Egor_M3114/tests/test_triangle.py
+              python3 tests/test_circle.py
+              python3 tests/test_rectangle.py
+              python3 tests/test_square.py
+              python3 tests/test_triangle.py
