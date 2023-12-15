@@ -9,7 +9,7 @@ class CircleTest(unittest.TestCase):
     def test_area_2(self):
         self.assertEqual(area(-13), "Does not exist")
     def test_area_3(self):
-        self.assertEqual(area(0), 'Does not exist')
+        self.assertEqual(area(0), "Doesn't exist")
 
     def test_area_4(self):
         self.assertEqual(area("mv"), 'Incorrect input')
