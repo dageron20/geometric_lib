@@ -1,38 +1,32 @@
-name: AutoRun UnitTests
-
+name: Autotests
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+   # События, которые запускают jobs
+    push:
+      branches: [ "main" ]
+    pull_request:
+      branches: [ "main" ]
 
 jobs:
+    linux-tests:
+      runs-on: ubuntu-latest
+      steps:
+          - uses: actions/checkout@v3
 
-  linux_tests:
-  
-    runs_on: ubuntu-latest
-    
-    steps:
-        - uses: actions/checkout@v3
-
-        - name: unittests
-          run: |
-            echo python3 Lysenko_Egor_M3114\tests\circle.py
-            echo python3 Lysenko_Egor_M3114\tests\rectangle.py
-            echo python3 Lysenko_Egor_M3114\tests\square.py
-            echo python3 Lysenko_Egor_M3114\tests\triangle.py
-
-            
-  Windows_tests:
-  
-    runs_on: windows-latest
-    
-    steps:
-        - uses: actions/checkout@v3
-
-        - name: unittests
-          run: |
-            echo python3 Lysenko_Egor_M3114\tests\circle.py
-            echo python3 Lysenko_Egor_M3114\tests\rectangle.py
-            echo python3 Lysenko_Egor_M3114\tests\square.py
-            echo python3 Lysenko_Egor_M3114\tests\triangle.py
+          - name: unittests
+            run: | 
+              echo python3 Lysenko_Egor_M3114/tests/test_circle.py
+              echo python3 Lysenko_Egor_M3114/tests/test_rectangle.py
+              echo python3 Lysenko_Egor_M3114/tests/test_square.py
+              echo python3 Lysenko_Egor_M3114/tests/test_triangle.py
+     
+    windows-tests:
+      runs-on: windows-latest
+      steps:
+          - uses: actions/checkout@v3
+          
+          - name: unittests
+            run: | 
+              echo python3 Lysenko_Egor_M3114/tests/test_circle.py
+              echo python3 Lysenko_Egor_M3114/tests/test_rectangle.py
+              echo python3 Lysenko_Egor_M3114/tests/test_square.py
+              echo python3 Lysenko_Egor_M3114/tests/test_triangle.py
