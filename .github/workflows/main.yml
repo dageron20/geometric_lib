@@ -1,28 +1,21 @@
+name: main
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
+    branches:
+      - main
 jobs:
   test:
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-    runs-on: matrix.os 
+        python-version: [3.9]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Set up Python matrix.python-version 
+      - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: matrix.python-version 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      - name: Run tests
-        run: pytest
-      - name: Upload test results
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-results
-          path: test-results.xml
+          python-version: ${{ matrix.python-version }}
+      - name: Run unit tests
+        run: python -m unittest tests.py
