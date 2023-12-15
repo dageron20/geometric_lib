@@ -3,7 +3,7 @@ def area(r):
     if isinstance(r, (bool, str, float)):
         return 'Incorrect input'
     if r <= 0:
-        return 'Does`t exist'
+        return 'Doesn`t exist'
     else:
        return math.pi * r * r
 
