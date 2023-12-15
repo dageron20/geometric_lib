@@ -1,5 +1,5 @@
 def area(a, b):
-    if isinstance((a, b), (bool, str, float)):
+    if isinstance(a, (bool, str, float)) or isinstance(b, (bool, str, float)):
         return "Incorrect input"
     if a <= 0 or b <= 0:
         return 'Doesn`t exist'
@@ -10,7 +10,7 @@ def area(a, b):
 
 def perimeter(a, b):
 
-    if isinstance((a, b), (bool, str, float)):
+    if isinstance(a, (bool, str, float)) or isinstance(b, (bool, str, float)):
         return "Incorrect input"
     if a <= 0 or b <= 0:
         return 'Doesn`t exist'
