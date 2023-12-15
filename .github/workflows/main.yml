@@ -1,6 +1,5 @@
 name: Autotests
 on:
-   # События, которые запускают jobs
     push:
       branches: [ "main" ]
     pull_request:
