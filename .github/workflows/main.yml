@@ -14,14 +14,17 @@ jobs:
         os: [ubuntu-latest, windows-latest]
 
     steps:
-      - name: Clone repository
-        run: git clone --depth=3 git@github.com:SPLOIT47/geometric_lib.git
-        
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       - name: Run unit tests
-        run: |
-          python3 -m unittest tests.py
+        run: python3 -m unittest tests.py
+          
