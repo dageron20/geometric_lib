@@ -28,20 +28,20 @@ class RectangleTestCase(unittest.TestCase):
         res_perimeter = rectangle_perimeter(2.5, 4.5)
         self.assertEqual(res_perimeter, 14)
     
-    # def test_negative_value(self):
-    #     with self.assertRaises(ValueError):
-    #         rectangle_area(-2, 5)
-    #         rectangle_perimeter(-2, 5)
+    def test_negative_value(self):
+        with self.assertRaises(ValueError):
+            rectangle_area(-2, 5)
+            rectangle_perimeter(-2, 5)
     
-    # def test_char_inputs(self):
-    #     with self.assertRaises(TypeError):
-    #         rectangle_area('a', 2)
-    #         rectangle_perimeter('a', 2)
+    def test_char_inputs(self):
+        with self.assertRaises(TypeError):
+            rectangle_area('a', 2)
+            rectangle_perimeter('a', 2)
     
-    # def test_bool_inputs(self):
-    #     with self.assertRaises(TypeError):
-    #         rectangle_area(True, False)
-    #         rectangle_perimeter(True, False)
+    def test_bool_inputs(self):
+        with self.assertRaises(TypeError):
+            rectangle_area(True, False)
+            rectangle_perimeter(True, False)
         
 class CircleTestCase(unittest.TestCase):
 
@@ -57,10 +57,10 @@ class CircleTestCase(unittest.TestCase):
         res_perimeter = circle_perimeter(10)
         self.assertEqual(res_perimeter, 62.83185307179586)
 
-    # def test_negative_values(self):
-    #     with self.assertRaises(ValueError):
-    #         circle_area(-10)
-    #         circle_perimeter(-10)
+    def test_negative_values(self):
+        with self.assertRaises(ValueError):
+            circle_area(-10)
+            circle_perimeter(-10)
     
     def test_float_values(self):
         res_area = circle_area(2.2)
@@ -68,15 +68,15 @@ class CircleTestCase(unittest.TestCase):
         res_perimeter = circle_perimeter(3.3)
         self.assertAlmostEqual(res_perimeter, 20.734511513692635)
     
-    # def test_char_inputs(self):
-    #     with self.assertRaises(TypeError):
-    #         circle_area('a')
-    #         circle_perimeter('a')
+    def test_char_inputs(self):
+        with self.assertRaises(TypeError):
+            circle_area('a')
+            circle_perimeter('a')
 
-    # def test_bool_inputs(self):
-    #     with self.assertRaises(TypeError):
-    #         circle_area(True)
-    #         circle_perimeter(True)
+    def test_bool_inputs(self):
+        with self.assertRaises(TypeError):
+            circle_area(True)
+            circle_perimeter(True)
 
 class SquareTestCase(unittest.TestCase):
 
@@ -92,10 +92,10 @@ class SquareTestCase(unittest.TestCase):
         res_perimeter = square_perimeter(5)
         self.assertEqual(res_perimeter, 20)
 
-    # def test_negative_values(self):
-    #     with self.assertRaises(ValueError):
-    #         square_area(-5)
-    #         square_perimeter(-5)
+    def test_negative_values(self):
+        with self.assertRaises(ValueError):
+            square_area(-5)
+            square_perimeter(-5)
     
     def test_float_values(self):
         res_area = square_area(2.2)
@@ -103,15 +103,15 @@ class SquareTestCase(unittest.TestCase):
         res_perimeter = square_perimeter(3.3)
         self.assertEqual(res_perimeter, 13.2)
 
-    # def test_char_inputs(self):
-    #     with self.assertRaises(TypeError):
-    #         square_area('a')
-    #         square_perimeter('a')
+    def test_char_inputs(self):
+        with self.assertRaises(TypeError):
+            square_area('a')
+            square_perimeter('a')
     
-    # def test_bool_inputs(self):
-    #     with self.assertRaises(TypeError):
-    #         square_area(True)
-    #         square_perimeter(True)
+    def test_bool_inputs(self):
+        with self.assertRaises(TypeError):
+            square_area(True)
+            square_perimeter(True)
 
 class TriangleTestCase(unittest.TestCase):
     
@@ -127,10 +127,10 @@ class TriangleTestCase(unittest.TestCase):
         res_perimeter = triangle_perimeter(5, 2, 3)
         self.assertEqual(res_perimeter, 10)
 
-    # def test_negative_values(self):
-    #     with self.assertRaises(ValueError):
-    #         triangle_area(-5, 2)
-    #         triangle_perimeter(-3, 2, 1)
+    def test_negative_values(self):
+        with self.assertRaises(ValueError):
+            triangle_area(-5, 2)
+            triangle_perimeter(-3, 2, 1)
     
     def test_float_values(self):
         res_area = triangle_area(3.3, 2.2)
@@ -138,12 +138,12 @@ class TriangleTestCase(unittest.TestCase):
         res_perimeter = triangle_perimeter(1.1, 2.2, 3.3)
         self.assertEqual(res_perimeter, 6.6)
     
-    # def test_char_inputs(self):
-    #     with self.assertRaises(TypeError):
-    #         triangle_area('a', 'b')
-    #         triangle_perimeter('a', 'b', 'c')
+    def test_char_inputs(self):
+        with self.assertRaises(TypeError):
+            triangle_area('a', 'b')
+            triangle_perimeter('a', 'b', 'c')
     
-    # def test_bool_inputs(self):
-    #     with self.assertRaises(TypeError):
-    #         triangle_area(True, False)
-    #         triangle_perimeter(True, True, False)
+    def test_bool_inputs(self):
+        with self.assertRaises(TypeError):
+            triangle_area(True, False)
+            triangle_perimeter(True, True, False)
