@@ -16,8 +16,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 3
+        
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -25,7 +24,7 @@ jobs:
 
       - name: Run unit tests and capture output
         run: |
-          python3 -m unittest tests.py   > test-results.txt
+          python3 -m unittest tests.py > test-results.txt
 
       - name: Display test results
         run: cat test-results.txt
