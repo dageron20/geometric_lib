@@ -22,12 +22,19 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: Run unit tests
+      - name: Install dependencies
         run: |
-          python3 tests.py > test-results.txt
-          cat test-results.txt
+          pip install -r requirements.txt
+
+      - name: Run unit tests and capture output
+        run: |
+          python3 tests.py > test-results.txt 2>&1
+
+      - name: Display test results
+        run: cat test-results.txt
 
       - name: Upload test results
+        if: always()
         uses: actions/upload-artifact@v2
         with:
           name: test-results
