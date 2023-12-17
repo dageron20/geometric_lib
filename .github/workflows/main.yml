@@ -16,12 +16,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 3 
         
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
 
-      - name: Run unit tests and capture output
+      - name: Run unit tests
         run: |
           python3 -m unittest tests.py
