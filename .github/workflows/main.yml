@@ -14,10 +14,8 @@ jobs:
         os: [ubuntu-latest, windows-latest]
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 3 
+      - name: Clone repository
+        run: git clone --depth=3 https://github.com/SPLOIT47/geometric_lib.git
         
       - name: Set up Python
         uses: actions/setup-python@v2
