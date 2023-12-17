@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          permissions: all
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -24,4 +26,3 @@ jobs:
 
       - name: Run unit tests
         run: python3 -m unittest tests.py
-          
