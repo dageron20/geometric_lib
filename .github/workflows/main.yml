@@ -23,4 +23,4 @@ jobs:
           python-version: 3.9
 
       - name: Run unit tests
-        run: python tests.py
+        run: python3 tests.py
