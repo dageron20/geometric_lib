@@ -22,10 +22,6 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-
       - name: Run unit tests and capture output
         run: |
           python3 tests.py > test-results.txt 2>&1
