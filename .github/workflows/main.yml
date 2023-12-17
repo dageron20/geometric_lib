@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Clone repository
-        run: git clone --depth=3 https://github.com/SPLOIT47/geometric_lib.git
+        run: git clone --depth=3 git@github.com:SPLOIT47/geometric_lib.git
         
       - name: Set up Python
         uses: actions/setup-python@v2
