@@ -25,6 +25,3 @@ jobs:
       - name: Run unit tests and capture output
         run: |
           python3 -m unittest tests.py
-
-      - name: Display test results
-        run: cat test-results.txt
