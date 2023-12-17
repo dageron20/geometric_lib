@@ -24,3 +24,14 @@ jobs:
 
       - name: Run unit tests
         run: python3 tests.py
+
+      - name: Publish test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: Test Results
+          path: test-results.xml
+      
+      - name: Display test results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        with:
+          files: test-results.xml
