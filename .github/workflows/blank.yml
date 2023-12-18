@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "build"
+  unittests_job_ubuntu:
+    name: unittest_job
+    runs-on: [ubuntu-latest, windows-latest]
+    steps:
+      - name: Git check
+        uses: actions/checkout@v3
+      - name: Python setup
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.11"
+      - name: UnitTesting...
+        run: python3 -m unittest unittests
+
