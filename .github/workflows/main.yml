@@ -12,11 +12,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-
       - name: Running the Unit-tests on ubuntu-latest
         run: |
           python -m unittest circle.py
