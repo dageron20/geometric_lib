@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Run test
-        run:  python -m unittest  test/rectangle_test.py
+        run:  python -m unittest test/rectangle_test.py
   windows-tests:
     runs-on: windows-latest
     strategy:
@@ -30,4 +30,4 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Test with pytest
-      run: python -m unittest  test/rectangle_test.py
+      run: python -m unittest test/rectangle_test.py
