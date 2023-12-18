@@ -1,10 +1,102 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# Описание каждой функции с примерами вызова
+## Прямоугольник
+Файл rectangle.py
+### Площадь
+- Функция area(a, b) принимает 2 числа (стороны прямугольника), возвращает площадь заданного прямоугольника
+```py
+rectangle_area = area(2, 5)
+print(rectangle_area) #10
+```
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+### Периметр
+- Функция perimeter(a, b) принимает 2 числа (стороны прямугольника), возвращает периметр заданного треугольника
+```py
+rectangle_perimeter = perimeter(2, 5)
+print(rectangle_perimeter) #14
+```
+
+
+## Квадрат
+Файл square.py
+### Площадь
+- Функция area(a) принимает 1 число (сторону квадрата), возвращает площадь заданного квадрата
+```py
+square_area = area(3)
+print(square_area) #9
+```
+
+### Периметр
+- Функция perimeter(a) принимает 1 число (сторону квадрата), возвращает периметр заданного квадрата
+```py
+square_perimeter = perimeter(3)
+print(square_perimeter) #12
+```
+
+## Треугольник
+Файл triangle.py
+### Площадь
+- Функция area(a, b) принимает 2 числа (стороны треугольника), возвращает площадь заданного треугольника
+```py
+triangle_area = area(4, 5)
+print(triangle_area) #10
+```
+
+### Периметр
+- Функция perimeter(a, b, c) принимает 3 числа (стороны треугольника), возвращает периметр заданного треугольника
+```py
+triangle_perimeter = perimeter(3, 4, 5)
+print(triangle_perimeter) #12
+```
+
+## Круг
+Файл circle.py
+### Площадь
+- Функция area(r) принимает 1 число (радиус круга), возвращает площадь заданного круга
+```py
+triangle_area = area(3)
+print(triangle_area) #28.274333882308138
+```
+
+### Периметр
+- Функция perimeter(r) принимает 1 число (радиус круга), возвращает периметр заданного круга
+```py
+triangle_perimeter = perimeter(3)
+print(triangle_perimeter) #18.84955592153876
+```
+
+# История изменения проекта с хешами комитов
+- 2a35831 - добавлены Unit тесты
+- 67eca5f Update README.md - добавлена история изменений проекта с хешами комитов
+- c215b0f Update README.md - добавлена документация к вызову функций triangle.py, square.py, rectangle.py, circle.py
+- c484c64 Update triangle.py - добавлено описание работы функций (area(a, b), perimeter(a, b, c))
+- 33393cd Update square.py- добавлено описание работы функций (area(a), perimeter(a))
+- 6cb039d Update rectangle.py- добавлено описание работы функций (area(a, b), perimeter(a, b))
+- b7bce0f Update circle.py - добавлено описание работы функций (area(a), perimeter(a))
+- d372037 Исправлена ошибка в файле rectangle.py
+- 8ba1e6f Добавлен новый файл triangle.py
+- d078c8d L-03: Docs added
+- 8ba9aeb L-03: Circle and square added
+
+# Unit тесты
+- Были добавлены тесты, для проверки корректности работы проекта. Тестируются функции файлов rectangle.py, square.py, circle.py, triangle.py на больших, обычных и вещественных значениях, а так же проверяется поведение программы при 0. Тесты не возвращают конкретную ошибку, а только завершаются корректно или выводят информацию о не прохождении теста. Продукт имеет следующие недостатки: функции по нахождению периметра не обрабатывают случай, когда одно введенное число равняется 0; не предусмотрен случай, когда в функции могут быть переданы значения в строковом виде. Еще предстоит добавить обработу отрицательных значений, в данной реализации программа выводит отрицательный результат, что не является корректным исполнением.
+
+- Для файла square.py (area()):
+    - input: 200000.9
+    - output: 40000360000.81
+  
+- Для файла rectange.py (perimeter()):
+    - input: 20.5 55.9
+    - output: 152.8
+
+- тесты, используемые в ручном тестировании:
+
+| Файл         | Функция     | Входные данные | Результат         | Ожидаемый результат             |
+|--------------|-------------|----------------|-------------------|---------------------------------|
+| circle.py    | area()      | "5"            | can't multiply... | 78.53981633974483 или TypeError |
+| circle.py    | perimeter() | "6"            | can't multiply... | 37.69911184307752 или TypeError |
+| rectangle.py | area()      | -3 10          | -30               | 0 или Lower than Zero           |
+| rectangle.py | perimeter() | "3" 20         | can't multiply... | 46 или TypeError                |
+| square.py    | area()      | "1"            | can't multiply... | 1 или TypeError                 |
+| square.py    | perimeter() | -10            | -40               | 0 или Lower than Zero           |
+| triangle     | area()      | "10" 2         | can't multiply... | 10 или TypeError                |
+| triangle     | perimeter() | 0 10 20        | 30                | 0                               |
