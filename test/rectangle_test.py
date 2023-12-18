@@ -1,13 +1,17 @@
+import sys, os
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
 import math
-import unittest
-import rectangle
 import circle
+import rectangle
 import square
 import triangle
+import unittest
 class RectangleTestCase(unittest.TestCase):
     #area test
     def test_area_int(self):
-        res = rectangle.area("125", "56")
+        res = rectangle.area(125, 56)
         self.assertEqual(res, 7000)
     def test_zero_area(self):
         res = rectangle.area(10, 0)
