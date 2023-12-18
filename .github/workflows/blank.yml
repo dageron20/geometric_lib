@@ -12,7 +12,7 @@ jobs:
   # This workflow contains a single job called "build"
   unittests_job_ubuntu:
     name: unittest_job
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: [ubuntu-latest]
     steps:
       - name: Git check
         uses: actions/checkout@v3
