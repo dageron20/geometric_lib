@@ -1,42 +1,21 @@
-name: Python package test
+name: Python package
 
 on: [push]
 
 jobs:
-  geomitrik:
-
-    runs-on: ubuntu-latest
+  tests:
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: ["pypy3.9", "pypy3.10", "3.9", "3.10", "3.11", "3.12"]
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
 
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python ${{ matrix.python-version }}
+      - uses: actions/checkout@v3
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Run test
-        run: |
-          python -m unittest circle.py
-          python -m unittest rectangle.py
-          python -m unittest square.py
-          python -m unittest triangle.py
-  windows-tests:
-    runs-on: windows-latest
-    strategy:
-      matrix:
-        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
-    steps:
-    - uses: actions/checkout@v4
-    - name: Setup Python # Set Python version
-      uses: actions/setup-python@v4
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Test with pytest
-      run: |
-        python -m unittest circle.py
-        python -m unittest rectangle.py
-        python -m unittest square.py
-        python -m unittest triangle.py
-        
+     
+      - name: Test with pytest
+        run: python -m unittest test/*.py
