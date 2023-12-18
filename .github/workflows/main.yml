@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: 3.8
-        
+          
+      - run: ls
+      
       - name: Run tests
         run: python3 tests/tests.py
