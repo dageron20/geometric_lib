@@ -1,7 +1,5 @@
 import sys
 
-sys.path.insert(0, '/home/alexsandalov/Документы/itmo/geometric_lib/')
-
 import unittest
 from function.square import area, perimeter
 

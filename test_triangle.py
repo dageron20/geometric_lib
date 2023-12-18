@@ -1,15 +1,13 @@
 import sys
 
-sys.path.insert(0, '/home/alexsandalov/Документы/itmo/geometric_lib/')
-
 import unittest
-from function.rectangle import area, perimeter
+from function.triangle import area, perimeter
 
 
-class TestRectangle(unittest.TestCase):
+class TestTriangle(unittest.TestCase):
    def test_area_1(self):
        result = area(10, 9)
-       self.assertEqual(result, 90)
+       self.assertEqual(result, 45)
 
    def test_area_2(self):
        result = area(-5, 10)
@@ -24,21 +22,20 @@ class TestRectangle(unittest.TestCase):
        self.assertEqual(res, 0)
 
    def test_perimeter_1(self):
-       result = perimeter(10, 9)
-       self.assertEqual(result, 38)
-
-   def test_perimeter_2(self):
-       result = perimeter(-5, 10)
+       result = perimeter(1, 2, 3)
        self.assertEqual(result, 0)
 
+   def test_perimeter_2(self):
+       result = perimeter(3, 4, 5)
+       self.assertEqual(result, 12)
+
    def test_perimeter_3(self):
-       res = perimeter(13, 0)
+       res = perimeter(-5, 346, 45)
        self.assertEqual(res, 0)
-
+   
    def test_perimeter_4(self):
-       res = perimeter(-14, -10)
+       res = perimeter(3, 4, 0)
        self.assertEqual(res, 0)
 
-       
 if __name__ == "__main__":
     unittest.main()
