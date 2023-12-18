@@ -5,20 +5,32 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
   workflow_dispatch:
 
 jobs:
-  # This workflow contains a single job called "build"
   unittests_job_ubuntu:
-    name: unittest_job
-    runs-on: [ubuntu-latest]
+    name: UnittestJob (Ubuntu)
+    runs-on: ubuntu-latest
     steps:
-      - name: Git check
+      - name: Checkout repo
         uses: actions/checkout@v3
-      - name: Python setup
+      - name: Set up Python
         uses: actions/setup-python@v3
         with:
           python-version: "3.11"
-      - name: UnitTesting...
+      - name: Run Unit Tests
         run: python3 -m unittest tests.py
+
+  unittests_job_windows:
+    name: UnittestJob (Windows)
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.11"
+      - name: Run Unit Tests
+        run: python -m unittest tests.py
+        
