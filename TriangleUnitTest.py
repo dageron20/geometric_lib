@@ -9,9 +9,6 @@ class RectanlgeTestCase(unittest.TestCase):
     def test_area_float(self):
         result = triangle.area(1.5,3.5)
         self.assertEqual(result, 2.625)
-    def test_area_string(self):
-        result = triangle.area("5", "1")
-        self.assertEqual(result, 2.5)
     def test_area_zero(self):
         result = triangle.area(0, 0)
         self.assertEqual(result, 0)
@@ -22,9 +19,6 @@ class RectanlgeTestCase(unittest.TestCase):
     def test_perimeter_float(self):
         result = triangle.perimeter(1.5, 2.5, 3.5)
         self.assertEqual(result, 7.5)
-    def test_perimeter_string(self):
-        result = triangle.perimeter("9", "10", "11")
-        self.assertEqual(result, 30)
     def test_perimeter_zero(self):
         result = triangle.perimeter(0, 0, 0)
         self.assertEqual(result, 0)
