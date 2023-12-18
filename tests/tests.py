@@ -1,8 +1,8 @@
 import unittest
-from bin import circle
-from bin import rectangle
-from bin import square
-from bin import triangle
+from ../bin import circle
+from ../bin import rectangle
+from ../bin import square
+from ../bin import triangle
 
 
 class CircleTestCase(unittest.TestCase):
