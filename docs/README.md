@@ -146,3 +146,30 @@ Date:   Tue Oct 3 21:12:40 2023 +0300
     Update rectanlge.py
 
 ```
+# Unit tests
+
+Добавлены Unit тесты для функций area() и perimeter() файлов: square.py, circle.py, triangle.py, rectangle.py. Тесты проверяют работу функций с: целочисленными и вещественными значениями, нулём, строками. Продукт имеет недостатки: 
+1) Невозможность работы со строками
+2) Отсутствие проверки на отрицательные числа
+3) Функция perimeter не обрабатывает вхождение 0 (для файлов triangle.py и rectangle.py)
+
+rectangle.py (area()):
+```
+input = 5, 6
+output = 30
+```
+square.py (perimeter()):
+```
+input = 1
+output = 4
+```
+triangle.py (perimeter()):
+```
+input = 1,2,0
+output = 3
+```
+circle.py (area()):
+```
+input = 0
+output = 0
+```
