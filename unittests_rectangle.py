@@ -1,33 +1,16 @@
-name: Run Unit Tests
+import unittest
+from rectangle import *
 
-on:
-  push:
-    branches:
-      - main 
+class circleTestCase(unittest.TestCase):
+    def test_right_area(self):
+        res = area(5,3)
+        self.assertEqual(res,15)
 
-jobs:
-  test:
-    runs-on: ${{ matrix.os }}
+    def test_zero_area(self):
+        res = area(0,0)
+        self.assertEqual(res,0)
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-        python-version: [3.8] 
+    def test_right_perimeter(self):
+        res = perimeter(5,3)
+        self.assertEqual(res,16)
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-       
-
-    - name: Run Unit Tests
-      run: |
-        python.exe -m unittest unittests_circle.py
