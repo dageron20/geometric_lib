@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: [ ubuntu-latest, windows-latest ]
+
+    steps:
+
+    - name: setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.9"
+
+    - name: run tests
+      run: python circle_tests.py
+      run: python rectangle_tests.py
+      run: python trianlge.tests.py
