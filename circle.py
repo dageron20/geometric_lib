@@ -2,11 +2,13 @@ import math
 
 
 def area(r):
-#Функция принимает на вход число r, возвращает квадрат числа r, умноженный на число пи.
+    if r < 0:
+        return "Negative number"
     return math.pi * r * r
 
 
 def perimeter(r):
-#Функция принимает на вход число r, возвращает удвоенное произведение числа r и числа пи.
+    if r < 0:
+        return "Negative number"
     return 2 * math.pi * r
 
