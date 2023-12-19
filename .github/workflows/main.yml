@@ -1,28 +1,24 @@
-name: Run Tests
+name: Run Unit Tests
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   test:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
+    name: Run unit tests
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
+    - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: '3.x'
 
-    - name: Run Tests
-      run:
-        python -m unittest discover -s tests -p '*_tests.py'
-        python -m unittest tests.py
+    - name: Run tests.py
+      run: |
+        python tests.py
+      working-directory: ./verbano/geometric_lib
