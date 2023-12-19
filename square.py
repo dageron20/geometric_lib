@@ -1,9 +1,11 @@
 
 def area(a):
-#Функция принимает на вход число, возвращает квадрат этого числа.
+    if a < 0:
+        return "Negative number"
     return a * a
 
 
 def perimeter(a):
-#Функция принимает на вход число, возвращает произведение этого числа на 4.
+    if a < 0:
+        return "Negative number"
     return 4 * a
