@@ -14,17 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run SquareUnitTest.py
-        run: python SquareUnitTest.py
+      - name: Run circleUnitTest.py
+        run: python circleUnitTest.py
 
-      - name: Run RectangleUnitTest.py
-        run: python RectangleUnitTest.py
+      - name: Run rectangleUnitTest.py
+        run: python rectangleUnitTest.py
 
-      - name: Run CircleUnitTest.py
-        run: python CircleUnitTest.py
+      - name: Run squareUnitTest.py
+        run: python squareUnitTest.py
 
-      - name: Run TriangleUnitTest.py
-        run: python TriangleUnitTest.py
+      - name: Run triangleUnitTest.py
+        run: python triangleUnitTest.py
   
   test_windows:
     runs-on: windows-latest
@@ -32,14 +32,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run SquareUnitTest.py
-        run: python SquareUnitTest.py
+      - name: Run circleUnitTest.py
+        run: python circleUnitTest.py
 
-      - name: Run RectangleUnitTest.py
-        run: python RectangleUnitTest.py
+      - name: Run rectangleUnitTest.py
+        run: python rectangleUnitTest.py
 
-      - name: Run CircleUnitTest.py
-        run: python CircleUnitTest.py
+      - name: Run squareUnitTest.py
+        run: python squareUnitTest.py
 
-      - name: Run TriangleUnitTest.py
-        run: python TriangleUnitTest.py
+      - name: Run triangleUnitTest.py
+        run: python triangleUnitTest.py
