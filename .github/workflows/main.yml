@@ -1,24 +1,55 @@
-name: Run Unit Tests
+# Имя workflow
+name: Run tests
 
-on:
-  push:
-    branches: [ main ]
+# Событие, которое запускает workflow
+on: push
 
+# Задачи, которые выполняются параллельно
 jobs:
-  test:
-    name: Run unit tests
+  # Задача для runner'а ubuntu-latest
+  test-ubuntu:
+    # Имя runner'а
     runs-on: ubuntu-latest
-
+    # Шаги, которые выполняются последовательно
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      # Установка Python
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      # Клонирование репозитория
+      - uses: actions/checkout@v2
+      # Кэширование зависимостей
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: $ { { runner.os }}-pip-$ { { hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            $ { { runner.os }}-pip-
+      # Установка зависимостей
+      - run: pip install -r requirements.txt
+      # Запуск тестов
+      - run: python tests.py
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
-    - name: Run tests.py
-      run: |
-        python tests.py
-      working-directory: ./verbano/geometric_lib
+  # Задача для runner'а windows-latest
+  test-windows:
+    # Имя runner'а
+    runs-on: windows-latest
+    # Шаги, которые выполняются последовательно
+    steps:
+      # Установка Python
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      # Клонирование репозитория
+      - uses: actions/checkout@v2
+      # Кэширование зависимостей
+      - uses: actions/cache@v2
+        with:
+          path: ~\AppData\Local\pip\Cache
+          key: $ { { runner.os }}-pip-$ { { hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            $ { { runner.os }}-pip-
+      # Установка зависимостей
+      - run: pip install -r requirements.txt
+      # Запуск тестов
+      - run: python tests.py
