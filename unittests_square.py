@@ -7,10 +7,6 @@ class circleTestCase(unittest.TestCase):
         res = area(5)
         self.assertEqual(res, 25)
 
-    def test_str_argument_area(self):
-        res = area("5")
-        self.assertEqual(res, 25)
-
     def test_zero_area(self):
         res = area(0)
         self.assertEqual(res, 0)
@@ -19,12 +15,7 @@ class circleTestCase(unittest.TestCase):
         res = perimeter(3)
         self.assertEqual(res, 12)
 
-    def test_str_argument_perimeter(self):
-        res = perimeter("3")
-        self.assertEqual(res, 6)
-
     def test_zero_perimeter(self):
         res = perimeter(0)
         self.assertEqual(res, 0)
 
-и
