@@ -40,4 +40,3 @@ jobs:
         pip install pytest pytest-cov
         pytest tests.py --doctest-modules
         
-Update main.yml · verbano/geometric_lib@f3a1d18
