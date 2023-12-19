@@ -10,6 +10,62 @@
 > Формулы площадей и периметров описаны в разделе [Математический формулы](#математические-формулы)
 
 
+# Результаты Unit-Тестов
+
+## RectangleTestCase
+
+| Test name           | Function  | Input      | Expected | Status (before) | Status (after) |
+| ------------------- | --------- | ---------- | -------- | --------------- | -------------- |
+| test_area           | area      | 174, 452   | 78648    | Ok              | Ok             |
+| test_area           | area      | -174, -452 | None     | Error           | Ok             |
+| test_perimeter      | perimeter | 43, 27     | 140      | Ok              | Ok             |
+| test_perimeter      | perimeter | -510, 21   | None     | Error           | Ok             |
+| test_area_zero      | area      | 123, 0     | 0        | Ok              | Ok             |
+| test_area_zero      | area      | 0, 0       | 0        | Ok              | Ok             |
+| test_perimeter_zero | perimeter | -124, -124 | 0        | Ok              | Ok             |
+| test_perimeter_zero | perimeter | 0, 0       | 0        | Ok              | Ok             |
+
+## SquareTestCase
+
+| Test name       | Function       | Input | Expected | Status (before) | Status (after) |
+| --------------- | -------------- | ----- | -------- | --------------- | -------------- |
+| test_area       | square_area    | 241   | 58081    | Ok              | Ok             |
+| test_area       | square_area    | -32   | None     | Error           | Ok             |
+| test_perimeter  | square_perimeter| 452   | 1808     | Ok              | Ok             |
+| test_perimeter  | square_perimeter| -510  | None     | Error           | Ok             |
+| test_area_zero  | square_area    | 0     | 0        | Ok              | Ok             |
+| test_perimeter_zero | square_perimeter | 0 | 0       | Ok              | Ok             |
+
+## TriangleTestCase
+
+| Test name            | Function          | Input             | Expected    | Status (before) | Status (after) |
+| -------------------- | ----------------- | ----------------- | ----------- | --------------- | -------------- |
+| test_area            | triangle_area     | 723, 5439         | 1966198.5   | Ok              | Ok             |
+| test_area            | triangle_area     | 723, 5438         | float       | Ok              | Ok             |
+| test_area            | triangle_area     | -76, 12           | None        | Error           | Ok             |
+| test_perimeter       | triangle_perimeter| 34, 85, 56         | 175         | Ok              | Ok             |
+| test_perimeter       | triangle_perimeter| -831, -7790, -3215 | None        | Error           | Ok             |
+| test_area_zero       | triangle_area     | 432, 0            | 0           | Ok              | Ok             |
+| test_area_zero       | triangle_area     | 0, 0              | 0           | Ok              | Ok             |
+| test_perimeter_zero  | triangle_perimeter| -51, 50, 0         | None        | Error           | Ok             |
+| test_perimeter_zero  | triangle_perimeter| 0, 0, 0           | 0           | Ok              | Ok             |
+
+
+## CircleTestCase
+
+| Test name       | Function       | Input | Expected               | Status (before) | Status (after) |
+| --------------- | -------------- | ----- | ---------------------- | --------------- | -------------- |
+| test_area       | circle_area    | 75    | float                  | Ok              | Ok             |
+| test_area       | circle_area    | 691   | 1500050.801828708     | Ok              | Ok             |
+| test_area       | circle_area    | -76   | None                   | Error           | Ok             |
+| test_perimeter  | circle_perimeter| 64    | float                  | Ok              | Ok             |
+| test_perimeter  | circle_perimeter| 74    | 464.9557127312894     | Ok              | Ok             |
+| test_perimeter  | circle_perimeter| -42   | None                   | Error           | Ok             |
+| test_area_zero  | circle_area    | 0     | 0                      | Ok              | Ok             |
+| test_perimeter_zero | circle_perimeter | 0 | 0                      | Ok              | Ok             |
+
+
+
 
 # Примеры работы библиотеки
 
