@@ -1,8 +1,8 @@
 name: Run Tests
 
-on:
+on: 
   push:
-    branches:  main 
+    branches: [ main ]
 
 jobs:
   test:
@@ -13,6 +13,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+      working-directory: tests
+
     - name: Run tests.py
-      run: python tests.py
-      shell: bash
+      run: |
+        python tests.py
+      working-directory: tests
