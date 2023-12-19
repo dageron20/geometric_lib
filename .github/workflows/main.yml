@@ -23,5 +23,5 @@ jobs:
         python-version: 3.8
 
     - name: Run Tests
-      run: |
+      run:
         python -m unittest tests.py
