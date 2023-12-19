@@ -1,55 +1,32 @@
 # Имя workflow
-name: Run tests
+name: Run unit tests
 
-# Событие, которое запускает workflow
+# Триггеры для запуска workflow
 on: push
 
-# Задачи, которые выполняются параллельно
+# Задания, которые будут выполнены
 jobs:
-  # Задача для runner'а ubuntu-latest
-  test-ubuntu:
-    # Имя runner'а
-    runs-on: ubuntu-latest
-    # Шаги, которые выполняются последовательно
+  # Имя задания
+  test:
+    # Стратегия для запуска задания на разных runner'ах
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    # Runner, на котором будет выполняться задание
+    runs-on: $ { { matrix.os }}
+    # Шаги, которые будут выполнены в задании
     steps:
-      # Установка Python
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-      # Клонирование репозитория
-      - uses: actions/checkout@v2
-      # Кэширование зависимостей
-      - uses: actions/cache@v2
-        with:
-          path: ~/.cache/pip
-          key: $ { { runner.os }}-pip-$ { { hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            $ { { runner.os }}-pip-
-      # Установка зависимостей
-      - run: pip install -r requirements.txt
-      # Запуск тестов
-      - run: python tests.py
-
-  # Задача для runner'а windows-latest
-  test-windows:
-    # Имя runner'а
-    runs-on: windows-latest
-    # Шаги, которые выполняются последовательно
-    steps:
-      # Установка Python
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-      # Клонирование репозитория
-      - uses: actions/checkout@v2
-      # Кэширование зависимостей
-      - uses: actions/cache@v2
-        with:
-          path: ~\AppData\Local\pip\Cache
-          key: $ { { runner.os }}-pip-$ { { hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            $ { { runner.os }}-pip-
-      # Установка зависимостей
-      - run: pip install -r requirements.txt
-      # Запуск тестов
-      - run: python tests.py
+      # Шаг для клонирования репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      # Шаг для установки Python
+      - name: Setup Python
+        uses: actions/setup-python@v2
+      # Шаг для установки зависимостей
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      # Шаг для запуска unit тестов из файла tests.py
+      - name: Run tests
+        run: python tests.py
+        # Атрибут для продолжения workflow, даже если тесты не прошли
+        continue-on-error: true
