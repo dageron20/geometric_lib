@@ -1,9 +1,11 @@
 
 def area(a, b):
-#Функция принимает на вход два числа, возвращает их произведение.
+    if a < 0 or b < 0:
+        return "Negative number"
     return a * b
 
 
 def perimeter(a, b):
-#Функция принимает на вход два числа, возвращает их удвоенную сумму.
+    if a < 0 or b < 0:
+        return "Negative number"
     return (a + b) * 2
