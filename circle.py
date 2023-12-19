@@ -4,7 +4,7 @@ import math
 def area(r):
     # Принимает на вход число r, возвращает квадрат r, умноженный на число Пи
     if not (type(r) is int):
-        return "Incorrect inputa"
+        return "Incorrect input"
     elif r <= 0:
         return "Incorrect input"
     return (int)(math.pi * r * r)
