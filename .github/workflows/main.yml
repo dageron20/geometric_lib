@@ -1,29 +1,27 @@
 name: Run Tests
 
-on: 
+on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   test:
-    name: Run tests.py
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
 
     steps:
-    - name: Checkout code
+    - name: Checkout Repository
       uses: actions/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
+        python-version: 3.8
 
-    - name: Install dependencies
+    - name: Run Tests
       run: |
-        pip install -r requirements.txt
-      working-directory: tests
-
-    - name: Run tests.py
-      run: |
-        python tests.py
-      working-directory: tests
+        python -m unittest tests.py
