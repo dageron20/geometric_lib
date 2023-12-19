@@ -60,6 +60,9 @@ class TriangleTest(unittest.TestCase):
     def test_negative_number(self):
         per = triangle.perimeter(-89, 8, 7)
         self.assertEqual(per, "Negative number")
+    def test_triangle_exists(self):
+        is_exists = triangle.exists(7, 8, 9)
+        self.assertEqual(is_exists, True)
 
 if __name__ == '__main__':
     unittest.main()
