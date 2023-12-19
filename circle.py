@@ -3,7 +3,7 @@ import math
 
 def area(r):
     if r>0: return math.pi * r * r
-    return 0
+    return 1
 
 
 def perimeter(r):
