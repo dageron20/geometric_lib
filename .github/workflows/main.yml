@@ -15,7 +15,6 @@ jobs:
       with:
         python-version: "3.9"
 
-    - name: run tests
-      run: python circle_tests.py
-      run: python rectangle_tests.py
-      run: python trianlge.tests.py
+    - run: python circle_tests.py
+    - run: python rectangle_tests.py
+    - run: python trianlge.tests.py
