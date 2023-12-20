@@ -155,11 +155,11 @@
 # История изменений (от новых к старым)
 
 * commit eeee6efb21966d4aebe7a0ac122b767ad877542b
+  
      Create main.yml
-
 * commit 25f05cc84e936fdda454d0b7a7c6477d3c6637d8
+  
      add tests
-
 * commit 17e680216126c9d07c55ba0f75cbe466b3f57dc1
 
     file triangle.py added, bug in rectrangle.py fixed
