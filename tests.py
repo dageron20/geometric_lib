@@ -13,7 +13,7 @@ class TriangleTests(unittest.TestCase):
 
     def test_area_check(self):
 
-        self.assertEqual(triangle.area(1444, 1), 777)
+        self.assertEqual(triangle.area(1554, 1), 777)
         self.assertEqual(triangle.area(4, 1000), 2000)
 
 

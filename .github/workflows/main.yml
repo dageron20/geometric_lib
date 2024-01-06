@@ -1,16 +1,27 @@
-name: CI
+name: AutoUnittests
+
+# Controls when the workflow will run
 on:
-   # События, которые запускают jobs
-    push:
-      branches: [ "main" ]
+  push:
+
+  workflow_dispatch:
 
 jobs:
-    my_build_job:
-      # Операционная система в виртуальной машине, в которой запускаются процессы
-      runs-on: [ubuntu-latest, windows-latest]
-      steps:
-          # Actions от github: проверяет репозиторий, гит и т.д.
-          - uses: actions/checkout@v3
-      
-          - name: Run tests
-            run: python -m unittest tests.py
+
+  build:
+    # The type of runner that the job will run on
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+
+    - name: Run tests
+      run: python -m unittest tests.py
