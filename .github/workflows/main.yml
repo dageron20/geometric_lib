@@ -1,0 +1,16 @@
+name: CI
+on:
+   # События, которые запускают jobs
+    push:
+      branches: [ "main" ]
+
+jobs:
+    my_build_job:
+      # Операционная система в виртуальной машине, в которой запускаются процессы
+      runs-on: [ubuntu-latest, windows-latest]
+      steps:
+          # Actions от github: проверяет репозиторий, гит и т.д.
+          - uses: actions/checkout@v3
+      
+          - name: Run tests
+            run: python -m unittest tests.py
