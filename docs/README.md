@@ -1,3 +1,10 @@
+# Оглавление
+
++ [Введение](./beginning.md)
++ [Описание функций и примеры вызова](./description-and-examples.md)
++ [История изменения проекта](./history.md)
++ [Unit тесты](./unittests.md)
+
 # Math formulas
 ## Area
 - Circle: S = πR²
