@@ -1,10 +1,21 @@
 import math
-
-
 def area(r):
-    return math.pi * r * r
+    if isinstance(r, (bool, str, float)):
+        return 'Incorrect input'
+    if r <= 0:
+        return 'Doesn`t exist'
+    else:
+       return math.pi * r * r
 
 
 def perimeter(r):
-    return 2 * math.pi * r
+
+    if isinstance(r, (bool, str, float)):
+        return 'Incorrect input'
+    if r <= 0:
+        return 'Doesn`t exist'
+    else:
+        return 2 * math.pi * r
+
+
 
