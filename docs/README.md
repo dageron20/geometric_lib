@@ -1,10 +1,11 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
-
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+# geometric_lib
+Библиотека хранит несколько файлов:
+```
+circle.py
+rectangle.py
+square.py
+triangle.py
+Unittester.py
+```
+Все они, кроме Unittester.py, хранят функции, расчитывающие **периметр** и **площадь** соответствующих геометрических фигур.
+Unittester тестирует работу функций в этих файлах.
