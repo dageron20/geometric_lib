@@ -1,0 +1,19 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  test1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run test.py Ubuntu
+      run: python test.py
+  test2:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run test.py Windows
+      run: python test.py
