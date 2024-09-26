@@ -1,10 +1,28 @@
 import math
-
+    
 
 def area(r):
-    return math.pi * r * r
+    '''принимает число r(радиус), возвращает площадь круга с радиусом r'''
+    if not isinstance(r, int) and not isinstance(r, float):
+        return "error"
+    elif r <= 0:
+        return "error"
+    else:
+        return math.pi * r * r
 
 
 def perimeter(r):
-    return 2 * math.pi * r
+    '''возвращает значение периметра круга с радиусом r
 
+        параметры:
+            r(int): целое десятичное число
+
+        возвращаемое значение:
+            perimeter(r): периметр круга с радиусом r
+    '''
+     if not isinstance(r, int) and not isinstance(r, float):
+        return "error"
+    elif r <= 0:
+        return "error"
+     else:
+        return 2 * math.pi * r
